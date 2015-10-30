@@ -1,0 +1,213 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+ background: url(../img/bg.jpg) repeat-x;
+}
+.wrapper {
+	width: 1000px;
+	height: 100%;
+	min-height: 100%;
+	margin: 0 auto;
+	background-color: white;
+	-webkit-box-shadow: 0px 0px 25px 4px rgba(18,103,122,1);
+	-moz-box-shadow: 0px 0px 25px 4px rgba(18,103,122,1);
+	box-shadow: 0px 0px 25px 4px rgba(18,103,122,1);
+
+}
+.header {
+	width: 1000px;
+	height: 174px;
+}
+.clearfix:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.logo {
+	display: block;
+	float: left;
+	background: url(../img/logo.jpg) no-repeat;
+	width: 283px;
+	height: 164px;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+.contacts {
+	float: right;
+	margin-top: 5px;
+	margin-right: 30px;
+	margin-left: 200px;
+	font-family: Tahoma;
+	font-size: 13px;
+	line-height: 20px;
+	color: #128aa7;
+}
+.contacts p{
+	font-weight: bold;
+}
+.contacts span{
+	display: block;
+}
+.flags {
+	margin-top: 25px;
+	margin-right: 30px;
+	float: right;
+}
+.flags ul{
+	font-size: 0;
+	line-height: 0;
+	letter-spacing: -1px;
+}
+.flags li {
+	float: left;
+	list-style: none;
+}
+.flags img{
+	margin-left: -5px;
+	display: block;
+	width: 42px;
+	height: 42px;
+}
+.flags a {
+	display: block;
+	margin-top: 3px;
+	margin-left: 5px;
+	padding-left: 10px;
+	font: 10px Tahoma;
+}
+.image {
+	background: url(../img/bridge.jpg) no-repeat;
+	width: 1000px;
+	height: 237px;
+	border-top: 1px solid #128aa7;
+	border-bottom: 1px solid #128aa7;
+}
+.menu {
+	width: 1000px;
+	height: 30px;
+	background-color: #333333;
+	border-bottom: 1px solid #000000;
+	-webkit-box-shadow: 0px 3px 3px -2px rgba(79,79,80,1);
+	-moz-box-shadow: 0px 3px 3px -2px rgba(79,79,80,1);
+	box-shadow: 0px 3px 3px -2px rgba(79,79,80,1);
+}
+.main_list {
+	font-size: 0;
+	line-height: 0;
+	letter-spacing: -1px;
+	margin-left: 50px;
+}
+.main_list img {
+	display: inline-block;
+	margin-left: 5px;
+}
+.main_list li {
+	display: block;
+	position: relative;
+	float: left;
+	list-style: none;
+}
+.main_list a {
+	display: block;
+	margin-right: 50px; 
+	padding-left: 10px;
+	font: 15px/30px Tahoma;
+	text-decoration: none;
+	color: #ffffff;
+}
+.main_list ul{
+	position: absolute;
+	left:-9999px;
+}
+.main_list ul li{
+	float:none;
+	background-color: #333333;
+}
+.main_list ul a{
+	color:#ffffff;
+	font: 15px/30px Tahoma;
+	white-space:nowrap; 
+	display: block;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+.main_list li:hover ul{
+	left: 0;
+}
+.fon3{
+	width: 100%;
+	background-color: #edeef0;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	color: #424c43;
+
+}
+.fon2{
+	width: 100%;
+	background-color: #ffffff;
+	float: left;
+	position: relative;
+	right:200px;
+	border-right: 1px solid #c7cacf;
+}
+.fon1{
+	width: 100%;
+	background-color: #edeef0;
+	float: left;
+	position: relative;
+	right: 600px;
+	border-right: 1px solid #c7cacf;
+}
+
+.first {
+	width: 180px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	left: 810px;
+}
+.second {
+	width: 578px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	left: 830px;
+}
+.third {
+	width: 180px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	left: 850px;
+}
+.first p{
+	font-weight: bold;
+	margin:5px 30px;
+	font: 18px Tahoma;
+
+}
+.first span{
+	font: 14px/26px Tahoma;
+
+}
+.third p{
+	font-weight: normal;
+	margin:5px 30px;
+	font: 20px Tahoma;
+
+}
+.third span{
+	font: 14px/26px Tahoma;
+
+}
+.copy{
+	display: inline-block;
+	margin-top: 5px;
+	margin-left: 40%;
+	color: #cee3ec;
+	font: 13px Tahoma;
+}
