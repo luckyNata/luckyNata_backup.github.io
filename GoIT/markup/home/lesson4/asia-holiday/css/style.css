@@ -4,6 +4,7 @@
 }
 body {
  background: url(../img/bg.jpg) repeat-x;
+ background-color: #0c75a0;
 }
 .wrapper {
 	width: 1000px;
@@ -11,9 +12,9 @@ body {
 	min-height: 100%;
 	margin: 0 auto;
 	background-color: white;
-	-webkit-box-shadow: 0px 0px 25px 4px rgba(18,103,122,1);
-	-moz-box-shadow: 0px 0px 25px 4px rgba(18,103,122,1);
-	box-shadow: 0px 0px 25px 4px rgba(18,103,122,1);
+-webkit-box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.76);
+-moz-box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.76);
+box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.76);
 
 }
 .header {
@@ -92,6 +93,8 @@ body {
 	-webkit-box-shadow: 0px 3px 3px -2px rgba(79,79,80,1);
 	-moz-box-shadow: 0px 3px 3px -2px rgba(79,79,80,1);
 	box-shadow: 0px 3px 3px -2px rgba(79,79,80,1);
+	position: relative;
+	z-index: 1;
 }
 .main_list {
 	font-size: 0;
@@ -128,7 +131,6 @@ body {
 .main_list ul a{
 	color:#ffffff;
 	font: 15px/30px Tahoma;
-	white-space:nowrap; 
 	display: block;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -185,7 +187,7 @@ body {
 	left: 850px;
 }
 .first p{
-	font-weight: bold;
+	font-weight: normal;
 	margin:5px 30px;
 	font: 18px Tahoma;
 
@@ -204,10 +206,20 @@ body {
 	font: 14px/26px Tahoma;
 
 }
+.second p{
+	font-weight: normal;
+	margin:5px 30px;
+	font: 20px Tahoma;
+
+}
+.second span{
+	font: 14px/26px Tahoma;
+
+}
 .copy{
-	display: inline-block;
+	display: block;
 	margin-top: 5px;
 	margin-left: 40%;
 	color: #cee3ec;
-	font: 13px Tahoma;
+	font: 14px Tahoma;
 }
