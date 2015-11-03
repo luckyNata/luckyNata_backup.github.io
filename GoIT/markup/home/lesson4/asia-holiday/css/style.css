@@ -88,7 +88,7 @@ box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.76);
 .menu {
 	width: 1000px;
 	height: 30px;
-	background-color: #333333;
+	background-color: #313131;
 	border-bottom: 1px solid #000000;
 	-webkit-box-shadow: 0px 3px 3px -2px rgba(79,79,80,1);
 	-moz-box-shadow: 0px 3px 3px -2px rgba(79,79,80,1);
@@ -123,14 +123,17 @@ box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.76);
 .main_list ul{
 	position: absolute;
 	left:-9999px;
+	-webkit-box-shadow: 0px 3px 3px -2px rgba(79,79,80,1);
+	-moz-box-shadow: 0px 3px 3px -2px rgba(79,79,80,1);
+	box-shadow: 0px 3px 3px -2px rgba(79,79,80,1);
 }
 .main_list ul li{
 	float:none;
-	background-color: #333333;
+	background-color: #313131;
 }
 .main_list ul a{
 	color:#ffffff;
-	font: 15px/30px Tahoma;
+	font: 15px/25px Tahoma;
 	display: block;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -138,6 +141,8 @@ box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.76);
 }
 .main_list li:hover ul{
 	left: 0;
+	background-color: #303030;
+	border-top: 1px solid #000;
 }
 .fon3{
 	width: 100%;
