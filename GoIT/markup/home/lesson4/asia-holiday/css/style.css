@@ -12,6 +12,7 @@ body {
 	min-height: 100%;
 	margin: 0 auto;
 	background-color: white;
+	border-bottom: 2px solid #031d28;
 -webkit-box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.76);
 -moz-box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.76);
 box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.76);
@@ -55,6 +56,7 @@ box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.76);
 	margin-top: 25px;
 	margin-right: 30px;
 	float: right;
+	padding-left: 50px;
 }
 .flags ul{
 	font-size: 0;
@@ -64,19 +66,18 @@ box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.76);
 .flags li {
 	float: left;
 	list-style: none;
+	margin-left: 15px;
 }
 .flags img{
-	margin-left: -5px;
+	margin-left:0;
 	display: block;
 	width: 42px;
 	height: 42px;
 }
 .flags a {
 	display: block;
-	margin-top: 3px;
-	margin-left: 5px;
-	padding-left: 10px;
 	font: 10px Tahoma;
+	text-align: center;
 }
 .image {
 	background: url(../img/bridge.jpg) no-repeat;
@@ -88,7 +89,17 @@ box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.76);
 .menu {
 	width: 1000px;
 	height: 30px;
-	background-color: #313131;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#373737+0,303030+100 */
+background: #373737; /* Old browsers */
+background: -moz-linear-gradient(top,  #373737 0%, #303030 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#373737), color-stop(100%,#303030)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #373737 0%,#303030 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #373737 0%,#303030 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #373737 0%,#303030 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #373737 0%,#303030 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373737', endColorstr='#303030',GradientType=0 ); /* IE6-9 */
+
 	border-bottom: 1px solid #000000;
 	-webkit-box-shadow: 0px 3px 3px -2px rgba(79,79,80,1);
 	-moz-box-shadow: 0px 3px 3px -2px rgba(79,79,80,1);
@@ -123,26 +134,27 @@ box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.76);
 .main_list ul{
 	position: absolute;
 	left:-9999px;
+	background-color: #303030;
+	border-top: 1px solid #000;
 	-webkit-box-shadow: 0px 3px 3px -2px rgba(79,79,80,1);
 	-moz-box-shadow: 0px 3px 3px -2px rgba(79,79,80,1);
 	box-shadow: 0px 3px 3px -2px rgba(79,79,80,1);
 }
 .main_list ul li{
 	float:none;
-	background-color: #313131;
+	background-color: #303030;
 }
 .main_list ul a{
 	color:#ffffff;
 	font: 15px/25px Tahoma;
 	display: block;
 	padding-left: 10px;
-	padding-right: 10px;
-
+}
+.main_list ul li a:hover{
+	text-decoration: underline;
 }
 .main_list li:hover ul{
 	left: 0;
-	background-color: #303030;
-	border-top: 1px solid #000;
 }
 .fon3{
 	width: 100%;
@@ -158,7 +170,7 @@ box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.76);
 	background-color: #ffffff;
 	float: left;
 	position: relative;
-	right:200px;
+	right:210px;
 	border-right: 1px solid #c7cacf;
 }
 .fon1{
@@ -166,60 +178,41 @@ box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.76);
 	background-color: #edeef0;
 	float: left;
 	position: relative;
-	right: 600px;
+	right: 580px;
 	border-right: 1px solid #c7cacf;
 }
 
 .first {
-	width: 180px;
+	width: 190px;
 	float: left;
 	overflow: hidden;
 	position: relative;
-	left: 810px;
+	left: 800px;
 }
 .second {
 	width: 578px;
 	float: left;
 	overflow: hidden;
 	position: relative;
-	left: 830px;
+	left: 820px;
 }
 .third {
-	width: 180px;
+	width: 190px;
 	float: left;
 	overflow: hidden;
 	position: relative;
-	left: 850px;
+	left: 820px;
 }
-.first p{
+.first p, .second p, .third p{
 	font-weight: normal;
-	margin:5px 30px;
+	text-align: center;
 	font: 18px Tahoma;
-
+	margin:5px 0;
 }
-.first span{
+.first span, .second span, .third span{
+	display: block;
 	font: 14px/26px Tahoma;
-
-}
-.third p{
-	font-weight: normal;
-	margin:5px 30px;
-	font: 20px Tahoma;
-
-}
-.third span{
-	font: 14px/26px Tahoma;
-
-}
-.second p{
-	font-weight: normal;
-	margin:5px 30px;
-	font: 20px Tahoma;
-
-}
-.second span{
-	font: 14px/26px Tahoma;
-
+	text-align: justify;
 }
 .copy{
 	display: block;
