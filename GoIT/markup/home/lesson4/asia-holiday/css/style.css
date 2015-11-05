@@ -80,11 +80,12 @@ box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.76);
 	text-align: center;
 }
 .image {
-	background: url(../img/bridge.jpg) no-repeat;
+	background: url(../img/bridge.jpg) no-repeat #cacbcb;
 	width: 1000px;
 	height: 237px;
 	border-top: 1px solid #128aa7;
 	border-bottom: 1px solid #128aa7;
+	margin-bottom: 1px;
 }
 .menu {
 	width: 1000px;
@@ -133,7 +134,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373737', end
 }
 .main_list ul{
 	position: absolute;
-	left:-9999px;
+	left: 0;
+	top:30px;
+	display: none;
 	background-color: #303030;
 	border-top: 1px solid #000;
 	-webkit-box-shadow: 0px 3px 3px -2px rgba(79,79,80,1);
@@ -154,7 +157,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373737', end
 	text-decoration: underline;
 }
 .main_list li:hover ul{
-	left: 0;
+	display: block;
 }
 .fon3{
 	width: 100%;
@@ -217,7 +220,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373737', end
 .copy{
 	display: block;
 	margin-top: 5px;
-	margin-left: 40%;
+	text-align: center;
 	color: #cee3ec;
 	font: 14px Tahoma;
 }
