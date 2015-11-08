@@ -1,0 +1,248 @@
+body {
+	background-color: #bfbfbf;
+}
+@font-face {
+    font-family: 'helveticaneuecyrthin';
+    src: url('../fonts/helveticaneuecyr-thin-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-thin-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneuecyr-thin-webfont.svg#helveticaneuecyrthin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.wrapper {
+	width: 1215px;
+	height: 1064px;
+	margin: 20px auto;
+	background-color: #96bfd3;
+	font-family: 'helveticaneuecyrthin';
+	color:white;
+	-webkit-box-shadow: 0px 3px 2px 1px rgba(145,145,145,1);
+	-moz-box-shadow: 0px 3px 2px 1px rgba(145,145,145,1);
+	box-shadow: 0px 3px 2px 1px rgba(145,145,145,1);
+}
+.top_line{
+	background-color: #085495;
+	width: 100%;
+	height: 38px;
+	font-size: 14px;
+}
+.enter{
+	float: right;
+	width: 191px;
+	height: 36px;
+	margin-right: 21px;
+	line-height: 36px;
+	
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	
+background: rgba(81,176,220,1);
+background: -moz-linear-gradient(top, rgba(81,176,220,1) 0%, rgba(67,155,210,1) 36%, rgba(50,127,199,1) 70%, rgba(46,121,196,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(81,176,220,1)), color-stop(36%, rgba(67,155,210,1)), color-stop(70%, rgba(50,127,199,1)), color-stop(100%, rgba(46,121,196,1)));
+background: -webkit-linear-gradient(top, rgba(81,176,220,1) 0%, rgba(67,155,210,1) 36%, rgba(50,127,199,1) 70%, rgba(46,121,196,1) 100%);
+background: -o-linear-gradient(top, rgba(81,176,220,1) 0%, rgba(67,155,210,1) 36%, rgba(50,127,199,1) 70%, rgba(46,121,196,1) 100%);
+background: -ms-linear-gradient(top, rgba(81,176,220,1) 0%, rgba(67,155,210,1) 36%, rgba(50,127,199,1) 70%, rgba(46,121,196,1) 100%);
+background: linear-gradient(to bottom, rgba(81,176,220,1) 0%, rgba(67,155,210,1) 36%, rgba(50,127,199,1) 70%, rgba(46,121,196,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51b0dc', endColorstr='#2e79c4', GradientType=0 );
+
+}
+.bottom-to-top {
+  position: relative;
+  border-bottom: 2px solid #4299d2;
+}
+.bottom-to-top:before, .bottom-to-top:after {
+position: absolute;
+  content: "";
+  width: 1px;
+  border-image: linear-gradient(to top, #4299d2, rgba(0, 0, 0, 0)) 0 100%;
+  bottom: -2px;/*растягиваем линию вниз*/
+}
+
+.bottom-to-top:before {
+  left: -6px;
+  top: 15px;
+}
+.bottom-to-top:after {
+  right: -6px;
+  top: 15px; 
+}
+.enter a{
+	text-decoration: underline;
+	color: white;
+}
+.flag_link{
+	float: right;
+	width: 143px;
+	height: 33px;
+	line-height: 33px;
+	padding-right: 15px;
+	margin-top: 2px;
+	text-align: right;
+	position: relative;
+	border-left: 1px solid #56a2dc;
+}
+.flag_link:before{
+	content: "";
+	display: block;
+	width:21px;
+	height: 23px;
+	position: absolute;
+	float: left;
+	background: url(../img/flag.png) no-repeat;
+	top: 50%;
+	margin-top: -11px;
+	left: 20px;
+}
+.menu {
+	float: right;
+	height: 38px;
+	line-height: 38px;
+	margin-right: 10px;
+}
+.menu ul{
+	font-size: 0;
+	line-height: 0;
+	letter-spacing: -1;
+}
+.menu li{
+	float: left;
+	list-style: none;
+}
+.menu a{
+	float: left;
+	display: block;
+	margin-right:15px;
+	margin-left: 13px;
+	color: white;
+	text-decoration: none;
+}
+.menu li:hover{
+	background-color: #4eabda;
+}
+.clearfix:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.content{
+	width: 1215px;
+	height: 1028px;
+	background-image: url(../img/fon.jpg);	
+	padding: 5% 0;
+
+}
+.form_background {
+	padding: 10% 0;
+}
+.form_background_1{
+	width: 560px;
+	height: 60px;
+	background-color: rgba(0,0,0,0.5);
+	margin:auto;
+	margin-bottom: 2px;
+	font-size: 24px;
+	text-align: center;
+	line-height: 60px;
+	font-weight: bold;
+}
+.form_background_2{
+	width: 560px;
+	height: 550px;
+	background-color: rgba(0,0,0,0.5);
+	margin:auto;
+	padding-top: 35px;
+}
+.fb{
+	width: 276px;
+	height: 35px;
+	margin: auto;
+	background-image: url(../img/fb.png);
+}
+.line{
+	width: 30px;
+	margin: 30px auto;
+	padding: 0 3px;
+	font-size: 14px;
+	color: #999999;
+	position: relative;
+}
+.line:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top:50%;
+	right: 40px;
+	width: 117px;
+	height: 2px;
+	background: url(../img/line.jpg) repeat-x;
+}
+.line:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top:50%;
+	left: 30px;
+	width: 123px;
+	height: 2px;
+	background: url(../img/line.jpg) repeat-x;
+}
+.form {
+	width: 276px;
+	margin: 0 auto;
+}
+input[type="text"], input[type="password"] {
+	margin-bottom: 14px;
+	padding-left: 17px;
+	width: 260px;
+	height: 34px;
+	background-color: #101010;
+	color: #cccccc;
+	font-size: 14px;
+	outline:none;
+	border:none;
+	border-bottom: 1px solid #474747;
+}
+input[type="text"]:hover, input[type="password"]:hover {
+	background-color: #1b5288;
+	-webkit-box-shadow: 0px 0px 14px 3px rgba(77,138,178,1);
+	-moz-box-shadow: 0px 0px 14px 3px rgba(77,138,178,1);
+	box-shadow: 0px 0px 14px 3px rgba(77,138,178,1);
+}
+[type="checkbox"]{
+	width: 13px;
+	height: 13px;
+	border-radius: 0;
+}
+label{
+	color: #cccccc;
+	font-size: 14px;
+}
+input[type="submit"]{
+	display: block;
+	width: 151px;
+	height: 38px;
+	margin: 22px auto;
+	border-radius: 3px;
+	border: 1px solid #4f9fd9;
+background: rgba(80,175,219,1);
+background: -moz-linear-gradient(top, rgba(80,175,219,1) 0%, rgba(46,121,196,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(80,175,219,1)), color-stop(100%, rgba(46,121,196,1)));
+background: -webkit-linear-gradient(top, rgba(80,175,219,1) 0%, rgba(46,121,196,1) 100%);
+background: -o-linear-gradient(top, rgba(80,175,219,1) 0%, rgba(46,121,196,1) 100%);
+background: -ms-linear-gradient(top, rgba(80,175,219,1) 0%, rgba(46,121,196,1) 100%);
+background: linear-gradient(to bottom, rgba(80,175,219,1) 0%, rgba(46,121,196,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50afdb', endColorstr='#2e79c4', GradientType=0 );
+}
+.agreement{
+	color: #cccccc;
+	font-size: 11px;
+	line-height: 1.4;
+}
+span{
+	display: block;
+	text-align: center;
+}
