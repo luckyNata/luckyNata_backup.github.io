@@ -1,0 +1,25 @@
+table{
+	border-collapse: collapse;
+	width: 500px;
+	height: 500px;
+	color:transparent;
+}
+td{
+	border: 5px solid black;
+	border-collapse: collapse;
+}
+.white {
+	background-color: #ffffff;
+}
+.red {
+	background-color: #ff583b;
+}
+.yellow {
+	background-color: #fff362;
+}
+.blue {
+	background-color: #0d4081;
+}
+.black {
+	background-color: #090909;
+}
