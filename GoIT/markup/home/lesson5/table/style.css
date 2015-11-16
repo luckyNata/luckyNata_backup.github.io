@@ -1,12 +1,31 @@
+body{
+	background-color: #c0c0c0;
+}
+.wrapper{
+	margin:50px auto;
+}
 table{
+	background-color: white;
 	border-collapse: collapse;
-	width: 500px;
-	height: 500px;
 	color:transparent;
+	width: 500px;
+	height: 525px;
+	table-layout: fixed;
 }
 td{
-	border: 5px solid black;
-	border-collapse: collapse;
+	border: 10px solid black;
+}
+.one{
+	border-left:none;
+}
+.two{
+	border-top: none;
+}
+.three{
+	border-bottom: none;
+}
+.four{
+	border-right: none;
 }
 .white {
 	background-color: #ffffff;
@@ -22,4 +41,12 @@ td{
 }
 .black {
 	background-color: #090909;
+}
+.square1{
+	width: 230px;
+	height: 230px;
+}
+.square2{
+	width: 60px;
+	height: 60px;
 }

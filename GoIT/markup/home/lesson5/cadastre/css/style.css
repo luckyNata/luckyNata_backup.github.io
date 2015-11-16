@@ -13,12 +13,14 @@ body {
     font-style: normal;
 }
 .wrapper {
-	width: 1215px;
-	height: 1064px;
-	margin: 20px auto;
+	min-width: 1215px;
+	height:100%;
 	background-color: #96bfd3;
 	font-family: 'helveticaneuecyrthin';
 	color:white;
+	background: url(../img/fon.jpg) no-repeat;	
+	background-size: cover;
+
 	-webkit-box-shadow: 0px 3px 2px 1px rgba(145,145,145,1);
 	-moz-box-shadow: 0px 3px 2px 1px rgba(145,145,145,1);
 	box-shadow: 0px 3px 2px 1px rgba(145,145,145,1);
@@ -131,8 +133,7 @@ position: absolute;
 .content{
 	width: 1215px;
 	height: 1028px;
-	background-image: url(../img/fon.jpg);	
-	padding: 5% 0;
+
 
 }
 .form_background {
@@ -206,7 +207,7 @@ input[type="text"], input[type="password"] {
 	border:none;
 	border-bottom: 1px solid #474747;
 }
-input[type="text"]:hover, input[type="password"]:hover {
+input[type="text"]:focus, input[type="password"]:focus {
 	background-color: #1b5288;
 	-webkit-box-shadow: 0px 0px 14px 3px rgba(77,138,178,1);
 	-moz-box-shadow: 0px 0px 14px 3px rgba(77,138,178,1);
