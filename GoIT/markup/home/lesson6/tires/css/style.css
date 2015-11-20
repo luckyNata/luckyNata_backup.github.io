@@ -12,7 +12,7 @@ section {
 	background-color: #ffffff;
 	padding-left: 55px;
 	padding-right: 35px;
-	margin: 40px auto 0; 
+	margin: 39px auto 0; 
 	border:1px solid transparent;
 }
 .top_menu{
@@ -153,7 +153,7 @@ box-shadow: 3px 3px 2px 0px rgba(180,180,180,1);
 .phone_number span{
 	font-size: 18px;
 	font-family: Arial;
-	color: 5e696d;
+	color: #5e696d;
 	margin-left: 21px;
 	vertical-align: middle;
 	letter-spacing: 0.5px;
@@ -184,9 +184,9 @@ box-shadow: 3px 3px 2px 0px rgba(180,180,180,1);
  nav{
  	display: block;
 	width: 910px;
-	height:33px;
-	margin-top: 7px;
-	margin-left: -10px;
+	height:34px;
+	margin-top: 8px;
+	margin-left: -8px;
 	border-radius: 4px;
 	border-bottom: 1px solid #0a1235;
 
@@ -209,7 +209,8 @@ nav ul{
 nav li{
 	list-style: none;
 	float: left;
-	height: 33px;
+	margin-top: 3px;
+	margin-bottom: 0px;
 	position: relative;
 }
 nav a {
@@ -219,7 +220,8 @@ nav a {
 	font-size: 13px;
 	margin-left: 17px;
 	margin-right: 8px;
-	line-height: 33px;
+	height: 25px;
+	line-height: 25px;
 	font-family: "Lucida Sans Unicode";
 	color: #b1bcc0;
 	letter-spacing: 0.5px;
@@ -230,9 +232,7 @@ nav a {
 .link2{
 	margin-left: 23px;
 }
-nav li:hover{
-	height: 27px;
-	margin-top: 3px;
+ nav .hover:hover{
 	border-radius: 20px;
 	background: rgba(31,104,135,1);
 background: -moz-linear-gradient(top, rgba(31,104,135,1) 0%, rgba(18,69,105,1) 49%, rgba(13,52,88,1) 100%);
@@ -248,18 +248,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6887', end
 	line-height: 33px;
 	font-family: Arial;
 	color: #71787c;
-	margin-top: -2px;
+	margin-top: -5px;
 	letter-spacing: 0.2px;
 }
 .basket{
 	padding-left: 31px;
-	margin-left: 59px;
+	margin-left: 60px;
 	margin-right: 0;
 
 }
 .price{
 	padding-left: 7px;
-	margin-left: 8px;
+	margin-left: 9px;
 	margin-right: 0;
 
 }
@@ -280,14 +280,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6887', end
 	background: url(../img/basket.png) no-repeat;
 	position: absolute;
 	top: 50%;
-	margin-top: -9px;
+	margin-top: -6px;
 	right: 62px;
 }
 .form1{
 	width: 412px;
-	height: 134px;
+	height: 133px;
 	margin-left: -6px;
-	margin-top: 11px;
+	margin-top: 10px;
 	font-family: Arial;
 	border: 1px solid #B8B8B9;
 	border-radius: 17px;
@@ -351,13 +351,25 @@ dl dd{
 	float:left;
 }
 dl dd select{
-	font-size: 10px;
+	width: 120px;
+	height: 14px;
+	font-size: 8px;
 	font-family: Arial;
-	width: 102px;
-	height: 16px;
+	border: 2px groove #d4d2d2;
+  
+	border-bottom: none;
+	border-right: none;
+	background: transparent;
+	padding: 20px;
+}
+.dd_1, .dd_2, .dd_4 {
+  	overflow: hidden; 
+    background: url(../img/select_pointer.png) no-repeat right transparent;
+    height: 16px;
+    width: 103px;
 }
 .dt_1{
-	margin: 5px 2px 1px 17px;
+	margin: 5px 2px 0px 17px;
 	letter-spacing: -0.4px;
 }
 .dt_2{
@@ -373,30 +385,37 @@ dl dd select{
 	letter-spacing: -0.3px;
 }
 .dd_1{
-	margin: -1px 0px 0px 4px;
+	margin: 0px 0px 3px 4px;
 
 }
 .dd_2{
-	margin: 3px 2px 4px 2px;
+	margin: 3px 2px 6px 3px;
 }
 .dd_3{
-	margin: 1px 2px 3px 3px;
+	margin: 1px 2px 5px 4px;
 }
-.dd_3 select{
+/*.dd_3 select{
 	width: 59px;
+}*/
+.dd_3 {
+  	overflow: hidden; 
+    background: url(../img/select_pointer.png) no-repeat right transparent;
+    height: 16px;
+    width: 59px;
 }
 .dd_4{
-	margin: 1px 6px 1px 6px;
-}
-.dd_4 select{
+	margin: 1px 2px 1px 4px;
+	padding-left: 2px;
 	width: 99px;
 }
+
 .search{
 	float: right;
-	margin: 7px 19px 0px 0px;
+	margin: 9px 19px 0px 0px;
 	font-family: Arial;
-	font-size: 14px;
+	font-size: 13px;
 	font-style: italic;
+	letter-spacing: 0.4px;
 	color: #154467;
 	text-decoration: underline;
 }
@@ -446,6 +465,7 @@ box-shadow: 3px 3px 2px 0px rgba(180,180,180,1);
 .catalog_menu li{
 	font-family: "Lucida Sans Unicode";
 	font-size: 12px;
+	letter-spacing: 0.4px;
 	line-height: 17px;
 	color: #465961;
 	margin-left: 5px;
@@ -459,24 +479,23 @@ box-shadow: 3px 3px 2px 0px rgba(180,180,180,1);
 	font-style: italic;
 	text-decoration: underline;
 	font-weight: bold;
-	line-height: 21px;
 	letter-spacing: -0.2px;
 	color: #0c3256;
     background: url(../img/marker_on.jpg) no-repeat 0px 8px;
 }
 .menu_tires{
-	margin-bottom: -13px;
+	margin-bottom: -12px;
 }
 .menu_discs{
 	margin-bottom: -15px;
 }
 .tires_names li{
-	margin:0px 0 3px 36px;
+	margin:0 0 4px 36px;
 	padding-left: 14px;
 	padding-top: 5px;
 }
 .discs_names li{
-	margin:0px 36px 3px;
+	margin:0 0 3px 36px;
 	padding-left: 14px;
 	padding-top: 5px;
 }
@@ -484,7 +503,7 @@ box-shadow: 3px 3px 2px 0px rgba(180,180,180,1);
 	padding-bottom: 2px;
 }
 .bolts_names li{
-	margin:0px 36px 3px;
+	margin:0 0 3px 36px;
 	padding-left: 14px;
 	padding-top: 5px;
 }
@@ -518,11 +537,21 @@ margin-left: -23px;
 main{
 float: left;
 width: 507px;
-background-color: #BCBCBC;
+background: rgba(228,231,232,1);
+background: -moz-linear-gradient(top, rgba(228,231,232,1) 0%, rgba(198,207,211,1) 35%, rgba(164,180,187,1) 67%, rgba(147,167,176,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(228,231,232,1)), color-stop(35%, rgba(198,207,211,1)), color-stop(67%, rgba(164,180,187,1)), color-stop(100%, rgba(147,167,176,1)));
+background: -webkit-linear-gradient(top, rgba(228,231,232,1) 0%, rgba(198,207,211,1) 35%, rgba(164,180,187,1) 67%, rgba(147,167,176,1) 100%);
+background: -o-linear-gradient(top, rgba(228,231,232,1) 0%, rgba(198,207,211,1) 35%, rgba(164,180,187,1) 67%, rgba(147,167,176,1) 100%);
+background: -ms-linear-gradient(top, rgba(228,231,232,1) 0%, rgba(198,207,211,1) 35%, rgba(164,180,187,1) 67%, rgba(147,167,176,1) 100%);
+background: linear-gradient(to bottom, rgba(228,231,232,1) 0%, rgba(198,207,211,1) 35%, rgba(164,180,187,1) 67%, rgba(147,167,176,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e7e8', endColorstr='#93a7b0', GradientType=0 );
 border-radius: 3px;
 margin-top:15px;
-margin-left: 3px;
+margin-left: 4px;
 padding:10px 10px 29px 10px;
+}
+main a{
+	text-decoration: none;
 }
 main div{
 	float: left;
@@ -669,6 +698,7 @@ margin-left: 6px;
 margin-bottom: 4px;
 font-family: "Lucida Sans Unicode";
 font-size: 13px;
+color: #0c3256;
 letter-spacing: 0.3px;
 position: relative;
 }
@@ -687,14 +717,15 @@ position: relative;
 	padding-top:2px;
 }
 .tires_right, .discs_right{
-width: 104px;
-height: 19px;
+width: 103px;
+height: 20px;
 border: 1px solid #79878D;
-border-radius: 16px;
+border-radius: 11px;
 margin-right: 1px;
 margin-left: 20px;
 margin-top: 8px;
 margin-bottom: 4px;
+color: #0c3256;
 padding-left: 32px;
 padding-top: 7px;
 font-size: 14px;
@@ -704,6 +735,7 @@ position: relative;
 .discs_right{
 	padding-top: 5px;
 	margin-bottom: 6px;
+	margin-top: 9px;
 }
 .tires_right:before, .discs_right:before{
 content: "";
@@ -715,25 +747,28 @@ height: 23px;
 position: absolute;
 top: 50%;
 margin-top: -12px;
-margin-left: -26px;
+margin-left: -27px;
 }
 .tires_brend, .discs_brend{
 	margin: 2px 0 0px 4px;
 	font-family: "Lucida Sans Unicode";
 	font-size: 13px;
+	color: #465961;
 	padding-left: 7px;
 }
-.tires_brend input, .discs_brend input{
-	margin-left: 27px;
-	margin-bottom: 9px;
+.tires_brend [type="checkbox"], .discs_brend [type="checkbox"]{
+margin-left: 18px;
+margin-bottom: 9px;
+margin-right: 13px;
 }
+
 .but input{
 width: 68px;
 height: 22px;
 border-radius: 38px;
 margin-top: 13px;
 margin-left: 29px;
-padding-top: 0px;
+padding-top: 2px;
 padding-left: 11px;
 font-family: Arial;
 font-size: 14px;
@@ -759,7 +794,7 @@ box-shadow: 3px 3px 2px 0px rgba(180,180,180,1);
 	float: left;
 	margin-left: 105px;
 	margin-top: 41px;
-	margin-bottom: 14px;
+	margin-bottom: 16px;
 }
 
 .logos div{
@@ -769,7 +804,7 @@ box-shadow: 3px 3px 2px 0px rgba(180,180,180,1);
 footer{
 float: right;
 width: 908px;
-height: 100px;
+height: 90px;
 background-color: #213A4D;
 margin-right: 11px;
 padding-top: 12px;
@@ -779,7 +814,7 @@ footer ul{
 	display: block;
 	margin: 0 auto;
 	width: 317px;
-	padding-left: 1px;
+	padding-left: 15px;
 
 }
 footer li{
