@@ -182,7 +182,7 @@ box-shadow: 3px 3px 2px 0px rgba(180,180,180,1);
 	margin-left: -9px;
 }
  nav{
- 	display: block;
+ 	display: table;
 	width: 910px;
 	height:34px;
 	margin-top: 8px;
@@ -204,7 +204,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#626e80', end
 box-shadow: 3px 3px 2px 0px rgba(180,180,180,1);
 }
 nav ul{
-	margin-left: 128px;
+	padding-left: 128px;
+	display: table-cell;
+	vertical-align: middle;
 }
 nav li{
 	list-style: none;
@@ -720,7 +722,7 @@ position: relative;
 width: 103px;
 height: 20px;
 border: 1px solid #79878D;
-border-radius: 11px;
+border-radius: 12px;
 margin-right: 1px;
 margin-left: 20px;
 margin-top: 8px;
