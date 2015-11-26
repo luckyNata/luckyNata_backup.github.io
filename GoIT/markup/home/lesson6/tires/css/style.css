@@ -175,7 +175,6 @@ box-shadow: 3px 3px 2px 0px rgba(180,180,180,1);
 	left:-3px;
 }
 .image{
-	background: url(../img/zazor.jpg);
 	width: 908px;
 	height: 237px;
 	margin-top: 10px;
@@ -508,6 +507,9 @@ box-shadow: 3px 3px 2px 0px rgba(180,180,180,1);
 	margin:0 0 3px 36px;
 	padding-left: 14px;
 	padding-top: 5px;
+}
+.bolts_names a, .discs_names a, .tires_names a{
+	text-decoration: none;
 }
 .tires, .discs, .bolts{
 width: 121px;
