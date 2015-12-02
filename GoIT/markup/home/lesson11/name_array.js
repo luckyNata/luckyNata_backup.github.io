@@ -3,7 +3,7 @@ for (var i = 0; i < 5; i++) {
 	
 	do {
 		var name = prompt("Введите имя:");
-	}	while ( (!name) || (name==' '));
+	}	while ( (!name) || (name==' ') || (name=='null') );
 
 		arrNames[i] = name;
 }
