@@ -1,4 +1,4 @@
-﻿var arrNames = new Array;
+﻿var arrNames = [];
 for (var i = 0; i < 5; i++) {
 	
 	do {
