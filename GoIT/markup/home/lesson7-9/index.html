@@ -3,14 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<title>pingbuller</title>
+<!--[if IE]>
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+        </script>
+<![endif]-->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!--[if gte IE 8]><link href="css/ie.css" rel="stylesheet" type="text/css" /><![endif]-->
 </head>
 <body>
 	<section>
 		<header class="header">
 			<div class="black"></div>
-			<div class="header__center"><span class="header__title">PINGBULL</span></div>
+			<div class="header__center clearfix"><span class="header__title clearfix">PINGBULL</span></div>
 			<nav class="header__home">
 				<div class="before768">
 				  <ul class="menu">
@@ -73,7 +88,7 @@
 		</div>
 		<div class="content">
 		  <div class="content__wrapper clearfix">
-			<div class="content__block">
+			<div class="content__block clearfix">
 				<span class="content_title">pingbuller</span>
 				<span class="content_title content_title--pink">starts here</span>
 				<div class="content__text"><span>"Nunc turpis neque, feu&shy;giat eget eleifend et, lacinia non neque. Prae&shy;sent rhoncus ultrices po&shy;suere. Pellentesque vel lacus eget nisi conval&shy;lis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl."</span>
