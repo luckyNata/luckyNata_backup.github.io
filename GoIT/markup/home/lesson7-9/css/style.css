@@ -1253,7 +1253,7 @@ margin-top: 3px;
     font-size: 0;
     height: 0;
     letter-spacing: -1px;
-    width: 80%;
+    width: 65%;
     margin: 0 auto;
 }
 .f_menu__item{
@@ -1613,7 +1613,7 @@ margin-top: 3px;
 }
 .footer__design{
     float: right;
-    margin-top: 37px;
+    margin-top: 0px;
 }
 }
 /* ------------------------------------------960 px--------------------------------------------- */
@@ -1973,6 +1973,6 @@ display: none;
 .footer__design{
     float: left;
     margin-left: 770px;
-    margin-top: 14px;
+    margin-top: 1px;
 }
 }
