@@ -603,7 +603,7 @@ left: 125px;
 }
 
 .header__lorem{
-    width: 80%;
+    width: 95%;
     margin: 126px auto 5px;
     padding-left: 15%;
     position: relative;
@@ -623,7 +623,7 @@ left: 125px;
     background: url(../img/right.png) center center no-repeat;
     position:absolute;
     top:23%;
-    left: 99%;
+    left: 93%;
 }
 .lorem{
     font-family: league;
@@ -678,7 +678,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#725081', end
 box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.75);
 }
 .about__center{
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     padding-top: 69px;
 }
@@ -686,7 +686,7 @@ box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.75);
     float: left;
     width: 100%;
 /*  background: url(../img/key.png) 0px 0px no-repeat;*/
-    padding-left: 44px;
+    padding-left: 15px;
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box;
     box-sizing:border-box;
