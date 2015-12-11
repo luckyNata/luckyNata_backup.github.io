@@ -678,7 +678,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#725081', end
 box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.75);
 }
 .about__center{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding-top: 69px;
 }
@@ -686,7 +686,7 @@ box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.75);
     float: left;
     width: 100%;
 /*  background: url(../img/key.png) 0px 0px no-repeat;*/
-    padding-left: 55px;
+    padding-left: 44px;
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box;
     box-sizing:border-box;
@@ -752,14 +752,14 @@ text-shadow:0 0 10px #fff;
     z-index: 9;
 }
 .content__wrapper{
-    padding-left: 19%;
+    padding-left: 20px;
 }
 .content__block{
     width:80%;
     height: 275px;
     background-color: #fff;
     margin:0 auto; 
-    padding: 25px 40px;
+    padding: 25px 15px 25px 40px;
     position: relative;
     border-bottom: 1px solid #efefef;
 }
@@ -788,7 +788,7 @@ text-shadow:0 0 10px #fff;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.2px;
-    text-align: left;
+    text-align: justify;
     word-wrap: break-word;
     white-space: pre-wrap;
     height: 166px;
@@ -807,8 +807,8 @@ text-shadow:0 0 10px #fff;
 .content__updates{
     width: 92%;
     float: left;
-    margin-left: 0;
-    margin-top: 14px;
+    margin-left: 11px;
+    margin-top: 22px;
 }
 .circle{
     display: inline-block;
@@ -822,7 +822,7 @@ text-shadow:0 0 10px #fff;
 }
 .about__title--content{
     font-size: 30px;
-    padding: 31px 3px 1px 5px;
+    padding: 19px 0px 14px 0px;
 }
 
 .about__text--content{
@@ -841,7 +841,7 @@ text-shadow:0 0 10px #fff;
     margin-top: -16px;
 }
 .about__more--content{
-    padding: 0 3px 10px 60%;
+    padding: 0px 3px 10px 60%;
 }
 .about__more--updatesMore{
     display: none;
@@ -872,15 +872,13 @@ text-shadow:0 0 10px #fff;
     box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.5);
 }
 .logos__container{
-    width: 80%;
+    width: 82%;
     margin: 0 auto;
-    padding-left: 5%;
+    padding-left:0px;
 }
 .logos__images{
     float: left;
-    margin-right: 7%;
-    margin-left: 5%;
-    margin-bottom: 5%;
+    margin: 10px 6px 44px 30px;
 }
 .news{
     display: none;
