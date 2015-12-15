@@ -50,12 +50,12 @@
     width: 90%;
     margin:0 auto;
     padding-bottom: 5px;
-    text-align: center;
 }
 .header__title{
     font-family: 'league',arial;
     font-size: 48px;
     color:white;
+    text-align: center;
     position: relative;
 }
 .header__title:after {
@@ -303,7 +303,8 @@ box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.75);
     font-family: league;
     font-size: 18px;
     text-transform: uppercase;
-    padding: 14px 3px 15px 67%;
+    padding: 14px 3px 15px 0;
+    float: right;
 }
 .about__more:hover{
 -moz-text-shadow:0 0 10px #fff;
@@ -339,6 +340,17 @@ text-shadow:0 0 10px #fff;
     background-image: url(../img/man.png);
     top: 22px;
     left: -14px;
+}
+.content__block:after{
+    content: "";
+    display: block;
+    width: 27px;
+    height: 22px;
+    position: absolute;
+    background-image: url(../img/corner.jpg);
+    top: 100%;
+    margin-top: -3px;
+    left: 70%;
 }
 .content_title{
     text-transform: uppercase;
@@ -407,7 +419,8 @@ text-shadow:0 0 10px #fff;
     margin-top: -16px;
 }
 .about__more--content{
-    padding: 0 3px 10px 50%;
+    padding: 0 3px 10px 0;
+    float: right;
 }
 .about__more--updatesMore{
     display: none;
@@ -443,8 +456,8 @@ text-shadow:0 0 10px #fff;
 }
 .logos__images{
     float: left;
-    margin-right: 15%;
-    margin-left: 5%;
+    margin-right: 0;
+    margin-left: 0;
 }
 .logos__images--el1{
     padding-right: 35px;
@@ -581,6 +594,7 @@ footer span{
     font-size: 48px;
     color:white;
     position: relative;
+    margin-left: -25px;
 }
 .header__title:after {
 content: "";
@@ -595,7 +609,7 @@ left: 125px;
 .header__home{
     width: 90%;
     margin: 27px auto 1px;
-    padding-left: 0;
+    padding-right: 30px;
     padding-top: 0;
 }
 .after768{
@@ -627,6 +641,8 @@ left: 125px;
 }
 .lorem{
     font-family: league;
+    text-align: center;
+    margin-left: -70px;
     font-size: 35px;
     color: #fff;
     display: block;
@@ -642,6 +658,7 @@ left: 125px;
 .lorem--small{
     font-size: 18px;
     color: #dcb4ed;
+    padding-left: 23px;
     text-transform: uppercase;
 }
 .header__iphone{
@@ -733,7 +750,8 @@ box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.75);
     font-family: league;
     font-size: 18px;
     text-transform: uppercase;
-    padding: 14px 3px 15px 75%;
+    padding: 14px 3px 15px 0;
+    float: right;
 }
 .about__more:hover{
 -moz-text-shadow:0 0 10px #fff;
@@ -805,10 +823,9 @@ text-shadow:0 0 10px #fff;
                 url(../img/white_dot.png) 125px center no-repeat;
 }
 .content__updates{
-    width: 92%;
-    float: left;
-    margin-left: 11px;
-    margin-top: 22px;
+    width: 100%;
+    max-width: 285px;
+    margin: 22px auto;
 }
 .circle{
     display: inline-block;
@@ -841,7 +858,8 @@ text-shadow:0 0 10px #fff;
     margin-top: -16px;
 }
 .about__more--content{
-    padding: 0px 3px 10px 60%;
+    padding: 0px 3px 10px 0;
+    float: right;
 }
 .about__more--updatesMore{
     display: none;
@@ -872,13 +890,12 @@ text-shadow:0 0 10px #fff;
     box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.5);
 }
 .logos__container{
-    width: 82%;
+    width: 300px;
     margin: 0 auto;
-    padding-left:0px;
 }
 .logos__images{
     float: left;
-    margin: 10px 6px 44px 30px;
+    margin: 10px 6px 44px 37px;
 }
 .news{
     display: none;
@@ -1046,7 +1063,8 @@ margin-top: 3px;
     display: none;
 }
 .about__more{
-    padding: 13px 3px 10px 80%;
+    padding: 13px 3px 10px 0;
+    float: right;
 }
 .content{
     width: 100%;
@@ -1089,9 +1107,7 @@ margin-top: 3px;
 }
 .content__updates{
     width: 400px;
-    float: left;
-    margin-top: -37px;
-    margin-left: 41px;
+    margin: -37 auto;
 }
 .circle{
     margin-left: -20px;
@@ -1139,7 +1155,7 @@ margin-top: 3px;
     box-shadow:none;
 }
 .logos__container{
-    width: 480px;
+    width: 440px;
     margin: 0 auto;
 }
 .logos__images{
@@ -1153,6 +1169,14 @@ margin-top: 3px;
     padding-right: 0;
     padding-bottom: 21px;
     padding-top: 21px;
+}
+.logos__images--el3{
+    margin-right: 0;
+    padding-right: 10px;
+}
+.logos__images--el6{
+    margin-right: 0;
+    padding-right: 10px;
 }
 .news{
     display: block;
@@ -1383,13 +1407,13 @@ margin-top: 3px;
     height: 341px;
 }
 .about__center{
-    width: 90%;
+    width: 100%;
     margin:0 auto;
     padding-left: 40px;
 }
 .about__center div{
     width: 30%;
-    margin: 7px 15px 0 0;
+    margin: 7px 22px 0 0;
     padding-left: 0;
 
 }
@@ -1414,7 +1438,9 @@ margin-top: 3px;
     margin-left: -27px;
 }
 .about__text{
-    padding:0;
+    padding-right:15px;
+    padding-left: 0px;
+    text-align: justify;
     height: 142px;
     overflow: hidden;
 }
@@ -1425,7 +1451,8 @@ margin-top: 3px;
     display: none;
 }
 .about__more{
-    padding: 8px 3px 10px 60%;
+    padding: 10px 12px 10px 0;
+    float: right;
 }
 .no_ipad{
     display: none;
@@ -1465,7 +1492,7 @@ margin-top: 3px;
     left: 61px;
 }
 .content__updates{
-    width: 47%;
+    width: 353px;
     float: left;
     margin-left: 40px;
 }
@@ -1499,7 +1526,8 @@ margin-top: 3px;
     margin-top: 7px;
 }
 .about__more--content{
-    padding: 17px 3px 10px 60%;
+    padding: 17px 3px 10px 0;
+    float: right;
 }
 .about__more--updatesMore{
     display: none;
@@ -1510,11 +1538,12 @@ margin-top: 3px;
     padding-top: 0;
 }
 .logos__container{
-    width: 90%;
+    width:715px;
+    margin: 0 auto;
 }
 .logos__images{
     float: left;
-    margin-right: 1%;
+    margin-right: 15px;
     margin-left: 0;
 }
 .news{
@@ -1718,6 +1747,9 @@ margin-top: 3px;
     left: 65%;
     position: absolute;
 }
+.header__container{
+    width: 960px;
+}
 .header__dots{
     width: 100px;
     margin-left: 75%;
@@ -1737,8 +1769,8 @@ margin-top: 3px;
 .about__center div{
     width: 25%;
     margin-top: 8px;
-    margin-right: 40px;
-    padding-left: 40px;
+    margin-right: 50px;
+    padding-left: 17px;
 }
 .about__center1{
  margin-left: 5%;
@@ -1777,7 +1809,7 @@ margin-top: 3px;
     display: inline;
 }
 .about__more{
-    padding: 22px 3px 10px 60%;
+   float: right;
 }
 .content{
     width: 100%;
