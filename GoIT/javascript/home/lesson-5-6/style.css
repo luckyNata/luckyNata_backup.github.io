@@ -1,0 +1,19 @@
+.wrapper{
+	width: 600px;
+	height: 400px;
+	padding-top: 10px;
+	background-color: #cecece;
+	margin: 100px auto;
+}
+.wrapper  div{
+	font-size: 20px;
+}
+.btn{
+	width: 83px;
+	margin-right: 20px;
+}
+
+.buttonsContainer{
+	width: 210px;
+	margin: 50px auto;
+}
