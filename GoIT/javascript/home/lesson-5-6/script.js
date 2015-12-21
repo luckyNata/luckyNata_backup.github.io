@@ -29,7 +29,7 @@
 	buttonReset.addEventListener('click', timerReset);
 
 	function timeShow(){
-		milisec = milisec + 10;
+		milisec = milisec + 4;
 		if (milisec%1000 === 0){
 			sec++;
 			milisec = 0;
@@ -68,7 +68,7 @@
 		buttonStart.removeEventListener('click', timerStart);
 		buttonStart.addEventListener('click', timerStop);
 		buttonReset.addEventListener('click', timerReset)
-		timerId = setInterval(timeShow, 10);
+		timerId = setInterval(timeShow, 1);
 	}
 
 	function timerStop(){
