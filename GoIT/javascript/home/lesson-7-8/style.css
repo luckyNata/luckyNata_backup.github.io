@@ -1,0 +1,117 @@
+.wrapper{
+	width: 890px;
+	height: 400px;
+	background-color: #fff;
+	border: 1px solid #aaaaaa;
+	margin: 100px auto;
+}
+.menu{
+	margin: 0 auto;
+	position: relative;
+}
+.menu li{
+	float:left;
+	margin-right: 10px;
+	list-style: none;
+	position: relative;
+}
+.grey{
+	display: block;
+	width: 808px;
+	height: 30px;
+	background-color: #d8d8d8;
+	border:  1px solid #aaa;
+	border-radius: 3px;
+	position: absolute;
+	top: 26px;
+	left: -5px;
+	z-index: 2;
+}
+.menu a{
+	display: block;
+	width: 100px;
+	line-height: 25px;
+	text-align: center;
+	border-radius: 3px 3px 0 0;
+	font-family: Tahoma;
+	font-size: 13px;
+	text-decoration: none;
+	position: relative;
+	z-index: 3;
+}
+.link{
+	height: 26px;
+	background-color: #fff;
+}
+.link2{
+	height: 25px;
+	background-color: #eeeeee;	
+}
+.menu a:hover{
+	width: 98px;
+	height: 23px;
+	border: 1px solid #aaa;
+	background-color: #e5e3e3;
+}
+.menu a:focus{
+	width: 98px;
+	height: 23px;
+	color: black;
+	border: 1px solid #a6c8ff;
+	background-color: #fff;
+}
+.submenu{
+	display: block;
+	position: absolute;
+	z-index: 1;
+}
+.first_tab{
+	top:-9px;
+	left: -49px;
+}
+.second_tab{
+	top:-9px;
+	left: -159px;
+}
+.third_tab{
+	top:-9px;
+	left: -269px;
+}
+.submenu li{
+	width: 786px;
+	height: 100%;
+	padding: 55px 10px 20px 20px;
+	font-family: Tahoma;
+	font-size: 12px;
+	border-radius: 5px;
+	background-color: #fff;
+	border: 1px solid #aaaaaa;
+}
+.menu li:hover .submenu{
+	display: block;
+}
+form{
+	margin-top: 200px;
+}
+.inputs{
+	width: 800px;
+	margin: 0 auto;
+	font-family: Tahoma;
+	font-size: 12px;
+	border: 2px solid #b4b4b4;
+}
+
+.inputs label {
+	display: block;
+	margin: 20px;
+}
+input{
+	margin-left: 5px;
+}
+.button{
+	margin: 10px 0 0 43px;
+}
+.tooltipStyle{
+	border: 1px solid #524F4F;
+	padding: 7px;
+}
