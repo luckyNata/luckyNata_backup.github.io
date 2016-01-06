@@ -1,6 +1,6 @@
 .wrapper{
 	width: 890px;
-	height: 400px;
+	height: 900px;
 	background-color: #fff;
 	border: 1px solid #aaaaaa;
 	margin: 100px auto;
@@ -29,10 +29,13 @@
 }
 .menu a{
 	display: block;
+
 	width: 100px;
-	line-height: 25px;
+	line-height: 24px;
 	text-align: center;
 	border-radius: 3px 3px 0 0;
+	border: 1px solid #d3d3d3;
+	border-bottom: none;
 	font-family: Tahoma;
 	font-size: 13px;
 	text-decoration: none;
@@ -40,46 +43,44 @@
 	z-index: 3;
 }
 .link{
-	height: 26px;
+	height: 25px;
 	background-color: #fff;
 }
 .link2{
-	height: 25px;
+	height: 24px;
 	background-color: #eeeeee;	
 }
 .menu a:hover{
-	width: 98px;
-	height: 23px;
+	width: 100px;
+	height: 24px;
+	line-height: 24px;
 	border: 1px solid #aaa;
+	border-bottom: none;
 	background-color: #e5e3e3;
 }
 .menu a:focus{
 	width: 98px;
-	height: 23px;
+	height: 22px;
+	line-height: 22px;
 	color: black;
-	border: 1px solid #a6c8ff;
+	border: 2px solid #a6c8ff;
 	background-color: #fff;
 }
-.submenu{
-	display: block;
-	position: absolute;
-	z-index: 1;
-}
 .first_tab{
-	top:-9px;
-	left: -49px;
+	top:123px;
+	left: 218px;
 }
 .second_tab{
-	top:-9px;
-	left: -159px;
+	top:123px;
+	left: 218px;
 }
 .third_tab{
-	top:-9px;
-	left: -269px;
+	top:123px;
+	left: 218px;
 }
-.submenu li{
+.wrapper .first_tab,.wrapper .second_tab,.wrapper .third_tab{
+	position: absolute;
 	width: 786px;
-	height: 100%;
 	padding: 55px 10px 20px 20px;
 	font-family: Tahoma;
 	font-size: 12px;
@@ -87,14 +88,13 @@
 	background-color: #fff;
 	border: 1px solid #aaaaaa;
 }
-.menu li:hover .submenu{
-	display: block;
-}
+
 form{
-	margin-top: 200px;
+	width: 786px;
+	margin: 200px auto 0;
 }
 .inputs{
-	width: 800px;
+	width: 786px;
 	margin: 0 auto;
 	font-family: Tahoma;
 	font-size: 12px;
