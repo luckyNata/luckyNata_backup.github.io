@@ -4,10 +4,11 @@
 	background-color: #fff;
 	border: 1px solid #aaaaaa;
 	margin: 100px auto;
+	position: relative;
 }
 .menu{
 	margin: 0 auto;
-	position: relative;
+	position: absolute;
 }
 .menu li{
 	float:left;
@@ -67,16 +68,16 @@
 	background-color: #fff;
 }
 .first_tab{
-	top:123px;
-	left: 218px;
+	top:22px;
+	left: 31px;
 }
 .second_tab{
-	top:123px;
-	left: 218px;
+	top:22px;
+	left: 31px;
 }
 .third_tab{
-	top:123px;
-	left: 218px;
+	top:22px;
+	left: 31px;
 }
 .wrapper .first_tab,.wrapper .second_tab,.wrapper .third_tab{
 	position: absolute;
