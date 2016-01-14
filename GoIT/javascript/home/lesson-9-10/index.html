@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>JQuery menu</title>
+	<link rel="stylesheet" href="css/style.css"><!-- общие стили -->
+	<link rel="stylesheet" type="text/css" href="css/styles-carousel.css"> <!-- стили Карусель -->
+	<link rel="stylesheet" type="text/css" href="css/newCheck.css"><!-- стили чекбоксов -->
+	<link rel="stylesheet" type="text/css" href="css/cusel.css" /> <!-- стили cusel селектов -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/carousel.js"></script> <!-- плагин Карусель -->
+	<script type="text/javascript" src="js/cusel.js"></script> <!-- плагин cusel селектов -->
+	<script type="text/javascript" src="js/jquery.mousewheel.js"></script><!-- добавка для селектов -->
+	<script type="text/javascript" src="js/jScrollPane.js"></script><!-- добавка для селектов -->
+	<script type="text/javascript" src="js/select_init.js"></script> <!-- Инициализация cusel селектов -->
+	<script type="text/javascript" src="js/checkbox_init.js"></script><!-- Инициализация чекбоксов и радио кнопок -->
+	<script type="text/javascript" src="js/customCheck_Radio.jquery.js"></script><!-- плагин чекбоксов и радио кнопок -->
+		<script type="text/javascript" src="js/jquery.color.js"></script>
+
+
+		
+</head>
+<body>
+<div class="main">
+	<!-- Карусель -->
+   <div class="carousel shadow"> 
+      <div class="carousel-button-left"><a href="#"></a></div> 
+      <div class="carousel-button-right"><a href="#"></a></div> 
+		<div class="carousel-wrapper"> 
+		   <div class="carousel-items"> 
+			  <div class="carousel-block">
+				 <img src="img/1_.jpg" alt="">
+			  </div>
+			  <div class="carousel-block">
+			 	 <img src="img/2_.jpg" alt="">
+			  </div>
+			  <div class="carousel-block">
+				 <img src="img/3_.jpg" alt="">
+			  </div>
+			  <div class="carousel-block">
+				 <img src="img/4_.jpg" alt="">
+			  </div>
+			  <div class="carousel-block">
+				 <img src="img/5_.jpg" alt="">
+			  </div>
+			  <div class="carousel-block">
+				 <img src="img/6_.jpg" alt="">
+			  </div>
+			  <div class="carousel-block">
+				 <img src="img/7_.jpg" alt="">
+			  </div>
+			  <div class="carousel-block">
+				 <img src="img/8_.jpg" alt="">
+			  </div>			 
+		   </div>
+		</div>
+   </div>
+   <!--   Чекбоксы     -->
+   <form action="#">
+	<div class="checkboxes clearfix">
+	  <div class="leftCheckbox">
+		<span class="checkTitle">Укажите породу вашей собаки</span>
+		<input type="checkbox" name="breed" id="check-1" value="Chihuahua" />
+		<label for="check-1">Чихуахуа</label>
+		
+		<input type="checkbox" name="breed" id="check-2" value="Sharpay" />
+
+		<label for="check-2">Шарпей</label>
+		
+		<input type="checkbox" name="breed" id="check-3" value="Labrador" />
+		<label for="check-3">Лабрадор</label>
+		
+		<input type="checkbox" name="breed" id="check-4" value="Pekingese" />
+		<label for="check-4">Пекинес</label>
+		
+		<input type="checkbox" name="breed" id="check-5" value="Pug" />
+		<label for="check-5">Мопс</label>
+	  </div>
+	  <div class="rightCheckbox">
+		<span class="checkTitle">Выберите услугу для собаки</span>
+		<input type="checkbox" class="checkbox" class="checkbox" name="service" id="ser-1" value="groom" />
+		<label for="ser-1">Грумминг</label>
+		
+		<input type="checkbox" name="service" class="checkbox" id="ser-2" value="walk" />
+		<label for="ser-2">Прогулка</label>
+		
+		<input type="checkbox"  class="checkbox" name="service" id="ser-3" value="treatment" />
+		<label for="ser-3">Лечение</label>
+	  </div>
+	</div>
+
+<!--      Селекты            -->
+     <div class="lineForm">
+      <label class="labelTitle">Выберите породу собаки</label>
+   	   <select id="animals" name="animals">
+   	   	<option value="2">Чихуахуа</option>
+    	<option value="1">Шарпей</option>
+		<option value="3">Лабрадор</option>
+        <option value="4">Пекинес</option>
+        <option value="5">Мопс</option>
+	   </select>
+     </div>
+ </form>
+</div>
+
+		<div class="wrapper">
+		</div>
+
+		<script src="js/script.js"></script>
+</body>
+</html>
