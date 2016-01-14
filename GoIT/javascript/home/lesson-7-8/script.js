@@ -1,6 +1,6 @@
 $(function(){
 
-	var $divTabs = $('.wrapper div');
+	var $divTabs = $('.tabs div');
 	$divTabs.hide();
 	$firstTab = $divTabs.first();
 	$firstTab.show();
@@ -10,47 +10,10 @@ $(function(){
 	$linkFirst.removeClass('link2');
 	$linkFirst.addClass('link');
 	
-	var $wrapper = $('.wrapper');
-	$wrapper.append('<form></form>');
-	var $form = $('form');
-	$form.append('<div></div>');
-	var $div = $form.children();
-	$div.addClass('inputs'); 
-	$div
-		.append('<label>Firstname </label>')
-		.append('<label>Lastname </label>')
-		.append('<label>Address </label>');
-	
-	var $label = $('label');
-	var $firstLabel = $label.eq(0);
-	//console.log($firstLabel);
-	$firstLabel.attr('for', 'firstname');
-	var $secondLabel = $label.eq(1);
-	$secondLabel.attr('for', 'lastname');
-	var $thirdLabel = $label.eq(2);
-	$thirdLabel.attr('for', 'address');
-	$label.append('<input>');
-	
-	var $input = $('input');
-	var $firstInput =$input.eq(0);
-	var $secondInput =$input.eq(1);
-	var $thirdInput =$input.eq(2);
-	$input.attr('type','text');
-	$firstInput
-			.attr('title', 'Please provide your firstname.')
-			.attr('id', 'firstname');
-	$secondInput
-			.attr('title', 'Please provide also your lastname.')
-			.attr('id', 'lastname');
-	$thirdInput
-			.attr('title', 'Your home or work address.')
-			.attr('id', 'address')
-			.css('margin-left', '14px');
-
-	$form.append('<button>Show help</button>');
-	var $button = $form.children('button');
-	$button.addClass('button');
-	//------------------------------------------------------------------------
+	var $label = $('form label');
+	var $input = $('form input');
+	var $button = $('form button');
+//------------------------------------------------------------------------
 		var $tooltipOne;
 		var $tooltipTwo;
 		var $tooltipThree;
@@ -60,11 +23,13 @@ $(function(){
 		$divTabs.hide();
 		$linkFirst.removeClass('link');
 		$linkFirst.addClass('link2');
-		var $value = $(this).attr('id');
-		var $activeDiv = $('div[aria-labelledby='+$value+']'); 
+		var $index = $linkAll.index(this);
+		console.log($index);
+		var $activeDiv = $divTabs.eq($index);
+		console.log($activeDiv); 
 		$activeDiv.toggle();
 		});
-
+//----------------------------------------------------------------
 	$input.hover(function(event){
 				var $span = $('span');
 				$span.remove();
@@ -88,6 +53,7 @@ $(function(){
 			}
 
 		);
+//---------------------------------------------------------------------------------
 	$button.on('click', function(event){
 		var $span = $('span');
 		$span.remove();
