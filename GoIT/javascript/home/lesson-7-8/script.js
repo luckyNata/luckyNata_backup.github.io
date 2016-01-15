@@ -13,6 +13,9 @@ $(function(){
 	var $label = $('form label');
 	var $input = $('form input');
 	var $button = $('form button');
+	var title0 ='Please provide your firstname.';
+	var title1 ='Please provide also your lastname.';
+	var title2 = 'Your home or work address.';
 //------------------------------------------------------------------------
 		var $tooltipOne;
 		var $tooltipTwo;
@@ -37,6 +40,7 @@ $(function(){
 					var $activeLabel = $(this).parent();
 					$activeLabel.append('<span><span>');
 					var $tooltipActive = $('span').text($title);
+					$(this).removeAttr("title");
 					$tooltipActive.addClass('tooltipStyle');
 					$tooltipActive.offset(function(i, coord){
 									        var  newCoord = {};	
@@ -48,7 +52,12 @@ $(function(){
 					$tooltipActive.show();
 				}, 
 			function(){
+				var title='title';
 				var $tooltipActive = $('span');
+				var $neighbor = $tooltipActive.siblings('input');
+				var $value = $input.index($neighbor);
+				var a = eval(title+$value);
+				$neighbor.attr('title', ''+a);
 				$tooltipActive.remove();
 			}
 
