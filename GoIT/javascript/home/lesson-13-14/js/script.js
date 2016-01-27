@@ -48,26 +48,35 @@
     //проверка ответов
       function checking(){
         var answersBlock = $('.answersBlock');
-        var numberCheckedAnswers = $('.answersBlock input:checkbox:checked').length;
+        // var numberCheckedAnswers = $('.answersBlock input:checkbox:checked').length;
         
-        if (numberCheckedAnswers < answersBlock.length){
-          alert('Пожалуйста, ответьте на все вопросы');
-          return true;
-        }
+        // if (numberCheckedAnswers < answersBlock.length){
+        //   alert('Пожалуйста, ответьте на все вопросы');
+        //   return true;
+        // }
  
       var checkedAnswers=[];
           $('.answersBlock input:checkbox:checked').each(function(){
-              checkedAnswers.push($(this).val());
+              var id = $(this).attr('id');
+              var sub = id.substr(0,1);
+              var index = sub - 1;
+              checkedAnswers[index] = $(this).val();
+             // checkedAnswers.push($(this).val());
           });
- 
+               console.log(checkedAnswers);
       var arrResult =[];
 
-           for(var j=0; j<checkedAnswers.length; j++){
-                console.log('checkedAnswers',checkedAnswers[j]);
+            for(var j=0; j<answersBlock.length; j++){
+              if(checkedAnswers[j]){
                   if (checkedAnswers[j] === rightAnswers[j]){
-                    arrResult.push('true');
-                  } else{ arrResult.push('false');
+                    arrResult[j]='true';
+                  } else{ arrResult[j]='false';
                     }
+              } else {
+                  arrResult[j]='false';
+                }
+                  
+               
             }//for
 
       var resultsForModal = [];
