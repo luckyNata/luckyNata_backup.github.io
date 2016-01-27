@@ -1,4 +1,3 @@
-$(function(){
     'use strict';
     var objData = [
                 {   question: 'Что такое HTML?',
@@ -53,7 +52,7 @@ $(function(){
         
         if (numberCheckedAnswers < answersBlock.length){
           alert('Пожалуйста, ответьте на все вопросы');
-          location.reload();
+          return true;
         }
  
       var checkedAnswers=[];
@@ -103,4 +102,3 @@ console.log(resultsForModal);
   });
     
     }//function 'checking'
-});//function ready
