@@ -53,7 +53,7 @@ $(function(){
         
         if (numberCheckedAnswers < answersBlock.length){
           alert('Пожалуйста, ответьте на все вопросы');
-        return 0;
+          location.reload();
         }
  
       var checkedAnswers=[];
