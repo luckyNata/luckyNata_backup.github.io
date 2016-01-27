@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Local storage</title>
+     <link rel="stylesheet" href="css/style.css">
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+     <script type="text/javascript" src="js/template.js"></script> 
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <p class="testTitle">Тест по программированию</p>
+      <form method="post" action="">
+        <script type = "text/template" id = "test">
+       <% for (var i=0; i<data.length; i++){ %>
+        <div class="answersBlock">
+        <div><span><%=i+1%>.</span><span class="questionTitle"><%=data[i].question%></span></div>
+        <div><input type="checkbox" class="checkbox" name="answ1" id="<%=data[i].key%>.<%=i+1%>" value="<%=data[i].answer1%>"><label for="<%=data[i].key%>.<%=i+1%>" class="answer"><%=data[i].answer1%></label></div>
+        <div><input type="checkbox" class="checkbox" name="answ2" id="<%=data[i].key%>.<%=i+2%>" value="<%=data[i].answer2%>"><label for="<%=data[i].key%>.<%=i+2%>" class="answer"><%=data[i].answer2%></label></div>
+        <div><input type="checkbox" class="checkbox" name="answ3" id="<%=data[i].key%>.<%=i+3%>" value="<%=data[i].answer3%>"><label for="<%=data[i].key%>.<%=i+3%>" class="answer"><%=data[i].answer3%></label></div>
+        </div>
+       <% }%>
+      </script>
+      <input type="submit" value="Проверить">
+      </form>
+    </div>
+        <script type="text/javascript" src="js/script.js"></script> 
+  </body>
+</html>
