@@ -26,8 +26,10 @@ form div{
 .questionTitle{
     font-weight: bold;
 }
-input[type=submit]{
+.submit{
     display: block;
+    width: 100px;
+    height: 30px;
     margin: 10px auto 0;
     margin-top: 10px;
     text-align: center;

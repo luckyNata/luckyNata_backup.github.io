@@ -1,36 +1,46 @@
     'use strict';
-    var objData = [
-                {   question: 'Что такое HTML?',
-                    answer1: 'Язык для создания анимаций',
-                    answer2: 'Язык гипертекстовой разметки',
-                    answer3: 'Язык супертекстовой разметки',
-                    key: 1
-               },
-               {    question: 'Что такое CSS?',
-                    answer1: "Язык для описания внешнего вида документа",
-                    answer2: "Язык, позволяющий выполнять запросы к серверу",
-                    answer3: "Язык для генерации html",
-                    key: 2
-               },
-               {    question: 'Что такое javascript?',
-                    answer1: "Язык прототипирования",
-                    answer2: "Язык для подключения к базе данных",
-                    answer3: "Язык программирования",
-                    key: 3
-               }];
+    var questions = {
+    '1': {
+        'title': 'What is HTML?',
+        'answers': [
+            'How To Make Landingpage',
+            'Hypertext Markup Language',
+            'Objective Programming Language'
+            
+        ],
+        'check': 1
+        },
+    '2': {
+        'title': 'What is CSS?',
+        'answers': [
+            'Censor Sold Solar System',
+            'Central Sugar Station',
+            'Cascading Style Sheets'
+        ],
+        'check':2
+        },
+    '3': {
+        'title': 'What is JavaScript?',
+        'answers': [
+            'Analog of Java with more functions',
+            'High-level interpreted programming language',
+            'Language of Javas in Star Wars'
+        ],
+        'check':1
+       },
+}
+   
+    var temp={};
 
-    var rightAnswers = ['Язык гипертекстовой разметки', 'Язык для описания внешнего вида документа', 'Язык программирования'];
-    var temp=[];
+       for (var key in questions){
 
-       for (var i=0; i<objData.length; i++){
-       
-          localStorage.setItem('answersAndQuestion[i]', JSON.stringify(objData[i]));      //записали в localStorage
-          temp[i] = localStorage.getItem('answersAndQuestion[i]');                        //вытащили из localStorage
-          temp[i] = JSON.parse(temp[i]);
+          localStorage.setItem('answersAndQuestion[key]', JSON.stringify(questions[key]));      //записали в localStorage
+          temp[key] = localStorage.getItem('answersAndQuestion[key]');                        //вытащили из localStorage
+          temp[key] = JSON.parse(temp[key]);
        }
-
+ 
     var htmlka = $('#test').html();
-    var content = tmpl(htmlka, {data: temp});  //сгенерировали контент
+    var content = tmpl(htmlka, temp);  //сгенерировали контент
         $('[type=submit]').before(content);         //вставили перед кнопкой
 
  
@@ -48,57 +58,39 @@
     //проверка ответов
       function checking(){
         var answersBlock = $('.answersBlock');
-        // var numberCheckedAnswers = $('.answersBlock input:checkbox:checked').length;
-        
-        // if (numberCheckedAnswers < answersBlock.length){
-        //   alert('Пожалуйста, ответьте на все вопросы');
-        //   return true;
-        // }
- 
-      var checkedAnswers=[];
+        var checkedAnswers=[];
           $('.answersBlock input:checkbox:checked').each(function(){
               var id = $(this).attr('id');
-              var sub = id.substr(0,1);
-              var index = sub - 1;
-              checkedAnswers[index] = $(this).val();
-             // checkedAnswers.push($(this).val());
+              var numberOfQuestion = id.substr(0,1);
+              var index = +numberOfQuestion-1;
+              var numberOfAnswer = id.substr(2);
+              checkedAnswers[index] = +numberOfAnswer;  
           });
-               console.log(checkedAnswers);
-      var arrResult =[];
-
+              console.log(checkedAnswers);
+       
+          var arrResult =[];
             for(var j=0; j<answersBlock.length; j++){
+                console.log('Правильный ответ:', temp[j+1].check);
               if(checkedAnswers[j]){
-                  if (checkedAnswers[j] === rightAnswers[j]){
-                    arrResult[j]='true';
-                  } else{ arrResult[j]='false';
+                  var check = temp[j+1].check;
+                  if (checkedAnswers[j] === check){
+                    arrResult[j]='<span style="color:green">Правильный ответ!</span>';
+                  } else{ arrResult[j]='Не правильный ответ!';
                     }
               } else {
-                  arrResult[j]='false';
-                }
-                  
-               
+                  arrResult[j]='Не правильный ответ!';
+                }     
             }//for
 
-      var resultsForModal = [];
-         
-          for(var k=0; k<arrResult.length; k++){
-            if(arrResult[k] == 'true'){
-                resultsForModal[k] = '<span style="color:green">Правильный ответ!</span>';
-            } else {
-                resultsForModal[k] = 'Не правильный ответ!';
-              }
-          }
-
-console.log(resultsForModal);
       event.preventDefault();
       var modal = $('<div class="modal"><h3>Результаты теста</h3></div>');
       var wrapper = $('.wrapper');
           wrapper.append(modal);
       
-          for (var z=0; z<rightAnswers.length; z++){
-               var questionDiv = $('<div class="questionTitle">'+(z+1)+'.'+objData[z].question+'</div>');
+          for (var z=0; z<answersBlock.length; z++){
+               var questionDiv = $('<div class="questionTitle">'+(z+1)+'.'+temp[z+1].title+'</div>');
                modal.append(questionDiv);
-               var answerDiv = $('<div class="answer warning">'+resultsForModal[z]+'</div>');
+               var answerDiv = $('<div class="answer warning">'+arrResult[z]+'</div>');
                modal.append(answerDiv);
           }
   $(document).mouseup(function (e){ // событие клика по веб-документу

@@ -13,16 +13,16 @@
       <p class="testTitle">Тест по программированию</p>
       <form method="post" action="">
         <script type = "text/template" id = "test">
-       <% for (var i=0; i<data.length; i++){ %>
+       <% for (var key in temp){ %>
         <div class="answersBlock">
-        <div><span><%=i+1%>.</span><span class="questionTitle"><%=data[i].question%></span></div>
-        <div><input type="checkbox" class="checkbox" name="answ1" id="<%=data[i].key%>.<%=i+1%>" value="<%=data[i].answer1%>"><label for="<%=data[i].key%>.<%=i+1%>" class="answer"><%=data[i].answer1%></label></div>
-        <div><input type="checkbox" class="checkbox" name="answ2" id="<%=data[i].key%>.<%=i+2%>" value="<%=data[i].answer2%>"><label for="<%=data[i].key%>.<%=i+2%>" class="answer"><%=data[i].answer2%></label></div>
-        <div><input type="checkbox" class="checkbox" name="answ3" id="<%=data[i].key%>.<%=i+3%>" value="<%=data[i].answer3%>"><label for="<%=data[i].key%>.<%=i+3%>" class="answer"><%=data[i].answer3%></label></div>
+        <div><span><%=key%>. </span><span class="questionTitle"><%=temp[key].title%></span></div>
+        <div><input type="checkbox" class="checkbox" name="answ1" id="<%=key%>.0" value="<%=temp[key].answers[0]%>"><label for="<%=key%>.0" class="answer"><%=temp[key].answers[0]%></label></div>
+        <div><input type="checkbox" class="checkbox" name="answ2" id="<%=key%>.1" value="<%=temp[key].answers[1]%>"><label for="<%=key%>.1" class="answer"><%=temp[key].answers[1]%></label></div>
+        <div><input type="checkbox" class="checkbox" name="answ3" id="<%=key%>.2" value="<%=temp[key].answers[2]%>"><label for="<%=key%>.2" class="answer"><%=temp[key].answers[2]%></label></div>
         </div>
        <% }%>
       </script>
-      <input type="submit" value="Проверить">
+      <input class="submit" type="submit" value="Проверить">
       </form>
     </div>
         <script type="text/javascript" src="js/script.js"></script> 
