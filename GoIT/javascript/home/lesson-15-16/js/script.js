@@ -7,7 +7,7 @@ $(function(){
   $.ajax({
    url:'http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&q='+ 'test' +'&callback=GoogleCallback&context=?',
    dataType: 'jsonp',
-   method: 'POST',
+   method: 'GET',
    success: function(){
    	alert('hello');
    },
@@ -15,7 +15,7 @@ $(function(){
    	 	alert('bad request');
   },
  });
-  function getData(){
+
   	var dataTmpl = $('#tmpl').html();
 	var tmpl = _.template(dataTmpl);
 	//var titleN=data.results[1].title;
@@ -27,5 +27,5 @@ $(function(){
 
 	var insert = tmpl(info);
 	$('.wrapper').append(insert);
-}
+
 });
