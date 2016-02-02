@@ -1,0 +1,26 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+input[type=text]{
+	height: 20px;
+	margin: 20px;
+}
+.title{
+	color: blue;
+	font-family: Tahoma;
+	font-size: 14px;
+}
+.url{
+	color: green;
+	font-family: Tahoma;
+	font-size: 12px;
+}
+.searchResults{
+	width: 600px;
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+.searchResults div{
+	margin-bottom: 5px;
+}
