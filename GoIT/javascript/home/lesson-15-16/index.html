@@ -11,11 +11,12 @@
 <body>
 
 	<div class="wrapper">
-		<form method="post" action="#">
-			<input type="text" name="request" size="65px" height="40px">
-			<button type="submit" class="button">Поиск в Google</button>
-		</form>
-	
+		<div class="center">
+			<form method="post" action="#" id="form">
+				<input type="text" class = "input" name="request" size="65px" height="40px" placeholder="Введите Ваш запрос">
+				<button type="submit" class="button">Поиск в Google</button>
+			</form>
+		</div>
 		<script type="text/template" id="tmpl">
 		 <% for (var key in dat){ %>
 		  <div class="searchResults">
