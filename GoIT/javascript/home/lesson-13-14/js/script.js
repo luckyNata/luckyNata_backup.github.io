@@ -58,34 +58,34 @@
     //проверка ответов
       function checking(){
         var answersBlock = $('.answersBlock');
-        var checkedAnswers=[];
+        var checkedAnswers=[];        //массив для отмеченных ответов
           $('.answersBlock input:checkbox:checked').each(function(){
               var id = $(this).attr('id');
-              var numberOfQuestion = id.substr(0,1);
+              var numberOfQuestion = id.substr(0,1); //узнали номер вопроса
               var index = +numberOfQuestion-1;
-              var numberOfAnswer = id.substr(2);
+              var numberOfAnswer = id.substr(2);// узали номер ответа (первый, второй или третий)
               checkedAnswers[index] = +numberOfAnswer;  
           });
               console.log(checkedAnswers);
        
-          var arrResult =[];
+          var arrResult =[]; //  массив с результатом теста для пользователя
             for(var j=0; j<answersBlock.length; j++){
                 console.log('Правильный ответ:', temp[j+1].check);
-              if(checkedAnswers[j]){
-                  var check = temp[j+1].check;
-                  if (checkedAnswers[j] === check){
+              if(checkedAnswers[j]){ // если был отмеченным ответ на вопрос, то сравниваем
+                  var check = temp[j+1].check;// достали правильный ответ из начального объекта
+                  if (checkedAnswers[j] === check){ //сравнили
                     arrResult[j]='<span style="color:green">Правильный ответ!</span>';
                   } else{ arrResult[j]='Не правильный ответ!';
                     }
               } else {
-                  arrResult[j]='Не правильный ответ!';
+                  arrResult[j]='Не правильный ответ!'; // если не было галочки, значит ошибка!
                 }     
             }//for
 
       event.preventDefault();
       var modal = $('<div class="modal"><h3>Результаты теста</h3></div>');
       var wrapper = $('.wrapper');
-          wrapper.append(modal);
+          wrapper.append(modal); // формируем модальное окно с результатами
       
           for (var z=0; z<answersBlock.length; z++){
                var questionDiv = $('<div class="questionTitle">'+(z+1)+'.'+temp[z+1].title+'</div>');
@@ -95,10 +95,10 @@
           }
   $(document).mouseup(function (e){ // событие клика по веб-документу
     var div = $(".modal"); 
-    if (!div.is(e.target) 
-    && div.has(e.target).length === 0) { 
-      div.hide(); // скрываем его
-    location.reload();
+    
+    if (!div.is(e.target)&& div.has(e.target).length === 0) { 
+      div.hide; // скрываем его
+      location.reload();
     }
   });
     
