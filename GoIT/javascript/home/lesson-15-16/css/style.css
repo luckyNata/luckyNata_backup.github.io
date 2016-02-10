@@ -63,3 +63,15 @@
 .searchResults div{
 	margin-bottom: 5px;
 }
+.groupMoreLinks{
+	margin-left: 10px;
+}
+.link{
+	margin: 5px;
+	color: blue;
+	cursor: pointer;
+
+}
+.link:hover{
+	text-decoration: underline;
+}
