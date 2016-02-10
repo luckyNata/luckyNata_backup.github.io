@@ -20,6 +20,7 @@ var numberLinks=10; // количество линков
 	    $('.searchResults').remove();
         $('.link').remove();
  		dataObject = data;
+ 		//console.log(dataObject);
 
    		var dataTmpl = $('#tmpl').html();
 		var tmpl = _.template(dataTmpl);
