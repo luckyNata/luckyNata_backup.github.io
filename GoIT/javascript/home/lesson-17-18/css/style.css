@@ -1,0 +1,77 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+    font-family: 'openSans';
+    src: url('../fonts/opensans-regular-webfont.eot');
+    src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.center{
+	margin: 100px auto;
+	width: 600px;
+	height: 300px;
+}
+.left{
+	margin: 20px;
+	width: 600px;
+	height: 100px;
+}
+.input{
+	height: 25px;
+	margin: 20px;
+	border: 1px solid #4d90fe;
+	padding-left: 5px;
+}
+.title{
+	color: blue;
+	font-family: openSans;
+	font-size: 14px;
+}
+.url{
+	color: green;
+	font-family: openSans;
+	font-size: 12px;
+}
+.button{
+	margin-left: 200px;
+	width: 120px;
+	height: 25px;
+	border: none;
+	background-color: #f2f2f2;
+	color: #757575;
+}
+.button:hover{
+	background-color: #f7f7f7;
+	border: 1px solid #c6c6c6;
+	color: #222222;
+}
+
+.searchResults{
+	width: 600px;
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+.searchResults div{
+	margin-bottom: 5px;
+}
+.groupMoreLinks{
+	margin-left: 10px;
+}
+.link{
+	margin: 5px;
+	color: blue;
+	cursor: pointer;
+
+}
+.link:hover{
+	text-decoration: underline;
+}
