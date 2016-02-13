@@ -1,0 +1,36 @@
+.circles {
+	margin: 0 auto;
+}
+.clearfix:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.circle{
+	float:left;
+	position: relative;
+	padding-right: 50px;
+	z-index: 1;
+
+}
+.circle img{
+	border-radius: 50%;
+}
+.circle-text{
+	position: absolute;
+	top: 85px;
+	left: 36px;
+	color: red;
+	font-family: Tahoma;
+	font-size: 14px;
+	z-index: 2;
+}
+#list_of_titles, #list{
+	float: left;
+	width: 250px;
+	height: 150px;
+	overflow: hidden;
+}
+#list{
+	padding-left: 80px;
+}
