@@ -27,7 +27,19 @@ var json2={"requestId":"4",
 
 var li = document.querySelectorAll('.json_list');
 console.log(li);
-  for (var i=0; i<json2.answers.length; i++){
-    console.log(json2.answers[i].title);//нашли названия для списка
-    li[i].innerHTML = json2.answers[i].title;
+for (var i=0; i<json2.answers.length; i++){
+  //  console.log(json2.answers[i].title);//нашли названия для списка
+    var arr = json2.answers[i].title.split(" ", 5); //обрезали 5 слов для вывода
+    var str = arr.join(' ');
+    li[i].innerHTML = str;
+}
+var list_item = document.querySelectorAll('.list_item');
+console.log(list_item);
+
+for(var j=0; j<list_item.length; j++){
+  var first_titles = list_item[j].innerHTML;
+  console.log(first_titles);
+  var arr = first_titles.split(" ", 5); //обрезали 5 слов для вывода
+  var str = arr.join(' ');
+    list_item[j].innerHTML = str;
 }

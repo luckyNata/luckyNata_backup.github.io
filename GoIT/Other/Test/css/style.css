@@ -1,5 +1,5 @@
 .circles {
-	margin: 0 auto;
+	margin-left: 50px;
 }
 .clearfix:after{
 	content: "";
@@ -9,20 +9,22 @@
 .circle{
 	float:left;
 	position: relative;
-	padding-right: 50px;
+	padding-right: 135px;
 	z-index: 1;
 
 }
 .circle img{
+	width: 180px;
+	height: 180px;
 	border-radius: 50%;
 }
 .circle-text{
 	position: absolute;
 	top: 85px;
-	left: 36px;
+	left: 6px;
 	color: red;
 	font-family: Tahoma;
-	font-size: 14px;
+	font-size: 12px;
 	z-index: 2;
 }
 #list_of_titles, #list{
