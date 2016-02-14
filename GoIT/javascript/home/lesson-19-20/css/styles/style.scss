@@ -1,0 +1,21 @@
+@import 'variables';
+@import 'reset';
+
+@font-face {
+    font-family: 'ubuntumedium';
+    src: url('../fonts/ubuntu-m-webfont.eot');
+    src: url('../fonts/ubuntu-m-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu-m-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu-m-webfont.woff') format('woff'),
+         url('../fonts/ubuntu-m-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.firstLine__bigText {
+	color: #434343;
+	font-family: ubuntumedium;
+}
+.firstLine__smallText {
+	color: #7a7a7a;
+}
