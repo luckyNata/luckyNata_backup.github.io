@@ -52,7 +52,7 @@ var numberLinks=10; // количество линков
 
 $(function(){
 
- 	$('#form').submit( function(){
+ 	$('#form').submit( function(event){
 		event.preventDefault();
 		ajax(0);
  	});

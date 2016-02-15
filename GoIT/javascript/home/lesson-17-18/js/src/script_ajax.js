@@ -11,7 +11,7 @@ var numberLinks=10; // количество линков
  		$.ajax({ 		
    		url: url,
   		dataType: 'jsonp',
-		method: 'POST',
+		method: 'GET',
 		//success: ,
   		})
 	};
@@ -52,7 +52,7 @@ var numberLinks=10; // количество линков
 
 $(function(){
 
- 	$('#form').submit( function(){
+ 	$('#form').submit( function(event){
 		event.preventDefault();
 		ajax(0);
  	});
