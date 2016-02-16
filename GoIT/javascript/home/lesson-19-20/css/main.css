@@ -41,49 +41,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
 @font-face {
   font-family: 'ubuntumedium';
   src: url("../fonts/ubuntu-m-webfont.eot");
@@ -91,9 +48,139 @@ table {
   font-weight: normal;
   font-style: normal; }
 
-.firstLine__bigText {
-  color: #434343;
-  font-family: ubuntumedium; }
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block; }
 
-.firstLine__smallText {
-  color: #7a7a7a; }
+.wrapper {
+  width: 1170px;
+  margin: 20px auto; }
+
+.firstLine__img {
+  width: 36px;
+  height: 36px;
+  margin-top: 5px;
+  float: left;
+  margin-right: 10px;
+  background-image: url(../img/logo.png); }
+
+.firstLine__text {
+  float: left;
+  display: inline;
+  width: 200px; }
+
+.firstLine__usualText {
+  display: block;
+  color: #434343;
+  font-family: ubuntumedium;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: bold; }
+
+.firstLine__capitalText {
+  display: block;
+  color: #7a7a7a;
+  font-size: 33px;
+  letter-spacing: 0,3; }
+
+.firstLine-contact {
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px; }
+
+.firstLine-contact__menu {
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -1px; }
+
+.firstLine-contact__item {
+  float: left;
+  list-style: none;
+  margin-right: 13px; }
+
+.firstLine-contact__link {
+  display: block;
+  width: 22px;
+  height: 18px;
+  text-decoration: none;
+  background: url(../img/sprite.png) no-repeat; }
+
+.firstLine-contact__link:hover {
+  cursor: pointer; }
+
+.firstLine-contact__link--fb {
+  background-position: -2px -135px; }
+
+.firstLine-contact__link--fb:hover {
+  background-position: -2px -153px; }
+
+.firstLine-contact__link--twit {
+  background-position: -1px -70px;
+  height: 15px;
+  width: 23px; }
+
+.firstLine-contact__link--twit:hover {
+  background-position: -1px -85px; }
+
+.firstLine-contact__link--rss {
+  background-position: -2px -101px;
+  height: 15px;
+  width: 15px; }
+
+.firstLine-contact__link--rss:hover {
+  background-position: -2px -118px; }
+
+.firstLine-contact__link--in {
+  background-position: -2px 0px;
+  height: 16px;
+  width: 17px; }
+
+.firstLine-contact__link--in:hover {
+  background-position: -2px -17px; }
+
+.firstLine-contact__link--skype {
+  background-position: -2px -34px;
+  height: 16px;
+  width: 17px; }
+
+.firstLine-contact__link--skype:hover {
+  background-position: -2px -52px; }
+
+.topMenuBlock {
+  display: block;
+  width: 1170px;
+  height: 55px;
+  background-color: #2a2d32;
+  margin-top: 35px; }
+
+.topMenu {
+  width: 800px; }
+
+.topMenu__item {
+  float: left;
+  list-style: none; }
+
+.topMenu__link {
+  display: block;
+  width: 100px;
+  height: 55px;
+  line-height: 55px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: ubuntumedium;
+  font-size: 12px;
+  text-align: center;
+  border-right: 1px solid #181a1d; }
+
+.topMenu__item:first-child {
+  background-color: #248cec; }
+
+.topMenu__link:hover {
+  cursor: pointer;
+  color: #f4b60d; }
+
+.topMenuBlock__form {
+  display: block;
+  float: right;
+  width: 200px; }

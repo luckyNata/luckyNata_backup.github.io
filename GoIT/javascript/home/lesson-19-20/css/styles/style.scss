@@ -15,12 +15,13 @@
     display: block;
 }
 .wrapper{
-    width:1200px;
+    width:1170px;
     margin: 20px auto;
 }
 .firstLine__img{
     width:36px;
     height: 36px;
+    margin-top: 5px;
     float: left;
     margin-right: 10px;
     background-image: url(../img/logo.png);
@@ -28,61 +29,120 @@
 .firstLine__text {
     float: left;
     display: inline;
-    width: 160px;
+    width: 200px;
 }
 .firstLine__usualText {
-    width: 150px;
     display: block;
 	color: #434343;
 	font-family: ubuntumedium;
     font-size: 12px;
-
+    letter-spacing: 2px;
     font-weight: bold;
 }
 .firstLine__capitalText {
-    width: 150px;
     display: block;
 	color: #7a7a7a;
-    font-size: 30px;
+    font-size: 33px;
     letter-spacing: 0,3;
 }
-.firstLine-contact {
+.firstLine-contact{
     float: right;
+    margin-top: 20px;
+    margin-right:20px;
 }
-.firstrLine-contact__item{
-    float: left;
+.firstLine-contact__menu{
+    font-size: 0;
+    line-height: 0;
+    letter-spacing: -1px;
 }
-.firstrLine-contact__link{
-    width: 16px;
+.firstLine-contact__item{
+    float:left;
+    list-style: none;
+    margin-right: 13px;
+}
+.firstLine-contact__link{
+    display: block;
+    width: 22px;
+    height: 18px;
+    text-decoration: none;
+    background: url(../img/sprite.png) no-repeat;
+}
+.firstLine-contact__link:hover{
+    cursor: pointer;
+}
+.firstLine-contact__link--fb{
+    background-position: -2px -135px;
+}
+.firstLine-contact__link--fb:hover{
+    background-position: -2px -153px;
+}
+.firstLine-contact__link--twit{
+    background-position: -1px -70px;
+    height: 15px;
+    width: 23px;
+}
+.firstLine-contact__link--twit:hover{
+    background-position: -1px -85px;
+}
+.firstLine-contact__link--rss{
+    background-position: -2px -101px;
+    height: 15px;
+    width: 15px;
+}
+.firstLine-contact__link--rss:hover{
+    background-position: -2px -118px;
+}
+.firstLine-contact__link--in{
+    background-position: -2px 0px;
     height: 16px;
-    margin-right:15px;
-    background-image: url(../img/sprite.png); 
-  
+    width: 17px;
 }
-.firstrLine-contact__link--first {
-   background-position: -2px -135px; 
-   width: 8px; 
-   height: 16px;
+.firstLine-contact__link--in:hover{
+    background-position: -2px -17px;
 }
-.firstrLine-contact__link--first:hover {
-   background-position: -2px -153px; 
-   width: 8px; 
-   height: 16px;
+.firstLine-contact__link--skype {
+    background-position: -2px -34px;
+    height: 16px;
+    width: 17px;
 }
-.firstrLine-contact__link--fivth {
-
+.firstLine-contact__link--skype:hover {
+    background-position: -2px -52px;
 }
-.firstrLine-contact__link--fivth:hover {
-
+.topMenuBlock {
+    display: block;
+    width: 1170px;
+    height: 55px;
+    background-color: #2a2d32;
+    margin-top: 35px;
 }
-
-.linked { background-position: -2px -0px; width: 16px; height: 15px; }
-.linked-h { background-position: -2px -17px; width: 16px; height: 15px; }
-.skype { background-position: -2px -34px; width: 16px; height: 16px; }
-.skype-h { background-position: -2px -52px; width: 16px; height: 17px; }
-.twit { background-position: -2px -71px; width: 16px; height: 13px; }
-.twit-h { background-position: -2px -86px; width: 16px; height: 13px; }
-.rss { background-position: -2px -101px; width: 15px; height: 15px; }
-.rss-h { background-position: -2px -118px; width: 15px; height: 15px; }
-.facebook { background-position: -2px -135px; width: 8px; height: 16px; }
-.facebook-h { background-position: -2px -153px; width: 8px; height: 16px; }
+.topMenu {
+    width: 800px;
+}
+.topMenu__item {
+    float:left;
+    list-style: none;
+}
+.topMenu__link {
+    display: block;
+    width: 100px;
+    height: 55px;
+    line-height: 55px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: ubuntumedium;
+    font-size: 12px;
+    text-align: center;
+    border-right: 1px solid #181a1d;
+}
+.topMenu__item:first-child {
+    background-color: #248cec;
+}
+.topMenu__link:hover {
+    cursor: pointer;
+    color:#f4b60d;
+}
+.topMenuBlock__form {
+    display: block;
+    float: right;
+    width: 200px;
+}
