@@ -1,3 +1,4 @@
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -42,8 +43,6 @@ table {
 	border-spacing: 0;
 }
 $color:  #f1670a;
-@import 'variables';
-@import 'reset';
 
 @font-face {
     font-family: 'ubuntumedium';
@@ -54,12 +53,81 @@ $color:  #f1670a;
          url('../fonts/ubuntu-m-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
-.firstLine__bigText {
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.wrapper{
+    width:1200px;
+    margin: 20px auto;
+}
+.firstLine__img{
+    width:36px;
+    height: 36px;
+    float: left;
+    margin-right: 10px;
+    background-image: url(../img/logo.png);
+}
+.firstLine__text {
+    float: left;
+    display: inline;
+    width: 160px;
+}
+.firstLine__usualText {
+    width: 150px;
+    display: block;
 	color: #434343;
 	font-family: ubuntumedium;
+    font-size: 12px;
+
+    font-weight: bold;
 }
-.firstLine__smallText {
+.firstLine__capitalText {
+    width: 150px;
+    display: block;
 	color: #7a7a7a;
+    font-size: 30px;
+    letter-spacing: 0,3;
 }
+.firstLine-contact {
+    float: right;
+}
+.firstrLine-contact__item{
+    float: left;
+}
+.firstrLine-contact__link{
+    width: 16px;
+    height: 16px;
+    margin-right:15px;
+    background-image: url(../img/sprite.png); 
+  
+}
+.firstrLine-contact__link--first {
+   background-position: -2px -135px; 
+   width: 8px; 
+   height: 16px;
+}
+.firstrLine-contact__link--first:hover {
+   background-position: -2px -153px; 
+   width: 8px; 
+   height: 16px;
+}
+.firstrLine-contact__link--fivth {
+
+}
+.firstrLine-contact__link--fivth:hover {
+
+}
+
+.linked { background-position: -2px -0px; width: 16px; height: 15px; }
+.linked-h { background-position: -2px -17px; width: 16px; height: 15px; }
+.skype { background-position: -2px -34px; width: 16px; height: 16px; }
+.skype-h { background-position: -2px -52px; width: 16px; height: 17px; }
+.twit { background-position: -2px -71px; width: 16px; height: 13px; }
+.twit-h { background-position: -2px -86px; width: 16px; height: 13px; }
+.rss { background-position: -2px -101px; width: 15px; height: 15px; }
+.rss-h { background-position: -2px -118px; width: 15px; height: 15px; }
+.facebook { background-position: -2px -135px; width: 8px; height: 16px; }
+.facebook-h { background-position: -2px -153px; width: 8px; height: 16px; }
