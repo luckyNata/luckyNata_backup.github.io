@@ -81,7 +81,7 @@ table {
 .firstLine__capitalText {
   display: block;
   color: #7a7a7a;
-  font-size: 33px;
+  font-size: 30px;
   letter-spacing: 0,3; }
 
 .firstLine-contact {
@@ -149,12 +149,13 @@ table {
 
 .topMenuBlock {
   display: block;
-  width: 1170px;
+  width: 1160px;
   height: 55px;
   background-color: #2a2d32;
   margin-top: 35px; }
 
 .topMenu {
+  float: left;
   width: 800px; }
 
 .topMenu__item {
@@ -163,7 +164,7 @@ table {
 
 .topMenu__link {
   display: block;
-  width: 100px;
+  width: 116px;
   height: 55px;
   line-height: 55px;
   text-decoration: none;
@@ -182,5 +183,41 @@ table {
 
 .topMenuBlock__form {
   display: block;
-  float: right;
-  width: 200px; }
+  float: right; }
+
+.formInput {
+  width: 230px;
+  height: 40px;
+  margin: 5px;
+  padding-left: 10px;
+  color: #ffffff;
+  background-color: #35383c;
+  background-image: url(../img/search.jpg);
+  background-position: 200px 13px;
+  background-repeat: no-repeat;
+  border: 1px solid #181a1d;
+  outline: none; }
+
+::-webkit-input-placeholder {
+  color: #535659; }
+
+:-moz-placeholder {
+  color: #535659; }
+
+:-ms-input-placeholder {
+  color: #535659; }
+
+.carousel-wrapper {
+  position: relative;
+  z-index: 1; }
+
+.carousel-wrapper:after {
+  content: "";
+  display: block;
+  width: 308px;
+  height: 197px;
+  background-image: url(../img/slogan.png);
+  position: absolute;
+  z-index: 2;
+  top: 245px;
+  left: 32px; }

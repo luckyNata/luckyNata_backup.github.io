@@ -7,8 +7,8 @@
 		<link rel="stylesheet" href="css/carousel_style.css">
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	    <script src="js/script.main.js"></script>
-	   	<script type="text/javascript" src="js/init.js"></script> 
-     	<script type="text/javascript" src="js/jquery.jCarousel.js"></script> 
+	   	
+     	<script type="text/javascript" src="js/jquery.carousel.js"></script> 
 	    
 </head>
 <body>
@@ -39,17 +39,29 @@
 					<li class="topMenu__item"><a href="" class="topMenu__link">SHOP</a></li>
 				</ul>
 				<form action="" class="topMenuBlock__form">
-					<input type="text" id="search" placeholder="Search...">
+					<input class="formInput" type="text" id="search" placeholder="Search...">
+					
 				</form>
 			</nav>
 			<main>
-				<div class="jcarousel">
-  	   					<ul>
-    	    				<li><img src="img/store1.jpg"></li>
-   		    				<li><img src="img/store2.jpg"></li>
-    	    				<li><img src="img/store3.jpg"></li>
-        				</ul>
-       			</div>
+
+   				<div class="carousel shadow"> 
+<!--       <div class="carousel-button-left"><a href="#"></a></div> 
+      <div class="carousel-button-right"><a href="#"></a></div>  -->
+					<div class="carousel-wrapper"> 
+		   				<div class="carousel-items"> 
+			 		 		<div class="carousel-block">
+								<img src="img/store1.jpg" alt="" />
+			  				</div>
+			  				<div class="carousel-block">
+								<img src="img/store2.jpg" alt="" />
+			  				</div>
+			 				<div class="carousel-block">
+								<img src="img/store3.jpg" alt="" />
+			  				</div>
+						</div>
+					</div>
+  				</div>
 			</main>
 			</div>
 		</header> 
