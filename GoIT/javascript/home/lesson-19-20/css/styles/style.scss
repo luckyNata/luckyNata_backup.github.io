@@ -181,42 +181,71 @@
 }
 
 .textBlocks {
-    margin-top: 70px;
+    margin-top: 65px;
 }
-.textBlocks__article {
-    width: 30%;
+.article {
+    width: 250px;
+    margin: 10px 15px 0 125px;
+    position: relative;
     float: left;
-
 }
-.textBlocks__option {
-    display: block;
+.article:before {
+    content: '01';
+    width: 110px;
+    height: 110px;
+    color: #e9e9ea;
     font-family: ubuntumedium;
     font-size: 90px;
-    color: #e9e9ea;
-    float: left;
+    position: absolute;
+    top: -17px;
+    left: -128px;
 }
-.textBlocks__option--title{
-    font-size: 20px;
-    color: #2a2b2e;
-    margin-top: 55px;
-    position: relative;
+.article--picture:before {
+    content: '02';
 }
-.textBlocks__option--title:after{
-    content: '';
-    display: block;
+.article--truck:before {
+    content: '03';
+}
+.article__img {
     width: 32px;
     height: 32px;
     background-image: url(../img/cogwheel.jpg);
-    position: absolute;
-    top: -34px;
-    left: 2px;
+    margin-bottom: 10px;
 }
-.article {
-    float: left;
-    margin-left: 30px;
+.article__img--picture {
+    background-image: url(../img/picture2.jpg);
+}
+.article__img--truck {
+    height: 26px;
+    background-image: url(../img/truck.jpg);
+}
+.article__title {
+    display: block;
+    font-family: ubuntumedium;
+    font-size: 20px;
+    color: #2a2b2e;
 }
 .article__text {
+    display: block;
     font-family: Arial;
     font-size: 13px;
     color: #8a8a8a;
+    margin-top: 20px;
+    line-height: 20px;
 }
+.article__title--moreText {
+    font-size: 13px;
+    margin-top: 20px;
+    position: relative;
+}
+.article__title--moreText:after {
+    content: '';
+    width: 10px;
+    height: 9px;
+    display: block;
+    background-image: url(../img/pointer.jpg);
+    position: absolute;
+    top:2px;
+    left: 70px;
+}
+
