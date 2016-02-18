@@ -16,6 +16,7 @@
    float: left; /* выстраиваем все элементы карусели в ряд */
    width: 1160px; /* задаём ширину каждого элемента */
    padding: 10px 10px 10px 0px; /* делаем оступы, чтобы элементы не сливались */
+   position: relative;
 }
 .carousel-block img{
     display:block;
@@ -42,4 +43,32 @@
 /*********** SHADOW ***********/
 .shadow{
    /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);*/
+}
+.square-box{
+   width: 15px;
+   height: 15px;
+   background-color: #ffffff;
+   margin-right: 5px;
+   position: absolute;
+   top:90%;
+   left: 50%;
+   z-index: 2;
+}
+.box1 {
+   left: 50%;
+}
+.box2 {
+   left: 52%;
+}
+.box3 {
+   left: 54%;
+}
+.square-box-small {
+   width: 11px;
+   height: 11px;
+   background-color: #000000;
+   position: absolute;
+   top: 2px;
+   left: 2px;
+   display: none;
 }

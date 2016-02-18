@@ -224,3 +224,44 @@ $color:  #f1670a;
     top: 245px;
     left: 32px;
 }
+
+.textBlocks {
+    margin-top: 70px;
+}
+.textBlocks__article {
+    width: 30%;
+    float: left;
+
+}
+.textBlocks__option {
+    display: block;
+    font-family: ubuntumedium;
+    font-size: 90px;
+    color: #e9e9ea;
+    float: left;
+}
+.textBlocks__option--title{
+    font-size: 20px;
+    color: #2a2b2e;
+    margin-top: 55px;
+    position: relative;
+}
+.textBlocks__option--title:after{
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/cogwheel.jpg);
+    position: absolute;
+    top: -34px;
+    left: 2px;
+}
+.article {
+    float: left;
+    margin-left: 30px;
+}
+.article__text {
+    font-family: Arial;
+    font-size: 13px;
+    color: #8a8a8a;
+}
