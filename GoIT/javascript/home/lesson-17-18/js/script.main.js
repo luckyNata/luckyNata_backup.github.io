@@ -8,12 +8,14 @@ var numberLinks=10; // количество линков
  		
  		$('.center').removeClass('center').addClass('left');
  		
- 		$.ajax({ 		
-   		url: url,
-  		dataType: 'jsonp',
-		method: 'POST',
-		//success: ,
-  		})
+ 		if (request!=""){
+ 			$.ajax({ 		
+   			url: url,
+  			dataType: 'jsonp',
+			method: 'GET',
+			//success: ,
+  			})
+ 		}
 	};
 
 	function GoogleCallback(jqueryObj, data){
@@ -53,8 +55,15 @@ var numberLinks=10; // количество линков
 $(function(){
 
  	$('#form').submit( function(event){
-		event.preventDefault();
-		ajax(0);
+ 		//var className = $('.wrapper div').attr('class');
+ 		var request = $('.input').val();
+		if (request==""){
+			location.reload();
+		} else {
+			event.preventDefault();
+			ajax(0);
+		  }
+		
  	});
 
 });
