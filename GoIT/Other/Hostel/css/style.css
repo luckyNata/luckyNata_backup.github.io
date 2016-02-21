@@ -1,0 +1,598 @@
+
+@font-face {
+    font-family: 'robotocondensed';
+    src: url('../fonts/3959-webfont.eot');
+    src: url('../fonts/3959-webfont.woff2') format('woff2'),
+         url('../fonts/3959-webfont.woff') format('woff'),
+         url('../fonts/3959-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.wrapper {
+	width: 2000px;
+	font-family: robotocondensed;
+}
+
+header {
+	width: 2000px;
+	background-color: #f6f6f6;
+}
+.headerCenter {
+	width: 1200px;
+	margin: 0 auto;
+}
+.topMenu{
+	height: 68px;
+}
+.logo {
+	width: 155px;
+	height: 47px;
+	background-image: url(../img/logo.jpg);
+	float: left;
+}
+.lng {
+	width: 30px;
+	margin: 26px 0 0 54px;
+	float: left;
+}
+.lng a{
+	text-decoration: none;
+	font-family: robotocondensed;
+	font-size: 14px;
+	color: #494949;
+}
+.menu {
+	float: right;
+	padding: 25px 40px 0 0;
+}
+.menu ul{
+
+	font-size: 0;
+	line-height: 0;
+	letter-spacing: -1px;
+}
+.menu li{
+	float: left;
+	list-style: none;
+	margin-right: 12px;
+	margin-left: 11px;
+}
+.menu a:hover{
+	text-decoration: underline;
+}
+.menu a{
+	display: block;
+	font-family: robotocondensed;
+	font-size: 16px;
+	color: #494949;
+	text-decoration: none;
+}
+.menu li:hover{
+
+}
+.clearfix:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.headerImage {
+	width: 2000px;
+	height: 598px;
+	background-image: url(../img/picture.jpg);
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+.headerTitle {
+	width: 814px;
+	height: 95px;
+	background-color: #6fc7e8;
+	opacity: 0.8;
+	position: absolute;
+	top: 89px;
+	left: 380px;
+}
+.headerTitle span {
+	color: #ffffff;
+	font-family: robotocondensed;
+	font-size: 72px;
+	font-weight: bold;
+	line-height: 95px;
+	margin-left: 52px;
+}
+.figure1 {
+	width: 345px;
+	height: 145px;
+	background-image: url(../img/figure1.png);
+	position: absolute;
+
+	top: 253px;
+	left: 380px;
+}
+.headerImage a{
+	text-decoration: none;
+	color: #ffffff;
+}
+.figure1 p, .figure2 p, .figure3 p{
+
+	font-family: robotocondensed;
+	font-size: 16px;
+	font-weight: bold;
+	position: absolute;
+	top: 50px;
+	left: 40px;
+}
+.figure1 span, .figure2 span, .figure3 span{
+	font-weight: normal;
+	display: block;
+	margin-top: 3px;
+}
+.figure1:after {
+	display: block;
+	content: '';
+	width: 50px;
+	height: 25px;
+	background-image: url(../img/visa.png);
+	position: absolute;
+	top: 93px;
+	left: 255px;
+}
+.figure2 {
+	width: 284px;
+	height: 143px;
+	background-image: url(../img/figure2.png);
+	position: absolute;
+
+	top: 253px;
+	left: 681px;
+}
+.figure2 p{
+	top: 66px;
+	left: 76px;
+}
+.figure2 span{
+	margin-top: 3px;
+}
+.figure2:before {
+	display: block;
+	content: '';
+	width: 22px;
+	height: 32px;
+	background-image: url(../img/location.png);
+	position: absolute;
+	top: 23px;
+	left: 32px;
+}
+.figure3 {
+	width: 269px;
+	height: 115px;
+	background-image: url(../img/figure3.png);
+	position: absolute;
+	top: 269px;
+	left: 924px;
+}
+.figure3 p{
+	top: 47px;
+	left: 70px;
+	letter-spacing: -0.5px;
+}
+.figure3 span{
+	margin-top: 2px;
+	margin-left: 46px;
+}
+.figure3:before {
+	display: block;
+	content: '';
+	width: 22px;
+	height: 28px;
+	background-image: url(../img/lamp.png);
+	position: absolute;
+	top: 76px;
+	left: 38px;
+}
+.phoneNumber {
+	width: 270px;
+	font-family: robotocondensed;
+	font-size: 30px;
+	color: #ffffff;
+	position: absolute;
+	top:100px;
+	left: 1282px;
+}
+.phoneNumber .number2 {
+	margin-top: 9px;
+}
+.callback {
+	width: 241px;
+	height: 50px;
+	background-image: url(../img/button.png);
+	position: absolute;
+	top: 200px;
+	left: 1292px;
+	font-family: robotocondensed;
+	font-size: 24px;
+	font-weight: bold;
+}
+.callback a{
+	line-height: 50px;
+	margin-left: 27px;
+}
+.booking{
+	width: 445px;
+	height: 70px;
+	background-color: #58c7f2;
+	border-bottom: 7px solid #0e91c4;
+	position: absolute;
+	top:453px;
+	left: 745px;
+}
+.booking a{
+	line-height: 70px;
+	margin-left: 105px;
+	font-family: robotocondensed;
+	font-size: 31px;
+	font-weight: bold;
+	letter-spacing: 0.4px;
+
+}
+.menuBlock {
+	width: 2000px;
+	height: 57px;
+	background-image: url(../img/bg_bottom.jpg);
+}
+.menuBlock div {
+	width: 1200px;
+	margin: 0 auto;
+}
+.mainMenu {
+	float: left;
+	font-size: 0;
+	line-height: 0;
+	letter-spacing: -1px;
+}
+.mainMenu li{
+	float: left;
+	height: 57px;
+	list-style: none;
+	padding-left: 2px;
+	padding-right: 3px;
+}
+.mainMenu a:hover{
+	background-color: #a5a5a5;
+}
+.mainMenu a{
+	line-height: 57px;
+	display: block;
+	font-family: robotocondensed;
+	font-size: 13px;
+	font-weight: bold;
+	letter-spacing: -0.4px;
+	color: #000000;
+	text-decoration: none;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.phoneMiddleNav {
+	float: left;
+	width: 177px;
+	font-family: robotocondensed;
+	font-size: 18px;
+	font-weight: bold;
+	color: #000000;
+}
+.phoneMiddleNav span{
+	display: block;
+	margin-top: 5px;
+	margin-left: 10px;
+	letter-spacing: -0.4px;
+}
+.callback2{
+	float: left;
+	width: 170px;
+	height: 57px;
+	background-color: #ffffff;
+
+}
+.callback2 a{
+	text-transform: uppercase;
+	font-family: robotocondensed;
+	font-size: 14px;
+	letter-spacing: -0.5px;
+	line-height: 46px;
+	font-weight: bold;
+	color: #58c7f2;
+	text-decoration:none;
+	border-bottom: 2px dashed #58c7f2;
+	margin-left: 20px;
+}
+main {
+	width: 1200px;
+	margin: 0 auto;
+}
+sidebar {
+	float: left;
+}
+sidebar > span {
+	display: block;
+	text-transform: uppercase;
+	font-size: 36px;
+	font-weight: bold;
+	letter-spacing: -0.5px;
+	margin-top: 18px;
+	margin-bottom: 30px; 
+	color: #000000;
+}
+.leftMenu li {
+	width: 243px;
+	height: 72px;
+	margin-bottom: 10px;
+	border: 1px dashed #454545;
+	position: relative;
+}
+
+.male_female:before {
+	display: block;
+	content: '';
+	width: 42px;
+	height: 32px;
+	background-image: url(../img/male_female.png);
+	position: absolute;
+	top:23px;
+	left: 10px;
+}
+.male:before {
+	display: block;
+	content: '';
+	width: 23px;
+	height: 22px;
+	background-image: url(../img/male.png);
+	position: absolute;
+	top:26px;
+	left: 19px;
+}
+.female:before {
+	display: block;
+	content: '';
+	width: 16px;
+	height: 27px;
+	background-image: url(../img/female.png);
+	position: absolute;
+	top:25px;
+	left: 19px;
+}
+.leftMenu a {
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #626262;
+	font-size: 17px;
+	font-weight: bold;
+	padding-top: 17px;
+	padding-left: 90px;
+}
+
+.leftMenu span {
+	display: block;
+	text-transform: lowercase;
+	padding-top: 5px;
+	padding-left: -6px;
+}
+.leftMenu li:hover {
+	width: 243px;
+	height: 74px;
+	background-color: #58c7f2;
+	background-image: url(../img/corner.jpg);
+	background-position: right center;
+	background-repeat: no-repeat;
+	border: none;
+}
+.mainCenter {
+	float: left;
+}
+.select {
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 28px;
+	margin-left: 30px;
+}
+select {
+	width: 170px;
+	height: 30px;
+	margin-left: 10px;
+}
+.roomTitle {
+	width: 450px;
+	height: 80px;
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 42px;
+	margin-left: 41px;
+	color: #58c7f2;
+}
+.roomDescription {
+	width: 450px;
+	font-size: 16px;
+	text-align: justify;
+	margin-left: 41px;
+	margin-top: 2px;
+	line-height: 18px;
+}
+.roomPrice {
+	font-size: 18px;
+	width: 450px;
+	margin-left: 44px;
+	margin-top: 52px;
+	letter-spacing: -0.5px;
+}
+.roomPrice .bold {
+	font-weight: bold;
+	margin-right: 37px;
+}
+.submit {
+    width: 443px;
+    height: 82px;
+    background-color: #58c7f2;
+    color: #ffffff;
+    border-bottom: 7px solid #0e91c4;
+    line-height: 70px;
+    font-size: 29px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-top: 34px;
+    margin-left: 47px;
+}
+.images {
+	float: left;
+	margin-left: 41px;
+	margin-top: 83px;
+	width: 400px;
+}
+.smallPic {
+	margin-top: 12px;
+	margin-right: 13px;
+}
+.facilities {
+	float: left;
+	width: 897px;
+	font-size: 13px;
+	line-height: 16px;
+	margin-top: 37px;
+	margin-left: 43px;
+}
+.facilities div {
+	float: left;
+	position: relative;
+	margin-top: 54px;
+	margin-right: 65px;
+}
+.facilities span{
+	display: block;
+}
+.bell:before {
+	content: '';
+	display: block;
+	width: 23px;
+	height: 21px;
+	background-image: url(../img/bell.png);
+	position: absolute;
+	top:-41px;
+	left: 28px;
+}
+.shower:before {
+	content: '';
+	display: block;
+	width: 31px;
+	height: 38px;
+	background-image: url(../img/shower.png);
+	position: absolute;
+	top:-50px;
+	left: 12px;
+}
+.wifi:before {
+	content: '';
+	display: block;
+	width: 36px;
+	height: 27px;
+	background-image: url(../img/wifi.png);
+	position: absolute;
+	top:-43px;
+	left: -7px;
+}
+.lamps:before {
+	content: '';
+	display: block;
+	width: 26px;
+	height: 34px;
+	background-image: url(../img/lamp2.png);
+	position: absolute;
+	top:-47px;
+	left: 42px;
+}
+.key:before {
+	content: '';
+	display: block;
+	width: 26px;
+	height: 27px;
+	background-image: url(../img/key.png);
+	position: absolute;
+	top:-47px;
+	left: 10px;
+}
+.bed {
+	letter-spacing: -1px;
+}
+.bed:before {
+	content: '';
+	display: block;
+	width: 32px;
+	height: 28px;
+	background-image: url(../img/bed.png);
+	position: absolute;
+	top:-47px;
+	left: 63px;
+}
+.feedback {
+	width: 1200px;
+	margin: 63px auto;
+}
+.feedbackBlock {
+	font-size: 36px;
+	font-weight: bold;
+}
+.carousel-block img {
+	float: left;
+	width: 111px;
+	height: 111px;
+	margin-left: 52px;
+}
+.feedbackTitle {
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 42px;
+	margin-left: 23px;
+	letter-spacing: -1px;
+}
+.feedbackText {
+	width: 460px;
+	float: left;
+	font-size: 14px;
+	line-height: 23px;
+	margin-top: 20px;
+	margin-left: 43px;
+}
+.writeUs {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 85px;
+}
+.writeUs a {
+	text-decoration: none;
+	border-bottom: 2px dashed #4abae4;
+	color: #4abae4;
+}
+footer {
+	width: 2000px;
+	height: 614px;
+	background-image: url(../img/footer.jpg);
+}
+.footer_center {
+	width: 1200px;
+	margin:0 auto;
+}
+.contacts {
+	width: 470px;
+	height: 614px;
+	background-color: #ffffff;
+}
+.modal {
+	width: 150px;
+	height: 200px;
+    background-color: white;
+    margin-top: 0px;
+  
+    -webkit-box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.75);
+}
