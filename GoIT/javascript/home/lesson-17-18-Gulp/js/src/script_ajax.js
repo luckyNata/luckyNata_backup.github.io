@@ -8,14 +8,13 @@ var numberLinks=10; // количество линков
  		
  		$('.center').removeClass('center').addClass('left');
  		
- 		if (request!=""){
  			$.ajax({ 		
    			url: url,
   			dataType: 'jsonp',
 			method: 'GET',
 			//success: ,
   			})
- 		}
+ 		
 	};
 
 	function GoogleCallback(jqueryObj, data){
