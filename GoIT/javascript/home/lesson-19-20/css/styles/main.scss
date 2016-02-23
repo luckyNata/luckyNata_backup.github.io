@@ -60,8 +60,12 @@ $color:  #f1670a;
     display: block;
 }
 .wrapper{
-    width:1170px;
+    width:1920px;
     margin: 20px auto;
+}
+header {
+    width: 1170px;
+    margin: 0 auto;
 }
 .firstLine__img{
     width:36px;
@@ -209,6 +213,10 @@ $color:  #f1670a;
 :-moz-placeholder { color:#535659; }
 :-ms-input-placeholder { color:#535659; }
 
+.section {
+    width: 1170px;
+    margin: 0 auto;
+}
 .carousel-wrapper {
     position: relative;
     z-index: 1;
@@ -230,7 +238,7 @@ $color:  #f1670a;
 }
 .article {
     width: 250px;
-    margin: 10px 15px 0 125px;
+    margin: 10px 15px 0 120px;
     position: relative;
     float: left;
 }
@@ -293,4 +301,21 @@ $color:  #f1670a;
     top:2px;
     left: 70px;
 }
-
+.services {
+    background-color: #2a2d32;
+    margin: 60px auto;
+    width: 1920px;
+    height: 500px;
+}
+.services__wrapper {
+    width: 1170px;
+    margin: 0 auto;
+}
+.services__title {
+    font-family: ubuntumedium;
+    font-size: 24px;
+    color: #ffffff;
+    display: block;
+    padding-top: 50px;
+    padding-left: 10px;
+}
