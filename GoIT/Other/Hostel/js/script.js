@@ -44,18 +44,51 @@ $(function(){
  	}
  	$('.bigImagePlace').on('click', scrollBigPicture);
 
+ 	// function isNumeric(n){
+ 	// 	return !isNaN(parseInt.Float(n))&&isFinite(n);
+ 	// }
+
  	function scrollBigPicture(e){
  		var pageCoords = "( " + e.pageX + ", " + e.pageY + " )";
  		console.log(pageCoords);
  		if (e.pageX > 1380){
  			var $url = $(this).attr('src');
- 			console.log($url);
- 			// var $arrUrl = $url.split('.');
- 			// var $newUrl = $arrUrl[0] + '_big'+'.jpg';
+ 			var $index = $url.substr(5,1);//получили номер картинки исходя из url img/1.jpg
+ 			var $partUrl = $url.split($index); //поделии url по полученому номеру
+ 			console.log($partUrl);
+ 			    $index = ++$index;
+ 			console.log($index);
+ 			if ($index === 1){
+ 				$index = 5;
+ 			}
+ 			if ($index === 6){ 		
+ 				$index = 2;
+
+ 			}
+ 			var $newUrl = $partUrl[0]+$index+$partUrl[1];
+
+ 			console.log($index);
+ 			$('.bigImagePlace').attr('src', $newUrl);
  		//console.log($newUrl);
  		//$('.bigImagePlace').attr('src', $newUrl);
  		} else {
- 			console.log('hello');
+ 			var $url = $(this).attr('src');
+ 			var $index = $url.substr(5,1);
+ 			var $partUrl = $url.split($index); 
+ 			console.log($partUrl);
+ 				$index = --$index;
+ 			if ($index === 1){
+ 				$index = 5;
+ 			}
+ 			if ($index === 6){
+ 				$index = 2;
+
+ 			}
+ 			console.log($index);
+ 			var $newUrl = $partUrl[0]+$index+$partUrl[1];
+
+ 			console.log($index);
+ 			$('.bigImagePlace').attr('src', $newUrl);
  		}
 
  	}
