@@ -31,4 +31,32 @@ $(function(){
       		div.remove(); // скрываем модальное окно
     	}
  		});
+
+ 	$('.smallPic').on('click', showBigPicture);
+
+ 	function showBigPicture(){
+ 		var $url = $(this).attr('src');
+ 		var $arrUrl = $url.split('.');
+ 		var $newUrl = $arrUrl[0] + '_big'+'.jpg';
+ 		//console.log($newUrl);
+ 		$('.bigImagePlace').attr('src', $newUrl);
+ 		 
+ 	}
+ 	$('.bigImagePlace').on('click', scrollBigPicture);
+
+ 	function scrollBigPicture(e){
+ 		var pageCoords = "( " + e.pageX + ", " + e.pageY + " )";
+ 		console.log(pageCoords);
+ 		if (e.pageX > 1380){
+ 			var $url = $(this).attr('src');
+ 			console.log($url);
+ 			// var $arrUrl = $url.split('.');
+ 			// var $newUrl = $arrUrl[0] + '_big'+'.jpg';
+ 		//console.log($newUrl);
+ 		//$('.bigImagePlace').attr('src', $newUrl);
+ 		} else {
+ 			console.log('hello');
+ 		}
+
+ 	}
 });

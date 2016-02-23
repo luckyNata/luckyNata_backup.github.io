@@ -540,7 +540,7 @@ select {
 	font-size: 36px;
 	font-weight: bold;
 }
-.carousel-block img {
+.feedbackImg {
 	float: left;
 	width: 111px;
 	height: 111px;

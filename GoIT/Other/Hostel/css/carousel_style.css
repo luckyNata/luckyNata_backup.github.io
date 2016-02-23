@@ -20,7 +20,7 @@
 }
 
 /*********** BUTTONS ***********/
-.carousel-button-left a, .carousel-button-right a{
+.feedback .carousel-button-left a, .feedback .carousel-button-right a{
    width: 25px; 
    height: 36px; 
    position: relative;
