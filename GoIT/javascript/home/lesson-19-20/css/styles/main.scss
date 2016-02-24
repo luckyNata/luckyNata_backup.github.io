@@ -301,9 +301,15 @@ header {
     top:2px;
     left: 70px;
 }
+.article__title--moreText:hover {
+    color: #50a3f0;
+}
+.article__title--moreText:hover:after {
+    background-image: url(../img/pointer_hover.jpg);
+}
 .services {
     background-color: #2a2d32;
-    margin: 60px auto;
+    margin: 77px auto;
     width: 1920px;
     height: 500px;
 }
@@ -317,5 +323,29 @@ header {
     color: #ffffff;
     display: block;
     padding-top: 50px;
-    padding-left: 10px;
+    padding-left: 383px;
+}
+.services__images {
+    margin-top: 50px;
+    margin-left: 383px;
+}
+.imgBlock {
+    float: left;
+    margin-right: 30px;
+}
+.imgBlock__img {
+    width: 260px;
+    height: 266px;
+    margin-right: 10px;
+}
+.imgBlock__title {
+    display: block;
+    font-family: ubuntumedium;
+    font-size: 16px;
+    color: #ffffff;
+    padding-top: 25px;
+    padding-left: 57px;
+}
+.imgBlock:hover {
+    
 }
