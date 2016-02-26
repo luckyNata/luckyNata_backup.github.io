@@ -1,4 +1,32 @@
 $(function(){
+	$('.accordion').on('click', showInfo);
+	$('.imgBlock').on('click', showBig);
+	$('.exit').on('click', closeBig);
+
+	function showInfo(){
+		$(this).toggleClass('accordion--click');
+      	$(this).children('.accordion__sign').toggleClass('accordion__sign--click');
+      	$(this).next().slideToggle(500);
+      	$('.accordion').not(this).next().slideUp(500);
+      	$('.accordion').not(this).removeClass('accordion--click');
+      	$('.accordion').not(this).children('.accordion__sign').removeClass('accordion__sign--click');
+	}
+
+	function showBig(){
+		var src = $(this).children('img').attr('src');
+		var arr = src.split('/');
+		var newSrc = 'img/ser_'+ arr[1];
+		var img = $('.services__modal img');
+		img.attr('src', newSrc);
+		$('.services__modal').show();
+	}
+
+	function closeBig(){
+		$('.services__modal').hide();
+	}
+
+
+//------------------------ Lodash -----------------------------------------------------------
 	var skills = [];
 		skills = _.map(data, 'skills');//выбрали скиллы
 		skills = _.flatten(skills);//склеили массив массивов
