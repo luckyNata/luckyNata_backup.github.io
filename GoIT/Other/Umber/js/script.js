@@ -10,4 +10,12 @@ $(function(){
 		modal.addClass('modal');
 		footer.append(modal);
 	}
+	
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+    	var modal = $(".modal"); 
+    
+    	if (!modal.is(e.target)&& modal.has(e.target).length === 0) { 
+      		modal.remove(); // скрываем модальное окно
+    	}
+ 	});
 });
