@@ -1,0 +1,354 @@
+@font-face {
+    font-family: 'museo_sans';
+    src: url('../font/museosanscyrl-webfont.eot');
+    src: url('../font/useosanscyrl-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/museosanscyrl-webfont.woff2') format('woff2'),
+         url('../font/museosanscyrl-webfont.woff') format('woff'),
+         url('../font/museosanscyrl-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'playfair';
+    src: url('../font/playfair_display_regular.otf');
+}
+playfair_display_regular.otf
+.wrapper {
+	width: 1920px;
+	padding: 95px;
+}
+.header {
+	background-color: #f6f6f6;
+	padding-bottom: 100px;
+}
+.header__image {
+	float: left;
+	padding: 240px 0 0 256px;
+}
+.header__textBlock {
+	float: left;
+	width: 990px;
+}
+.header__title {
+	font: 22px museo_sans;
+	letter-spacing: 3px;
+	margin: 160px 2px 3px 380px;
+}
+.header__title--name {
+	font-size: 45px;
+	margin-top: 20px;
+	margin-left: 302px;
+	letter-spacing: 9px;
+}
+.header__text {
+	font: 15px museo_sans;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+}
+.header__text--margin1 {
+	margin-top: 147px;
+	margin-left: 225px;
+}
+.header__text--text {
+	font-weight: normal;
+	margin-top: 17px;
+	margin-left: 225px;
+	line-height: 24px;
+}
+.header__text--margin2 {
+	margin-top: 72px;
+	margin-left: 225px;
+}
+.clearfix:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.middle__image {
+	float: left;
+	padding: 70px 0 0 150px;
+}
+.middle__text {
+	float: left;
+	width: 1060px;
+}
+.middleImage {
+	display: block;
+	padding-left: 49px;
+	padding-top: 123px;
+	float: left;
+}
+.middle__text p {
+	float: left;
+}
+.header__text--margin3 {
+	margin-top: 147px;
+	margin-left: 67px;
+  	letter-spacing: -0.5px;
+}
+ .header__text--margin4 {
+	margin-top: 16px;
+	margin-left: 67px;
+	font-weight: normal;
+ }
+ .header__text--margin5 {
+	margin-top: 34px;
+	margin-left: 67px;
+	letter-spacing: -1px;
+ }
+  .header__text--margin6 {
+  	width: 660px;
+	margin-top: 15px;
+	margin-left: 67px;
+	line-height: 22px;
+	font-weight: normal;
+ }
+.header__text--dnk {
+   	width: 525px;
+	margin-top: 112px;
+	margin-left: 116px;
+	font-size: 20px;
+	line-height: 30px;
+	letter-spacing: -1px;
+	text-indent: 16px;
+	margin-bottom: 130px;
+ }
+.header__text--margin7 {
+	margin-top: 3px;
+	margin-left: 114px;
+	letter-spacing: -0.5px;
+ }
+.header__text--margin8, .header__text--margin9 {
+	width: 760px;
+	margin-top: 12px;
+	margin-left: 114px;
+	line-height: 25px;
+	font-weight: normal;
+	letter-spacing: 1px;
+ }
+ .header__text--margin9 {
+	margin-top: 3px;
+ }
+ .lastInfo {
+ 	margin-top: 44px;
+ }
+ .lastInfo__image {
+ 	float: left;
+ 	padding-top: 30px;
+ 	padding-left: 233px;
+ }
+.lastIndo__text {
+ 	float: left;
+ 	width: 856px;
+ 	padding-top: 200px;
+}
+.header__text--margin10 {
+	margin-top: 22px;
+	margin-left: 82px;
+	letter-spacing: -0.5px;
+}
+.header__text--margin11 {
+	margin-top: 18px;
+	margin-left: 82px;
+	line-height: 22px;
+	letter-spacing: 1px;
+	font-weight: normal;
+}
+.header__text--margin12 {
+	margin-top: 33px;
+	margin-left: 82px;
+	letter-spacing: -0.5px;
+}
+.header__text--margin13 {
+	margin-top: 15px;
+	margin-left: 82px;
+	line-height: 24px;
+	letter-spacing: 1px;
+	font-weight: normal;
+}
+.share {
+	margin-top: 68px;
+	margin-left: 82px;
+	cursor: pointer;
+}
+.share i{
+	margin-right: 12px;
+	color: #000;
+}
+.collection {
+	margin-top: 54px;
+}
+.collection__title {
+	font-family:playfair;
+	font-size: 33px;
+	font-style: italic;
+	margin-left: 198px;
+}
+.autor {
+	font-family: museo_sans;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 56px;
+	letter-spacing: 2px;
+}
+.option {
+	font-family: museo_sans;
+	font-size: 13px;
+	text-align: center;
+	padding-top: 5px;
+}
+.footer {
+	width: 1920px;
+	border-top: 1px solid #e5e5e5;
+	margin-top: 102px;
+	position: relative;
+}
+.footer__block {
+	width: 300px;
+	height: 232px;
+	margin-top: 118px;
+	margin-left: 270px;
+	padding-top: 45px; 
+	padding-right: 80px;
+	border-right: 1px solid #e5e5e5;
+	text-align: center;
+	float: left;
+}
+.footer__block--second {
+	width: 300px;
+	height: 232px;
+	margin-top: 118px;
+	margin-left: 27px;
+	padding-top: 45px; 
+	padding-right: 254px;
+	position: relative;
+}
+.footer__block--second:after {
+	content: '';
+	display: block;
+	width: 201px;
+	height: 302px;
+	background-image: url(../img/gucci.jpg);
+	position: absolute;
+	top: -54px;
+	left: 289px;
+}
+.footer__question{
+	font-family: museo_sans;
+	font-weight: bold;
+	font-size: 12px;
+	text-align: center;
+}
+.footer__help,.footer__number {
+	font-family: museo_sans;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 20px;
+	margin-top: 15px;
+	text-align: center;
+}
+.footer__number {
+	margin-top: 3px;
+}
+.footer__Gucci {
+	width: 175px;
+	font-weight: playfair;
+	font-size: 34px;
+	line-height: 40px;
+	font-style: italic;
+	text-align: center;
+	margin-top: -40px;
+	margin-left: 50px;
+}
+.footer__surprise {
+	width: 240px;
+	font-family: museo_sans;
+	font-size: 14px;
+	line-height: 20px;
+	margin-top: 17px;
+	margin-left: 16px;
+	text-align: center;
+}
+.footer__block--last {
+	width: 300px;
+	font-family: museo_sans;
+	font-size: 13px;
+	line-height: 20px;
+	border-right: none;
+	margin-left: 80px;
+	margin-top: 53px;
+}
+.footer__send {
+	margin-top: 17px;
+	margin-left: -32px;
+	margin-bottom: 9px;
+}
+.footer__posh {
+	margin-left: 18px;
+	margin-bottom: 55px;
+	padding-right: 39px;
+	padding-left: 0;
+}
+.modal {	
+	width: 300px;
+	height: 300px;
+	background-color: #ffffff;
+    padding: 40px 30px;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+
+    -webkit-box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.75);
+}
+.email__your {
+	float: left;
+	margin-top: 21px;
+	margin-left: 54px;
+	margin-right: 2px;
+	border: none;
+	width: 110px;
+	height: 25px;
+}
+.email__button {
+	float: left;
+	width: 95px;
+	height: 63px;
+	font-weight: bold;
+	background-color: #e8dadc;
+	margin-left: 31px;
+	line-height: 63px;
+	text-align: center;
+	cursor: pointer;
+}
+.footer__copyMenu {
+	margin-top: 60px;
+	margin-bottom: 35px;
+}
+.footer__copyright {
+	float: left;
+	margin-left: 125px;
+	font-family: museo_sans;
+	font-size: 14px;
+	color: #606060;
+}
+.footer__menu{
+	float: right;
+	margin-right: 130px;
+}
+.footer__list {
+	list-style: none;
+	float: left;
+	margin-right: 10px;
+	margin-left: 53px;
+}
+.footer__link {
+	text-decoration: none;
+	cursor: pointer;
+	font-family: museo_sans;
+	font-size: 14px;
+	color: #606060;
+}
