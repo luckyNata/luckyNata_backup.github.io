@@ -1,9 +1,12 @@
 $(function(){
-	$('.email__button').on('click', showModal);
+	$('form').on('submit', showModal);
 
-	function showModal(){
-		var email = $('.email__your').val();
-		var jsonData = '{ \"email\" : \"'+email+'\" }';
+	function showModal(e){
+		e.preventDefault();
+
+		var str = $(this).serialize();
+		var jsonData = JSON.stringify(str);
+	
 		var modal = $('<div></div>');
 		modal.text(jsonData);
 		var footer = $('.footer');
