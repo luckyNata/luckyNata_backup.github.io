@@ -1,0 +1,32 @@
+.carousel  {
+   max-width: 320px; /* ширина всего блока */
+   margin: 10px auto;
+   width:100%;
+}
+.carousel-wrapper {
+   margin: 5px; /* отступы для стрелок */
+   overflow: hidden; /* скрываем содержимое, выходящее за рамки основной области */
+   position:relative;
+}
+.carousel-items {
+   width: 10000px; /* устанавливаем большую ширину для набора элементов */
+   position: relative; /* позиционируем блок относительно основной области карусели */
+}
+.carousel-block {
+   float: left; /* выстраиваем все элементы карусели в ряд */
+   width: 300px; /* задаём ширину каждого элемента */
+   padding: 0px 10px 10px 10px; /* делаем оступы, чтобы элементы не сливались */
+   position: relative;
+}
+
+/*********** BUTTONS ***********/
+.feedback .carousel-button-left a, .feedback .carousel-button-right a{
+   width: 25px; 
+   height: 36px; 
+   position: relative;
+   top: 157px; 
+   cursor: pointer; 
+   text-decoration:none;
+}
+
+
