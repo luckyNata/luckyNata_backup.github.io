@@ -22,7 +22,7 @@
 		</script>
 		<script type="text/template" id="list-template">
 			<% for (var i=0; i<data.length; i++) {%>
-				<li><%= data[i] %><span class="item-delete"> x</span></li>
+				<li><%= data[i] %><span data-value="<%= data[i] %>" class="item-delete"> <img src="img/del1.png" class="deleteImage"></span><span data-value="<%= data[i] %>" class="item-edit"> <img src="img/ed2.png" class="editImage"></span></li>
 			<% }; %>
 		</script>
 </body>

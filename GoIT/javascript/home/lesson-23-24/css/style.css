@@ -8,3 +8,11 @@ input {
 .wrapper {
 	margin: 20px;
 }
+.item-list li {
+	list-style: none;
+}
+.deleteImage, .editImage {
+	width: 20px;
+	height: 20px;
+}
+ 
