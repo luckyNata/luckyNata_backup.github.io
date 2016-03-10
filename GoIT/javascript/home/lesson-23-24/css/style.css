@@ -15,4 +15,7 @@ input {
 	width: 20px;
 	height: 20px;
 }
- 
+.activeInput{
+	border: 1px solid red;
+	background: green;
+}
