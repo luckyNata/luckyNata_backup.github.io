@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf');
+}
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
 .wrapper {
 	max-width: 960px;
 	margin: 0 auto;
@@ -13,7 +22,32 @@ header{
 	width:320px;
 	margin: 0 auto;
 }
-
+.register-style {
+	float: left;
+	font-family: Montserrat-Bold;
+	font-size: 14px;
+	color: #ffffff;
+	text-decoration: none;
+	margin-left: 82px;
+	margin-top: 30px;
+}
+.register-style--sign {
+	float:right;
+	margin: 20px 85px 0 0;
+	border: 2px solid #ffffff;
+	border-radius: 20px;
+	width: 85px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.header_content__title {
+	font: 20px Montserrat-Bold;
+	color: #ffffff;
+	text-align: center;
+	margin-top: 115px;
+	letter-spacing: 0.5px;
+}
 @media (min-width: 320px) and (max-width: 479px){
 
 }
