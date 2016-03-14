@@ -11,7 +11,7 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('sass', function () {
-  gulp.src('css/styles/styles.scss')
+  gulp.src('css/styles/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('css/'));
 });

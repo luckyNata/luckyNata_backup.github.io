@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url("../fonts/montserrat-bold-webfont.eot");
+  src: url("../fonts/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat-bold-webfont.woff") format("woff"), url("../fonts/montserrat-bold-webfont.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'robotolight';
+  src: url("../fonts/roboto-light-webfont.eot");
+  src: url("../fonts/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-light-webfont.woff2") format("woff2"), url("../fonts/roboto-light-webfont.woff") format("woff"), url("../fonts/roboto-light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserrat';
+  src: url("../fonts/montserrat-regular-webfont.eot");
+  src: url("../fonts/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat-regular-webfont.woff") format("woff"), url("../fonts/montserrat-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block; }
+
 .wrapper {
   max-width: 960px;
   margin: 0 auto;
@@ -11,4 +35,121 @@ header {
 
 .header_content {
   width: 320px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 122px; }
+
+.register_style {
+  float: left;
+  margin: 28px 0 0 83px;
+  font: 14px Montserrat-Bold;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer; }
+
+.register_style--sign {
+  float: right;
+  margin: 21px 86px 0 0;
+  width: 85px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 20px; }
+
+.header_content__title {
+  font: 20px Montserrat-Bold;
+  margin-top: 115px;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 0.5px; }
+
+.header_content__slogan {
+  display: block;
+  text-transform: uppercase;
+  font: 30px Montserrat-Bold;
+  margin-top: 27px;
+  text-align: center;
+  color: #ffffff; }
+
+.header_content__partner {
+  display: block;
+  font: 18px/20px robotolight;
+  margin-top: 9px;
+  text-align: center;
+  color: #ffffff; }
+
+.block {
+  display: block; }
+
+.header_content__btn {
+  width: 280px;
+  height: 40px;
+  margin: 16px auto;
+  background-color: #ff4e50;
+  color: #ffffff;
+  text-align: center;
+  font: 14px/40px Montserrat-Bold;
+  border-radius: 20px; }
+
+.how-work {
+  background-color: #fff;
+  padding: 35px 10px 10px 10px; }
+
+.header_content__title--steps, .header_content__title--partners {
+  font-size: 22px;
+  margin-top: 0;
+  color: #000; }
+
+.how-work__step {
+  width: 300px;
+  height: 240px;
+  background: url(../img/step1.png) no-repeat;
+  margin: 10px auto;
+  position: relative; }
+
+.how-work__step--step2 {
+  background: url(../img/step2.png) no-repeat; }
+
+.how-work__step--step3 {
+  background: url(../img/step3.png) no-repeat; }
+
+.step-btn {
+  display: block;
+  width: 70px;
+  height: 20px;
+  font: 10px/20px montserrat;
+  background-color: #ff4e50;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+  text-decoration: none;
+  cursor: pointer;
+  position: absolute;
+  top: 70px;
+  left: 20px; }
+
+.step-btn--step2 {
+  top: 100px; }
+
+.step-title {
+  display: block;
+  font: 24px/24px Montserrat-Bold;
+  color: #fff;
+  position: absolute;
+  top: 110px;
+  left: 20px; }
+
+.step-title--step2 {
+  top: 140px; }
+
+.step-text {
+  display: block;
+  font: 14px/15px robotolight;
+  color: #fff;
+  position: absolute;
+  top: 177px;
+  left: 20px; }
+
+.partners {
+  margin-top: 35px; }
