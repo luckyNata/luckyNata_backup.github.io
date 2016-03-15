@@ -56,7 +56,7 @@ header {
   border: 2px solid #fff;
   border-radius: 20px; }
 
-.header_content__title {
+.title {
   font: 20px Montserrat-Bold;
   margin-top: 115px;
   text-align: center;
@@ -95,7 +95,7 @@ header {
   background-color: #fff;
   padding: 35px 10px 10px 10px; }
 
-.header_content__title--steps, .header_content__title--partners {
+.title--steps, .title--partners {
   font-size: 22px;
   margin-top: 0;
   color: #000; }
@@ -152,4 +152,52 @@ header {
   left: 20px; }
 
 .partners {
-  margin-top: 35px; }
+  margin-top: 15px; }
+
+.partners-list {
+  width: 320px;
+  margin: 13px auto; }
+
+.item-photo {
+  display: block;
+  width: 125px;
+  margin: 0 auto 16px;
+  position: relative; }
+
+.item-icon {
+  width: 41px;
+  position: absolute;
+  top: 87px;
+  left: 85px; }
+
+.item-name {
+  font: 14px Montserrat-Bold;
+  text-align: center;
+  color: #333; }
+
+.item-hobby {
+  width: 230px;
+  margin: 11px auto;
+  font: 14px/18px robotolight;
+  text-align: center;
+  color: #666; }
+
+.partners-list__item {
+  margin-bottom: 25px; }
+
+.partners__btn {
+  width: 275px;
+  margin: -2px auto;
+  height: 36px;
+  border: 2px solid #ff4e50;
+  border-radius: 18px;
+  color: #ff4e50;
+  font: 14px/40px Montserrat-Bold;
+  text-align: center; }
+
+.images {
+  width: 320px;
+  margin: -80px auto; }
+
+.title--images {
+  color: #000; }
