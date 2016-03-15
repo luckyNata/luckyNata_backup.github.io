@@ -212,6 +212,15 @@ header{
 .title--images {
 	color: #000;
 }
+
+
+.grid--item {
+    width: 295px;
+    float: left;
+    margin-bottom: 10px;
+    position: relative; 
+}
+
 @media (min-width: 320px) and (max-width: 479px){
 
 }

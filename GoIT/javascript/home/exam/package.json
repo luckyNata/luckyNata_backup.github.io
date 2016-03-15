@@ -13,5 +13,8 @@
     "gulp-concat": "^2.6.0",
     "gulp-sass": "^2.2.0",
     "gulp-watch": "^4.3.5"
+  },
+  "dependencies": {
+    "isotope-layout": "^2.2.2"
   }
 }

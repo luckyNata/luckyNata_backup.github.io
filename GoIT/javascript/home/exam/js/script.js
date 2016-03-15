@@ -22,9 +22,28 @@ var partners = {
 }
 $(function(){
     var htmlka = $('#partners-list').html();
-    console.log(htmlka);
     var content = tmpl(htmlka, partners);
-    console.log(partners[1].name);
-    $('.partners').append(content);    
+    $('.partners').append(content);   
+
+// $('.grid').isotope({
+//   // options...
+//   itemSelector: '.grid-item',
+//   masonry: {
+//     columnWidth: 50px;
+//     margin-right: 5px;
+//   }
+// });
+ 
+    $('.grid').isotope({
+        itemSelector: '.grid-item',
+        layoutMode: 'fitRows'
+    }); 
+// $('.grid').isotope({
+//   percentPosition: true,
+//   itemSelector: '.grid-item',
+//   masonry: {
+//     columnWidth: '.grid-sizer'
+//   }
+// })
 });
 
