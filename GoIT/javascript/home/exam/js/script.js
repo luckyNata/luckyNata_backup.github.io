@@ -23,28 +23,26 @@ var partners = {
 
   $.ajax({
     type: 'GET',
-    url: 'http://api.pixplorer.co.uk/image?word=animals&amount=7&size=m',
+    url: 'http://api.pixplorer.co.uk/image?word=animals&amount=7&size=s',
     dataType: 'json',
-    success: function(data){
-        // $('#grid img').attr('src', data.images.)
-        for (var key in data){
-        console.log( "Прибыли данные: ", data[key].imageurl);    
-        }
-        
+    success: function (data){
+        var imgHtml = $('#images-list').html();
+        console.log(data);
+        var contentImg = tmpl(imgHtml, {data:data});
+        $('.images').append(contentImg);
     }
-    });
+  });
 
 
 $(function(){
     var htmlka = $('#partners-list').html();
     var content = tmpl(htmlka, partners);
     $('.partners').append(content);   
-
-          
-           $('.grid').isotope({
-              itemSelector: '.grid-item',
-              columnWidth: '.grid-item',
-              gutter: 10
-            });
+ 
+    $('.grid').isotope({//инициализация изотопа
+       itemSelector: '.grid-item',
+       columnWidth: '.grid-item',
+       gutter: 10
+    });
 });
 
