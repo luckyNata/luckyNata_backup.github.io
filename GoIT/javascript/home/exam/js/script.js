@@ -21,7 +21,8 @@ var partners = {
         },
 }
 
-
+   try {
+    alert('1');
   $.ajax({
     type: 'GET',
     url: 'http://api.pixplorer.co.uk/image?word=sport&amount=7&size=m',
@@ -30,11 +31,25 @@ var partners = {
         for(var i=0; i<data.images.length; i++){
         $('.grid-item'+i).css({"background-image":"url("+data.images[i].imageurl+")","background-size":"cover"});
         }
-    }//success
+    },//success
+    error: function (){
+        for(var i=0; i<7; i++){
+        $('.grid-item'+i).css({"background-image":"url(img/sport"+i+".jpg)","background-size":"cover"});
+        }
+    }
   });//ajax
+
+} catch (err) {
+        alert('2');
+console.log(err);
+  for(var i=0; i<7; i++){
+        $('.grid-item').css({"background-image":"url(img/sport1.jpg)","background-size":"cover"});
+        }
+}
 
 $(function(){
     var htmlka = $('#partners-list').html();
+    console.log(htmlka);
     var content = tmpl(htmlka, partners);
     $('.partners').append(content);   
  

@@ -199,18 +199,23 @@ header {
 
 .images {
   width: 320px;
-  margin: 0px auto; }
+  margin: 0px auto 25px; }
 
 .title--images {
-  color: #000; }
+  color: #000;
+  font-size: 22px; }
+
+.grid {
+  margin-top: 5px; }
 
 .grid-item {
   width: 300px;
   height: 120px;
   float: left;
-  margin: 10px 5px 0 2px;
   border-radius: 5px;
-  background-size: cover; }
+  margin: 5px 0 4px 5px;
+  background-size: cover;
+  border: 1px solid black; }
 
 .grid-item--width2 {
   width: 40%; }
@@ -218,4 +223,5 @@ header {
 .images__category {
   font: 22px/120px Montserrat-Bold;
   text-align: center;
+  padding-left: 20%;
   color: #fff; }
