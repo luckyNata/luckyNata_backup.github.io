@@ -21,18 +21,17 @@ var partners = {
         },
 }
 
+
   $.ajax({
     type: 'GET',
-    url: 'http://api.pixplorer.co.uk/image?word=animals&amount=7&size=s',
+    url: 'http://api.pixplorer.co.uk/image?word=sport&amount=7&size=m',
     dataType: 'json',
     success: function (data){
-        var imgHtml = $('#images-list').html();
-        console.log(data);
-        var contentImg = tmpl(imgHtml, {data:data});
-        $('.images').append(contentImg);
-    }
-  });
-
+        for(var i=0; i<data.images.length; i++){
+        $('.grid-item'+i).css({"background-image":"url("+data.images[i].imageurl+")","background-size":"cover"});
+        }
+    }//success
+  });//ajax
 
 $(function(){
     var htmlka = $('#partners-list').html();
@@ -44,5 +43,6 @@ $(function(){
        columnWidth: '.grid-item',
        gutter: 10
     });
-});
+  
 
+ });//f-n ready
