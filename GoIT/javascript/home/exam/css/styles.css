@@ -82,7 +82,7 @@ header {
 .block {
   display: block; }
 
-.header_content__btn {
+.button {
   width: 280px;
   height: 40px;
   margin: 16px auto;
@@ -223,5 +223,270 @@ header {
 .images__category {
   font: 22px/120px Montserrat-Bold;
   text-align: center;
-  padding-left: 20%;
   color: #fff; }
+
+.form-interest {
+  width: 320px;
+  margin: 0 auto;
+  padding-bottom: 23px;
+  border-bottom: 3px solid #de4f51; }
+
+.form-interest--center {
+  text-align: center; }
+
+.form-interest__question {
+  display: block;
+  font: 18px robotolight;
+  color: #363636;
+  margin-top: 10px; }
+
+.form-interest__input {
+  display: block;
+  width: 260px;
+  height: 35px;
+  border: 1px solid #989898;
+  border-radius: 5px;
+  margin: 13px 0 10px 17px;
+  padding-left: 15px;
+  font: 14px/35px robotolight; }
+
+.button--interest {
+  margin-top: 2px;
+  border: none; }
+
+footer {
+  width: 320px;
+  margin: 18px auto;
+  text-align: center; }
+
+.title--footer {
+  font-size: 16px;
+  color: #de4f51; }
+
+.footer-categories {
+  display: block;
+  font: 14px Montserrat-Bold;
+  color: #363636;
+  margin: 12px 0 5px 0; }
+
+.footer-menu {
+  width: 240px;
+  margin: -4px auto; }
+
+.footer-menu__item {
+  list-style: none;
+  float: left;
+  margin-left: 15px; }
+
+.footer-menu__link {
+  text-decoration: none;
+  font: 14px robotolight;
+  color: #666; }
+
+.footer-copyright {
+  display: block;
+  font: 10px Montserrat-Bold;
+  color: #cccccc;
+  margin: 14px 0 5px 0; }
+
+.footer-logo {
+  width: 110px;
+  height: 24px;
+  margin: 8px auto 0;
+  padding-bottom: 10px;
+  background: url(../img/partners_logo.jpg) no-repeat; }
+
+@media (min-width: 768px) and (max-width: 939px) {
+  .header_content {
+    width: 768px;
+    padding-bottom: 196px; }
+  .header_content__register {
+    margin-bottom: 115px; }
+  .register_style {
+    float: right;
+    margin: 44px 18px 0 0; }
+  .register_style--sign {
+    margin: 37px 53px 0 0; }
+  .title {
+    float: left;
+    margin: -142px 0 0 49px; }
+  .header_content__slogan {
+    width: 500px;
+    font: 52px Montserrat-Bold;
+    margin: 0 auto;
+    padding-top: 25px; }
+  .header_content__partner {
+    font-size: 24px;
+    margin-top: 24px; }
+  .block {
+    display: inline; }
+  .button {
+    width: 225px;
+    margin: 38px auto; }
+  .how-work {
+    width: 768px;
+    padding-top: 96px; }
+  .title--steps, .title--partners {
+    font-size: 22px;
+    margin-top: 0;
+    color: #000; }
+  .how-work__step {
+    width: 300px;
+    height: 240px;
+    background: url(../img/step1.png) no-repeat;
+    margin: 10px auto;
+    position: relative; }
+  .how-work__step--step2 {
+    background: url(../img/step2.png) no-repeat; }
+  .how-work__step--step3 {
+    background: url(../img/step3.png) no-repeat; }
+  .step-btn {
+    display: block;
+    width: 70px;
+    height: 20px;
+    font: 10px/20px montserrat;
+    background-color: #ff4e50;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    top: 70px;
+    left: 20px; }
+  .step-btn--step2 {
+    top: 100px; }
+  .step-title {
+    display: block;
+    font: 24px/24px Montserrat-Bold;
+    color: #fff;
+    position: absolute;
+    top: 110px;
+    left: 20px; }
+  .step-title--step2 {
+    top: 140px; }
+  .step-text {
+    display: block;
+    font: 14px/15px robotolight;
+    color: #fff;
+    position: absolute;
+    top: 177px;
+    left: 20px; }
+  .partners {
+    margin-top: 15px;
+    margin-bottom: 36px; }
+  .partners-list {
+    width: 320px;
+    margin: 13px auto; }
+  .item-photo {
+    display: block;
+    width: 125px;
+    margin: 0 auto 16px;
+    position: relative; }
+  .item-icon {
+    width: 41px;
+    position: absolute;
+    top: 87px;
+    left: 85px; }
+  .item-name {
+    font: 14px Montserrat-Bold;
+    text-align: center;
+    color: #333; }
+  .item-hobby {
+    width: 230px;
+    margin: 11px auto;
+    font: 14px/18px robotolight;
+    text-align: center;
+    color: #666; }
+  .partners-list__item {
+    margin-bottom: 25px; }
+  .partners__btn {
+    width: 275px;
+    margin: -2px auto;
+    height: 36px;
+    border: 2px solid #ff4e50;
+    border-radius: 18px;
+    color: #ff4e50;
+    font: 14px/40px Montserrat-Bold;
+    text-align: center; }
+  .images {
+    width: 320px;
+    margin: 0px auto 25px; }
+  .title--images {
+    color: #000;
+    font-size: 22px; }
+  .grid {
+    margin-top: 5px; }
+  .grid-item {
+    width: 300px;
+    height: 120px;
+    float: left;
+    border-radius: 5px;
+    margin: 5px 0 4px 5px;
+    background-size: cover;
+    border: 1px solid black; }
+  .grid-item--width2 {
+    width: 40%; }
+  .images__category {
+    font: 22px/120px Montserrat-Bold;
+    text-align: center;
+    color: #fff; }
+  .form-interest {
+    width: 320px;
+    margin: 0 auto;
+    padding-bottom: 23px;
+    border-bottom: 3px solid #de4f51; }
+  .form-interest--center {
+    text-align: center; }
+  .form-interest__question {
+    display: block;
+    font: 18px robotolight;
+    color: #363636;
+    margin-top: 10px; }
+  .form-interest__input {
+    display: block;
+    width: 260px;
+    height: 35px;
+    border: 1px solid #989898;
+    border-radius: 5px;
+    margin: 13px 0 10px 17px;
+    padding-left: 15px;
+    font: 14px/35px robotolight; }
+  .button--interest {
+    margin-top: 2px;
+    border: none; }
+  footer {
+    width: 320px;
+    margin: 18px auto;
+    text-align: center; }
+  .title--footer {
+    font-size: 16px;
+    color: #de4f51; }
+  .footer-categories {
+    display: block;
+    font: 14px Montserrat-Bold;
+    color: #363636;
+    margin: 12px 0 5px 0; }
+  .footer-menu {
+    width: 240px;
+    margin: -4px auto; }
+  .footer-menu__item {
+    list-style: none;
+    float: left;
+    margin-left: 15px; }
+  .footer-menu__link {
+    text-decoration: none;
+    font: 14px robotolight;
+    color: #666; }
+  .footer-copyright {
+    display: block;
+    font: 10px Montserrat-Bold;
+    color: #cccccc;
+    margin: 14px 0 5px 0; }
+  .footer-logo {
+    width: 110px;
+    height: 24px;
+    margin: 8px auto 0;
+    padding-bottom: 10px;
+    background: url(../img/partners_logo.jpg) no-repeat; } }

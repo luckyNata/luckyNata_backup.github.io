@@ -21,10 +21,10 @@
 <body>
 	<div class="wrapper">
 		<header>
-			<div class="header_content clearfix">
+			<div class="header_content">
 				<div class="header_content__register clearfix">
-					<div><a href="#" class="register_style register_style--sign">Sign up</a></div>
 					<div><a href="#" class="register_style">Log in</a></div>
+					<div><a href="#" class="register_style register_style--sign">Sign up</a></div>
 				</div>
 				<h1 class="title">URLAUBSGLÜCK</h1>
 				<span class="header_content__slogan">share your holiday dreams</span>
@@ -70,20 +70,22 @@
 			</div>
 			<div class="images">
 				<h2 class="title title--images">Discover holiday activity ideas</h2>
-					<script type="text/template" id="images-list">
-                	  <div class="grid">
-						<% for(var i=0; i<data.images.length; i++){ %>
-  							<div class="grid-item" style="background:url(<%=data.images[i].imageurl%>) no-repeat center top; background-size: cover"><p class="images__category"><%=data.images[i].word%></p></div>
- 						<% } %>
- 					  </div>
-					</script>
+                <div class="grid">
+					<div class="grid-item grid-item0"><span class="images__category">Sport and Activity</span></div>
+					<div class="grid-item grid-item1"><span class="images__category">Wellnes and Health</span></div>
+					<div class="grid-item grid-item2"><span class="images__category">Extreme Sports and Expeditions</span></div>
+					<div class="grid-item grid-item3"><span class="images__category">Games</span></div>
+					<div class="grid-item grid-item4"><span class="images__category">Culture and Education</span></div>
+					<div class="grid-item grid-item5"><span class="images__category">Relaxation</span></div>
+					<div class="grid-item grid-item6"><span class="images__category">Travelling</span></div>
+ 				</div>
 			</div>
 			<div class="form-interest">
 				<h2 class="title title--images">Discover holiday activity <span class="block">ideas</span></h2>
-				<form method="POST" action="#" class="form-interest--center form-search">
-					<span class="form-interest__question">Hi! What are your holiday interests?</span>
-					<input type="text" placeholder="Enter your interests" class="form-interest__input">
-					<input type="submit" value="Search partners" class="button button--interest">
+				<form class="form-interest--center">
+				<span class="form-interest__question">Hi! What are your holiday interests?</span>
+				<input type="text" placeholder="Enter your interests" class="form-interest__input">
+				<button class="button button--interest">Search partners</button>
 				</form>
 			</div>
 		</main>
