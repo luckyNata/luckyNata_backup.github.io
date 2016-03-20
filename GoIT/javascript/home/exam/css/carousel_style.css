@@ -1,0 +1,97 @@
+.how-work__carousel1 {
+   display: block;
+   float: left;
+   margin-top: 20px;
+}
+.how-work__carousel1--margin{
+   margin-right: 20px;
+}
+.how-work__carousel1--last{
+   margin: 20px 0 0 0;
+}
+.carousel  {
+   height: 400px;
+}   
+.carousel-block {
+   float: left; /* выстраиваем все элементы карусели в ряд */
+   height: 400px;
+   padding: 0 2px 0 1px; /* делаем оступы, чтобы элементы не сливались */
+   position: relative;
+}
+.carousel-block img {
+    display:block;
+}
+.carousel-wrapper {
+   margin: 1px 2px;/* отступы для стрелок */
+   overflow: hidden; /* скрываем содержимое, выходящее за рамки основной области */
+   position:relative;
+}
+.carousel-items {
+   width: 10000px; /* устанавливаем большую ширину для набора элементов */
+   position: relative; /* позиционируем блок относительно основной области карусели */
+}
+
+/*********** BUTTONS ***********/
+.carousel-button-left a, .carousel-button-right a{
+   display: block;
+   width: 30px; 
+   height: 55px; 
+   position: absolute;
+   cursor: pointer; 
+   text-decoration:none;
+   z-index: 2;
+}
+.carousel-button-left a{
+   float: left; 
+   background: url(../img/left.png); 
+}
+.carousel-button-right a{
+   float: right;
+   background: url(../img/right.png); 
+}
+
+/*********** SHADOW ***********/
+.shadow{
+   /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);*/
+}
+@media (min-width: 768px) and (max-width: 949px){
+.carousel  {
+   max-width: 236px; /* ширина всего блока */
+}
+.carousel-block {
+    width: 236px;
+}
+.carousel-block img{
+    width: 236px;
+}
+.carousel-button-left a, .carousel-button-right a{
+      top: 40px; 
+}
+.carousel-button-left a{ 
+   left: 10px;
+}
+.carousel-button-right a{
+   right: 10px;
+}
+}
+/*---------------------------Desktop------------------------------------------------------------------*/
+@media (min-width: 950px) {
+.carousel  {
+   max-width: 300px; /* ширина всего блока */
+}   
+.carousel-block {
+   width: 300px; /* задаём ширину каждого элемента */
+}
+.carousel-block img {
+   width: 300px;
+}
+.carousel-button-left a, .carousel-button-right a {
+   top: 160px; 
+}
+.carousel-button-left a {
+   left: 23px;
+}
+.carousel-button-right a {
+   right: 23px;
+}
+}
