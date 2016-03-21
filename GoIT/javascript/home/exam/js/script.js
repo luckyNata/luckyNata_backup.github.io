@@ -20,6 +20,7 @@ var partners = {
         'hobby': 'Based in Chicago. I love playing tennis and loud music.'
         },
 }
+
 function ajaxRequest(word){
   $.ajax({
     type: 'GET',
@@ -30,15 +31,20 @@ function ajaxRequest(word){
     var img_content = tmpl(img_tmpl, {data: data});
     $('.grid').remove();
     $('.images').append(img_content); 
-    $('.grid').isotope({//инициализация изотопа
-       itemSelector: '.grid-item',
-       columnWidth: '.grid-item',
-       gutter: 10
+    // $('.grid').isotope({//инициализация изотопа
+    //    itemSelector: '.grid-item',
+    //    columnWidth: '.grid-item',
+    //    gutter: 10
+    // });
+    $('.grid').isotope({
+         // options
+         itemSelector: '.grid-item',
+         layoutMode: 'fitRows'
     });
       // $('.grid-item'+i).css({"background-image":"url("+data.images[i].imageurl+")","background-size":"cover"});
     }//success
   });//ajax
-  }
+}
     ajaxRequest("cats");
 
 $(function(){
