@@ -100,6 +100,7 @@ header{
 	text-align: center;
 	font: 14px/40px Montserrat-Bold;
 	border-radius: 20px;
+	cursor: pointer;
 }
 .how-work{
 	width:320px;
@@ -109,14 +110,7 @@ header{
 	box-sizing: border-box;
 }
 .slider {
-	width:320px;
-	margin: 0 auto;
-	box-sizing: border-box;
-}
-.how-work__carousel1 {
-	position: relative;
-	display: block;
-	float: left;
+	display: none;
 }
 .title--steps, .title--partners {
 	font-size: 22px;
@@ -124,7 +118,11 @@ header{
 	color: #000;
 }
 .how-work__step {
-	display: none;
+	width: 300px;
+	height: 240px;
+	background: url(../img/step1.png) no-repeat;
+	margin: 10px auto;
+	position: relative;
 }
 .how-work__step--step2 {
 	background: url(../img/step2.png) no-repeat;
@@ -214,10 +212,12 @@ header{
 	color: #ff4e50;
 	font: 14px/40px Montserrat-Bold;
 	text-align: center;
+	cursor: pointer;
 }
 .images {
 	width: 320px;
-	margin: 0px auto 25px;;
+	margin: 0px auto 25px;
+	box-sizing: border-box;
 }
 .title--images {
 	color: #000;
@@ -228,7 +228,7 @@ header{
 }
 .grid-item {
     width: 300px;
-    height: 120px;
+    height:238px;
   	float: left;
     border-radius: 5px;
     margin: 5px 0 4px 5px;
@@ -240,9 +240,9 @@ header{
      float: left;
 }
 .images__category {
-	font: 22px/120px Montserrat-Bold;
+	font: 22px/238px Montserrat-Bold;
 	text-align: center;
-	color: #fff;
+	color: #000;
 }
 .form-interest {
 	width: 320px;
@@ -272,6 +272,13 @@ header{
 	margin-top: 2px;
 	border: none;
 }
+.button--interest:focus {
+	outline: none;
+}
+// .button--interest::-moz-focus-inner// для мозилы
+//     {   
+//         border : 0px;
+//     } 
 footer {
 	width: 100%;
 	border-top: 3px solid #de4f51;
@@ -360,9 +367,19 @@ footer {
 	width: 768px;
 	padding-top: 96px;
 }
+.how-work__slider320px {
+	display: none;
+}
 .slider {
+	display: block;
 	width:768px;
 	margin: 0 auto;
+	box-sizing: border-box;
+}
+.how-work__carousel1 {
+	position: relative;
+	display: block;
+	float: left;
 }
 .title--steps{
 	display: block;
@@ -414,13 +431,18 @@ footer {
 	width: 768px;
 	margin: 0px auto 82px;
 }
+.images__category {
+	line-height: 310px;
+}
 .grid {
+	width: 768px;
 	margin-top: 25px;
+	box-sizing: border-box;
 }
 .grid-item {
     width: 230px;
     height: 310px;
-    margin: 5px 15px 15px 5px;
+    margin: 5px 5px 15px 5px;
 }
 .grid-item--width2{
     width: 480px;
@@ -520,9 +542,19 @@ footer {
 	width: 950px;
 	padding-top: 96px;
 }
+.how-work__slider320px {
+	display: none;
+}
 .slider {
+	display: block;
 	width: 950px;
 	margin: 0 auto;
+	box-sizing: border-box;
+}
+.how-work__carousel1 {
+	position: relative;
+	display: block;
+	float: left;
 }
 .title--steps{
 	display: block;
@@ -575,8 +607,12 @@ footer {
 	width: 950px;
 	margin: 0px auto 82px;
 }
+.images__category {
+	line-height: 310px;
+}
 .grid {
 	margin-top: 25px;
+	box-sizing: border-box;
 }
 .grid-item {
     width: 295px;
