@@ -4,24 +4,3 @@ header {
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/top_bg.jpg', sizingMethod='scale')";
   width: 100%; }
 
-.header_content {
-  width: 320px;
-  margin: 0 auto;
-  padding-bottom: 122px; }
-
-.register_style {
-  display: inline-block;
-  margin: 28px 0 0 83px;
-  font: 14px Montserrat-Bold;
-  color: #ffffff;
-  text-decoration: none;
-  cursor: pointer; }
-
-.register_style--sign {
-  margin: 21px 86px 0 0;
-  width: 85px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  border: 2px solid #fff;
-  border-radius: 20px; }
