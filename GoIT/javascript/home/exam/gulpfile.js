@@ -5,9 +5,9 @@ var watch = require('gulp-watch');
 
 
 gulp.task('scripts', function() {
-  return gulp.src('js/src/*.js')
+  return gulp.src('src/js/*.js')
     .pipe(concat('script.main.js'))
-    .pipe(gulp.dest('js/dist/'));
+    .pipe(gulp.dest('dist/js/'));
 });
 
 gulp.task('sass', function () {
