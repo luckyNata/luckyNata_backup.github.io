@@ -14,7 +14,7 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('uglify', function() {
-  return gulp.src('dest/js/*.js')
+  return gulp.src('dest/js/script.main.js')
     .pipe(uglify())
     .pipe(rename("main.min.js"))
     .pipe(gulp.dest('dest/js/'));
