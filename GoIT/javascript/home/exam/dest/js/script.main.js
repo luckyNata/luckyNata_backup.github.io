@@ -78,9 +78,9 @@ function auto_right(carusel){
     }, 2000)
 }
 // Навели курсор на карусель
-$(document).on('mouseenter', '.carousel', function(){$(this).addClass('hover')})
+$(document).on('mouseenter', '.carousel', function(){$(this).addClass('hover')});
 //Убрали курсор с карусели
-$(document).on('mouseleave', '.carousel', function(){$(this).removeClass('hover')})
+$(document).on('mouseleave', '.carousel', function(){$(this).removeClass('hover')});
 /*!
  * jQuery-ajaxTransport-XDomainRequest - v1.0.4 - 2015-03-05
  * https://github.com/MoonScript/jQuery-ajaxTransport-XDomainRequest
