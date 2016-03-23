@@ -45,8 +45,6 @@ header{
 	width:320px;
 	margin: 0 auto;
 	padding-bottom: 122px;
-}
-.header_content__register {
 	margin-bottom: 115px;
 }
 .register_style {
@@ -176,18 +174,21 @@ header{
 	width: 320px;
 	margin: 13px auto;
 }
+.icon-circle1:before{
+	content: '';
+	background: url('../img/circle1.png') no-repeat;
+	width: 41px;
+	position: absolute;
+	top: 87px;
+	left: 85px;
+}
 .item-photo {
 	display: block;
 	width: 125px;
 	margin: 0 auto 16px;
 	position: relative;
 }
-.item-icon {
-	width: 41px;
-	position: absolute;
-	top: 87px;
-	left: 85px;
-}
+
 .item-name {
 	font: 14px Montserrat-Bold;
 	text-align: center;

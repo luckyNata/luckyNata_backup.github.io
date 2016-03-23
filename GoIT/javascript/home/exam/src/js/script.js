@@ -28,20 +28,18 @@ function ajaxRequest(word){
     dataType: 'json',
     success: function (data){ 
     var img_tmpl = $('#images-list').html();
+    console.log('----------', data);
+    console.log('----------', img_tmpl);
     var img_content = tmpl(img_tmpl, {data: data});
     $('.grid').remove();
     $('.images').append(img_content); 
-    // $('.grid').isotope({//инициализация изотопа
-    //    itemSelector: '.grid-item',
-    //    columnWidth: '.grid-item',
-    //    gutter: 10
-    // });
+
     $('.grid').isotope({
          // options
          itemSelector: '.grid-item',
          layoutMode: 'fitRows'
     });
-      // $('.grid-item'+i).css({"background-image":"url("+data.images[i].imageurl+")","background-size":"cover"});
+
     }//success
   });//ajax
 }
