@@ -26,10 +26,15 @@ function ajaxRequest(word){
     type: 'GET',
     url: 'http://api.pixplorer.co.uk/image?word='+word+'&amount=7&size=m',
     dataType: 'json',
+
     success: function (data){ 
+        console.log('ie');
+    // if ( data.status === 'failed' ) {
+    //     data = mockData;
+    // }
     var img_tmpl = $('#images-list').html();
-    console.log('----------', data);
-    console.log('----------', img_tmpl);
+    // console.log('----------', data);
+    // console.log('----------', img_tmpl);
     var img_content = tmpl(img_tmpl, {data: data});
     $('.grid').remove();
     $('.images').append(img_content); 
@@ -39,7 +44,11 @@ function ajaxRequest(word){
          itemSelector: '.grid-item',
          layoutMode: 'fitRows'
     });
-
+            // $(".grid-item").each( function() { 
+            //     $(this).bind('load', function (i) { 
+            //          console.log('load', i);
+            //     });
+            // }); 
     }//success
   });//ajax
 }
@@ -56,4 +65,5 @@ $(function(){
         var request = $('.form-interest__input').val();
         ajaxRequest(request);
     });   
+ 
  });

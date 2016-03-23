@@ -145,13 +145,11 @@
 					<ul class="partners-list clearfix">
 						<% for (var key in partners) {%>
 							<li class="partners-list__item">
-							<div>
 								<div class="item-photo icon-circle<%=key%>">
 									<img src="<%=partners[key].photo %>">
+									<p class="item-name"><%=partners[key].name %></p>
+									<p class="item-hobby"><%=partners[key].hobby %></p>
 								</div>
-								<p class="item-name"><%=partners[key].name %></p>
-								<p class="item-hobby"><%=partners[key].hobby %></p>
-							</div>
 							</li>
 						<% } %>
 					</ul>
