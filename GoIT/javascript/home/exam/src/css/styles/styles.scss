@@ -26,7 +26,6 @@
          url('../fonts/montserrat-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
 .clearfix:after {
     content: "";
@@ -174,13 +173,23 @@ header{
 	width: 320px;
 	margin: 13px auto;
 }
-.icon-circle1:before{
+.icon-circle1:before, .icon-circle2:before, .icon-circle3:before, .icon-circle4:before{
 	content: '';
 	background: url('../img/circle1.png') no-repeat;
 	width: 41px;
+	height: 40px;
 	position: absolute;
 	top: 87px;
 	left: 85px;
+}
+.icon-circle2:before {
+	background: url('../img/circle2.png') no-repeat;
+}
+.icon-circle3:before {
+	background: url('../img/circle3.png') no-repeat;
+}
+.icon-circle4:before {
+	background: url('../img/circle4.png') no-repeat;
 }
 .item-photo {
 	display: block;

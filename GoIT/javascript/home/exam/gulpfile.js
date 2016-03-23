@@ -27,11 +27,11 @@ gulp.task('css', function () {
 });
 
 gulp.task('sass', function () {
-  gulp.src('css/styles/*.scss')
+  gulp.src('src/css/styles/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('css/'));
+    .pipe(gulp.dest('src/css/'));
 });
 
 gulp.task('watch', function () {
-  gulp.watch('css/styles/*.scss', ['sass']);
+  gulp.watch('src/css/styles/*.scss', ['sass']);
 });
