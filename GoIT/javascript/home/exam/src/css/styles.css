@@ -44,6 +44,9 @@ header {
   text-decoration: none;
   cursor: pointer; }
 
+.register_style:hover {
+  color: #000; }
+
 .register_style--sign {
   float: right;
   margin: 21px 86px 0 0;
@@ -89,6 +92,9 @@ header {
   border-radius: 20px;
   cursor: pointer; }
 
+.button:hover {
+  color: #000; }
+
 .how-work {
   width: 320px;
   margin: 0 auto;
@@ -132,6 +138,9 @@ header {
   position: absolute;
   top: 70px;
   left: 20px; }
+
+.step-btn:hover {
+  color: #000; }
 
 .step-btn--step2 {
   top: 100px; }
@@ -212,6 +221,9 @@ header {
   font: 14px/40px Montserrat-Bold;
   text-align: center;
   cursor: pointer; }
+
+.partners__btn:hover {
+  color: #000; }
 
 .images {
   width: 320px;

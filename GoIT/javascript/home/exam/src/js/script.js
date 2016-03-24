@@ -33,7 +33,7 @@ function ajaxRequest(word){
     //     data = mockData;
     // }
     var img_tmpl = $('#images-list').html();
-    // console.log('----------', data);
+    console.log('----------', data);
     // console.log('----------', img_tmpl);
     var img_content = tmpl(img_tmpl, {data: data});
     $('.grid').remove();
@@ -52,18 +52,21 @@ function ajaxRequest(word){
     }//success
   });//ajax
 }
+console.log('ieeee');
     ajaxRequest("cats");
+    console.log('ieeee2');
 
 $(function(){
   $.support.cors = true;//поддержка ajax для IE
     var htmlka = $('#partners-list').html();
     var content = tmpl(htmlka, partners);
     $('.partners').append(content);   
+        console.log('ieeee3');
 
     $('.form-search').submit( function(event){
         event.preventDefault();
         var request = $('.form-interest__input').val();
         ajaxRequest(request);
     });   
- 
+     console.log('ieeee4');
  });
