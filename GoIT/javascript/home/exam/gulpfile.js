@@ -70,7 +70,7 @@ gulp.task('style:build', function () {
     gulp.src(path.src.style) 
         .pipe(concatCss("main.css"))
         .pipe(uglifycss({"maxLineLen": 80,"uglyComments": true}))
-       // .pipe(rename("main.min.css"))
+        .pipe(rename("main.min.css"))
         .pipe(gulp.dest(path.build.css))
         .pipe(reload({stream: true}));
 });

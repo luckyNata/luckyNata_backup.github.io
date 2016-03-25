@@ -23,30 +23,6 @@ var partners = {
         },
 }
 
-function ajaxRequest(word){
-  $.ajax({
-    type: 'GET',
-    url: 'http://api.pixplorer.co.uk/image?word='+word+'&amount=7&size=m',
-    dataType: 'json',
-
-    success: function (data){ 
-
-    var img_tmpl = $('#images-list').html();
-    var img_content = tmpl(img_tmpl, {data: data});
-    $('.grid').remove();
-    $('.images').append(img_content); 
-
-    $('.grid').isotope({
-         // options
-         itemSelector: '.grid-item',
-         layoutMode: 'fitRows'
-    });
-
-    }//success
-  });//ajax
-}
-
-    ajaxRequest("cats");
 
 
 $(function(){
@@ -54,11 +30,35 @@ $(function(){
     var htmlka = $('#partners-list').html();
     var content = tmpl(htmlka, partners);
     $('.partners').append(content);   
+    
+    function ajaxRequest(word){
+      $.ajax({
+        type: 'GET',
+        url: 'http://api.pixplorer.co.uk/image?word='+word+'&amount=7&size=m',
+        dataType: 'json',
+        cache: false,
+    
+        success: function (data){   
+            var img_tmpl = $('#images-list').html();
+            var img_content = tmpl(img_tmpl, {data: data});
+            $('.grid').remove();
+            $('.images').append(img_content); 
+    
+            $('.grid').isotope({
+                 // options
+                 itemSelector: '.grid-item',
+                 layoutMode: 'fitRows'
+            }); 
+            }//success
+      });//ajax
+    }
+
+    ajaxRequest("cats");
        
     $('.form-search').submit( function(event){
         event.preventDefault();
         var request = $('.form-interest__input').val();
         ajaxRequest(request);
     });   
-     
+
  });
