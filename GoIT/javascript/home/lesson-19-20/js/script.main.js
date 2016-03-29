@@ -16,8 +16,9 @@ $(function(){
 		var src = $(this).children('img').attr('src');
 		var arr = src.split('/');
 		var newSrc = 'img/ser_'+ arr[1];
-		var img = $('.services__modal img');
-		img.attr('src', newSrc);
+		var img = $('.services__modal');
+		console.log(newSrc);
+		img.css({'backgroundImage': 'url('+newSrc+')', "background-size": "cover"});
 		$('.services__modal').show();
 	}
 
