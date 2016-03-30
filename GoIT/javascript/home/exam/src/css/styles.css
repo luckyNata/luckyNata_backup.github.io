@@ -27,8 +27,13 @@
   box-sizing: border-box; }
 
 header {
-  background: url(../img/top_bg.jpg) no-repeat center top;
-  background-size: cover; }
+  background-image: url(../img/top_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/top_bg.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/top_bg.jpg', sizingMethod='scale')";
+  width: 100%; }
 
 .header_content {
   width: 320px;
@@ -97,7 +102,10 @@ header {
   cursor: pointer; }
 
 .button:hover {
-  color: #000; }
+  color: #000;
+  height: 36px;
+  border: 2px solid #ff4e50;
+  background-color: #ffffff; }
 
 .how-work {
   width: 320px;
@@ -144,6 +152,10 @@ header {
   left: 20px; }
 
 .step-btn:hover {
+  width: 68px;
+  height: 18px;
+  background-color: #fff;
+  border: 1px solid #ff4e50;
   color: #000; }
 
 .step-btn--step2 {
@@ -186,7 +198,8 @@ header {
   height: 40px;
   position: absolute;
   top: 87px;
-  left: 85px; }
+  left: 85px;
+  z-index: 100; }
 
 .icon-circle2:before {
   background: url("../img/circle2.png") no-repeat; }
@@ -219,8 +232,8 @@ header {
   margin-bottom: 25px; }
 
 .partners__btn {
-  width: 275px;
   margin: -2px auto;
+  width: 275px;
   height: 36px;
   border: 2px solid #ff4e50;
   border-radius: 18px;
@@ -230,7 +243,9 @@ header {
   cursor: pointer; }
 
 .partners__btn:hover {
-  color: #000; }
+  color: #000;
+  height: 36px;
+  background-color: #ff4e50; }
 
 .images {
   width: 320px;
@@ -327,6 +342,13 @@ header {
 .button--interest {
   margin-top: 2px;
   border: none; }
+
+.button--interest:hover {
+  color: #000;
+  height: 40px;
+  line-height: 36px;
+  border: 2px solid #ff4e50;
+  background-color: #ffffff; }
 
 .button--interest:focus {
   outline: none; }
