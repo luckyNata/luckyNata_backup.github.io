@@ -21,7 +21,11 @@ var path = {
         html: 'src/*.html', 
         jsV: 'src/js/vendors/vendors.js',
         js: 'src/js/script.js',
-        style: 'src/css/*.css'
+        style: [
+                    'src/css/reset.css',
+                    'src/css/carousel_style.css',
+                    'src/css/styles.css'
+                ]
     },
     watch: { 
         html: 'src/**/*.html',

@@ -37,7 +37,7 @@ $(function(){
         cache: false,
     
         success: function (data){   
-            console.log(data);
+
             var img_tmpl = $('#images-list').html();
             var img_content = tmpl(img_tmpl, {data: data});
             $('.grid').remove();
@@ -56,7 +56,6 @@ $(function(){
                  function showModal(e){
                     var targIndex = $(this).index();
                     var modalURL = data.images[targIndex].imageurl;
-                    console.log(modalURL);
                    
                     $('.modal-image').attr('src', modalURL);
                     $('.modal').show();
