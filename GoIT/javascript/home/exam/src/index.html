@@ -152,20 +152,20 @@
 					<div class="partners__btn">See other partners</div>
 				</script>
 			</div>
-			<div class="images">
+			<div class="images clearfix">
 				<h2 class="title title--images">Discover holiday activity ideas</h2>
 					<script type="text/template" id="images-list">
                 	  <div class="grid clearfix">
 						<% for(var i=0; i<data.images.length; i++){
 							if ((i==4) || (i==5)) {%>
-  							<div class="grid-item grid-item--width2" style="background:url(<%=data.images[i].imageurl%>) no-repeat center top; background-size: cover"><p class="images__category"><%=data.images[i].word%></p></div>
+  							<div class="grid-item grid-item--width2" style="background:url(<%=data.images[i].imageurl%>) no-repeat center top; background-size: cover"><p class="images__category"><%=data.images[i].word%></p><div class="img-shadow"></div></div>
  						<%  } else { %>
- 							<div class="grid-item" style="background:url(<%=data.images[i].imageurl%>) no-repeat center top; background-size: cover"><p class="images__category"><%=data.images[i].word%></p></div>
+ 							<div class="grid-item" style="background:url(<%=data.images[i].imageurl%>) no-repeat center top; background-size: cover"><p class="images__category"><%=data.images[i].word%></p><div class="img-shadow"></div></div>
  							 <% }
  						} %>
  					  </div>
 					</script>
-					<div class="modal-overlay"><div class="images-modal"></div></div>
+					<div class="modal"><div class="modal-overlay"><img class="modal-image" src=""></div></div></div>
 			</div>
 			<div class="form-interest">
 				<h2 class="title title--images">Discover holiday activity <span class="block">ideas</span></h2>
