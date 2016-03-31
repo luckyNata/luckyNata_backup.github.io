@@ -1,5 +1,4 @@
-//= vendors/template.js
-//= vendors/isotope.js
+
 var partners = {
     '1': {
         'photo': 'img/partner1.png',

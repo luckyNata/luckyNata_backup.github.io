@@ -5,7 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Holiday Dreams</title>
 
-	<link rel="stylesheet" href="css/main.min.css">
+	
+	<link rel="stylesheet" href="css/main.css">
 	<script src="js/vendor.min.js"></script>
  	<script src="js/main.min.js"></script> 
 
@@ -13,11 +14,10 @@
    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 	<![endif]-->
 
+
 </head>
 <body>
-
 	<div class="wrapper">
-
 		<header>
 			<div class="header_content clearfix">
 				<div><a href="#" class="register_style register_style--sign">Sign up</a></div>
@@ -147,19 +147,20 @@
 					<div class="partners__btn">See other partners</div>
 				</script>
 			</div>
-			<div class="images">
+			<div class="images clearfix">
 				<h2 class="title title--images">Discover holiday activity ideas</h2>
 					<script type="text/template" id="images-list">
                 	  <div class="grid clearfix">
 						<% for(var i=0; i<data.images.length; i++){
 							if ((i==4) || (i==5)) {%>
-  							<div class="grid-item grid-item--width2" style="background:url(<%=data.images[i].imageurl%>) no-repeat center top; background-size: cover"><p class="images__category"><%=data.images[i].word%></p></div>
+  							<div class="grid-item grid-item--width2" style="background:url(<%=data.images[i].imageurl%>) no-repeat center top; background-size: cover"><p class="images__category"><%=data.images[i].word%></p><div class="img-shadow"> </div></div>
  						<%  } else { %>
- 							<div class="grid-item" style="background:url(<%=data.images[i].imageurl%>) no-repeat center top; background-size: cover"><p class="images__category"><%=data.images[i].word%></p></div>
+ 							<div class="grid-item" style="background:url(<%=data.images[i].imageurl%>) no-repeat center top; background-size: cover"><p class="images__category"><%=data.images[i].word%></p><div class="img-shadow"></div></div>
  							 <% }
  						} %>
  					  </div>
 					</script>
+					<div class="modal"><div class="modal-overlay"><img class="modal-image" src=""></div></div></div>
 			</div>
 			<div class="form-interest">
 				<h2 class="title title--images">Discover holiday activity <span class="block">ideas</span></h2>

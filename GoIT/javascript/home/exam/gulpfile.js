@@ -54,7 +54,7 @@ gulp.task('html:build', function () {
 
 gulp.task('js:build', function () {
     gulp.src(path.src.js) 
-        .pipe(rigger()) 
+     //   .pipe(rigger()) 
         .pipe(uglify()) 
         .pipe(rename("main.min.js"))
         .pipe(gulp.dest(path.build.js)) 
@@ -92,15 +92,15 @@ gulp.task('uglify', function() {
     .pipe(gulp.dest('src/js/'));
 });
 
-gulp.task('css', function () {
-  const f = filter(['src/css/styles.css', 'src/css/reset.css', 'src/css/carousel_style.css']);
-  return gulp.src('src/css/*.css')
-    .pipe(f)
+gulp.task('concatCss', function () {
+  return gulp.src(['src/css/reset.css','src/css/styles.css', 'src/css/carousel_style.css'])
     .pipe(concatCss("main.css"))
+   // .pipe(uglifycss())
+    //.pipe(rename("main.min.css"))
     .pipe(gulp.dest('build/css/'));
 });
 
-gulp.task('uglifycss', function () {
+gulp.task('css', function () {
   gulp.src('build/css/main.css')
     .pipe(uglifycss({
       "maxLineLen": 80,
