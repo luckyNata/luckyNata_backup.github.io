@@ -675,7 +675,7 @@ footer {
   .register_style {
     float: left;
     margin: 28px 0 0 83px;
-    font: 14px Montserrat-Bold;
+    font: 14px Montserrat-Bold, sans-serif;
     color: #ffffff;
     text-decoration: none;
     cursor: pointer; }
@@ -692,7 +692,7 @@ footer {
     border-radius: 20px; }
   .title {
     display: block;
-    font: 20px Montserrat-Bold;
+    font: 20px Montserrat-Bold, sans-serif;
     text-align: center;
     color: #ffffff;
     letter-spacing: 0.5px; }
@@ -701,13 +701,13 @@ footer {
   .header_content__slogan {
     display: block;
     text-transform: uppercase;
-    font: 30px Montserrat-Bold;
+    font: 30px Montserrat-Bold, sans-serif;
     margin-top: 27px;
     text-align: center;
     color: #ffffff; }
   .header_content__partner {
     display: block;
-    font: 18px/20px robotolight;
+    font: 18px/20px robotolight, sans-serif;
     margin-top: 9px;
     text-align: center;
     color: #ffffff; }
@@ -720,7 +720,7 @@ footer {
     background-color: #ff4e50;
     color: #ffffff;
     text-align: center;
-    font: 14px/40px Montserrat-Bold;
+    font: 14px/40px Montserrat-Bold, sans-serif;
     border-radius: 20px;
     cursor: pointer; }
   .button:hover {
@@ -755,7 +755,7 @@ footer {
     display: block;
     width: 70px;
     height: 20px;
-    font: 10px/20px montserrat;
+    font: 10px/20px montserrat, sans-serif;
     background-color: #ff4e50;
     border-radius: 10px;
     text-align: center;
@@ -776,7 +776,7 @@ footer {
     top: 100px; }
   .step-title {
     display: block;
-    font: 24px/24px Montserrat-Bold;
+    font: 24px/24px Montserrat-Bold, sans-serif;
     color: #fff;
     position: absolute;
     top: 110px;
@@ -785,7 +785,7 @@ footer {
     top: 140px; }
   .step-text {
     display: block;
-    font: 14px/15px robotolight;
+    font: 14px/15px robotolight, sans-serif;
     color: #fff;
     position: absolute;
     top: 177px;
@@ -822,13 +822,13 @@ footer {
     margin: 0 auto 16px;
     position: relative; }
   .item-name {
-    font: 14px Montserrat-Bold;
+    font: 14px Montserrat-Bold, sans-serif;
     text-align: center;
     color: #333; }
   .item-hobby {
     width: 230px;
     margin: 11px auto;
-    font: 14px/18px robotolight;
+    font: 14px/18px robotolight, sans-serif;
     text-align: center;
     color: #666; }
   .partners-list__item {
@@ -840,7 +840,7 @@ footer {
     border: 2px solid #ff4e50;
     border-radius: 18px;
     color: #ff4e50;
-    font: 14px/40px Montserrat-Bold;
+    font: 14px/40px Montserrat-Bold, sans-serif;
     text-align: center;
     cursor: pointer; }
   .partners__btn:hover {
@@ -901,7 +901,7 @@ footer {
     width: 300px;
     float: left; }
   .images__category {
-    font: 22px/238px Montserrat-Bold;
+    font: 22px/238px Montserrat-Bold, sans-serif;
     text-align: center;
     color: #000; }
   .form-interest {
@@ -912,7 +912,7 @@ footer {
     text-align: center; }
   .form-interest__question {
     display: block;
-    font: 18px robotolight;
+    font: 18px robotolight, sans-serif;
     color: #363636;
     margin-top: 10px; }
   .form-interest__input {
@@ -923,7 +923,7 @@ footer {
     border-radius: 5px;
     margin: 13px 0 10px 17px;
     padding-left: 15px;
-    font: 14px/35px robotolight; }
+    font: 14px/35px robotolight, sans-serif; }
   .button--interest {
     margin-top: 2px;
     border: none; }
@@ -947,7 +947,7 @@ footer {
     color: #de4f51; }
   .footer-categories {
     display: block;
-    font: 14px Montserrat-Bold;
+    font: 14px Montserrat-Bold, sans-serif;
     color: #363636;
     margin: 12px 0 5px 0; }
   .footer-menu {
@@ -959,11 +959,11 @@ footer {
     margin-left: 15px; }
   .footer-menu__link {
     text-decoration: none;
-    font: 14px robotolight;
+    font: 14px robotolight, sans-serif;
     color: #666; }
   .footer-copyright {
     display: block;
-    font: 10px Montserrat-Bold;
+    font: 10px Montserrat-Bold, sans-serif;
     color: #cccccc;
     margin: 14px 0 5px 0; }
   .footer-logo {
