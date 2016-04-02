@@ -49,6 +49,7 @@ $(function(){
             }); 
 
              $('.modal').hide();
+             $('.modal-overlay').hide();
 
                 $('.grid-item').on('click', showModal);
 
@@ -57,6 +58,7 @@ $(function(){
                     var modalURL = data.images[targIndex].imageurl;
                    
                     $('.modal-image').attr('src', modalURL);
+                    $('.modal-overlay').show();
                     $('.modal').show();
                 }
             }//success
