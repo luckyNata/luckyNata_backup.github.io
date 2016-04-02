@@ -22,12 +22,21 @@ var partners = {
         },
 }
 
+var words = ['sport', 'ice-cream', 'tree', 'sea', 'spring', 'skateboards', 'flower', 'food', 'animal', 'building', 'country', 'cars', 'jewelery'];
+
+function getWord(min, max){
+	var rand = min + Math.floor(Math.random() * (max + 1 - min));
+	//return words[rand]; //слова для поиска из нашего массива
+}
+
 $(function(){
   $.support.cors = true;//поддержка ajax для IE
     var htmlka = $('#partners-list').html();
     var content = tmpl(htmlka, partners);
     $('.partners').append(content);   
     
+    var queryWord = getWord(0,12);
+
     function ajaxRequest(word){
       $.ajax({
         type: 'GET',
@@ -65,7 +74,7 @@ $(function(){
       });//ajax
     }
 
-    ajaxRequest("cats");
+    ajaxRequest(queryWord);
        
     $('.form-search').submit( function(event){
         event.preventDefault();
