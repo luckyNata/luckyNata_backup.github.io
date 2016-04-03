@@ -99,14 +99,30 @@ gulp.task('concatCss', function () {
     //.pipe(rename("main.min.css"))
     .pipe(gulp.dest('build/css/'));
 });
+gulp.task('concatCss_ie', function () {
+  return gulp.src(['src/css/ie8.css','src/css/ie8_carousel.css'])
+    .pipe(concatCss("main_ie.css"))
+   // .pipe(uglifycss())
+    //.pipe(rename("main.min.css"))
+    .pipe(gulp.dest('build/css/'));
+});
 
-gulp.task('css', function () {
+gulp.task('mincss', function () {
   gulp.src('build/css/main.css')
     .pipe(uglifycss({
       "maxLineLen": 80,
       "uglyComments": true
     }))
     .pipe(rename("main.min.css"))
+    .pipe(gulp.dest('build/css/'));
+});
+gulp.task('mincss_ie', function () {
+  gulp.src('build/css/main_ie.css')
+    .pipe(uglifycss({
+      "maxLineLen": 80,
+      "uglyComments": true
+    }))
+    .pipe(rename("ie.min.css"))
     .pipe(gulp.dest('build/css/'));
 });
 
