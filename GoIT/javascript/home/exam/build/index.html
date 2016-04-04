@@ -135,17 +135,39 @@
   			</div>
 			<div class="partners">
 				<h2 class="title title--partners">Meet a partner for your <span class="block">best holiday</span></h2>
-				<script type="text/template" id="partners-list">
 					<ul class="partners-list clearfix">
-						<% for (var key in partners) {%>
 							<li class="partners-list__item">
-								<div class="item-photo icon-circle<%=key%>">
-									<img src="<%=partners[key].photo %>">
+								<div class="item-photo">
+									<img src="img/partner1.png" class="photo">
+									<div class="icon-circle1"></div>
 								</div>
-									<p class="item-name"><%=partners[key].name %></p>
-									<p class="item-hobby"><%=partners[key].hobby %></p>
+									<p class="item-name">Bradley Hunter</p>
+									<p class="item-hobby">Based in Chicago. I love playing tennis and loud music.</p>
 							</li>
-						<% } %>
+							<li class="partners-list__item">
+								<div class="item-photo">
+									<img src="img/partner2.png" class="photo">
+									<div class="icon-circle2"></div>
+								</div>
+									<p class="item-name">Lucas Marsha</p>
+									<p class="item-hobby">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
+							</li>
+							<li class="partners-list__item">
+								<div class="item-photo">
+									<img src="img/partner3.png" class="photo">
+									<div class="icon-circle3"></div>
+								</div>
+									<p class="item-name">Heather Walker</p>
+									<p class="item-hobby">I'm a happy person that loves cats and climbing on mountains.</p>
+							</li>
+							<li class="partners-list__item">
+								<div class="item-photo">
+									<img src="img/partner4.png" class="photo">
+									<div class="icon-circle4"></div>
+								</div>
+									<p class="item-name">Bradley Hunter</p>
+									<p class="item-hobby">Based in Chicago. I love playing tennis and loud music.</p>
+							</li>
 					</ul>
 					<div class="partners__btn">See other partners</div>
 				</script>
@@ -156,14 +178,14 @@
                 	  <div class="grid clearfix">
 						<% for(var i=0; i<data.images.length; i++){
 							if ((i==4) || (i==5)) {%>
-  							<div class="grid-item grid-item--width2" style="background:url(<%=data.images[i].imageurl%>) no-repeat center top; background-size: cover"><p class="images__category"><%=data.images[i].word%></p><div class="img-shadow"> </div></div>
+  							<div class="grid-item grid-item--width2" style="background:url(<%=data.images[i].imageurl%>) no-repeat center top; background-size: cover"><p class="images__category"><%=data.images[i].word%></p><div class="img-shadow"></div></div>
  						<%  } else { %>
  							<div class="grid-item" style="background:url(<%=data.images[i].imageurl%>) no-repeat center top; background-size: cover"><p class="images__category"><%=data.images[i].word%></p><div class="img-shadow"></div></div>
  							 <% }
  						} %>
  					  </div>
 					</script>
-					<div class="modal"><div class="modal-overlay"><img class="modal-image" src=""></div></div></div>
+					<div class="modal"><div class="modal-overlay"><img class="modal-image" src=""></div></div>
 			</div>
 			<div class="form-interest">
 				<h2 class="title title--images">Discover holiday activity <span class="block">ideas</span></h2>

@@ -30,10 +30,7 @@ function getWord(min, max){
 }
 
 $(function(){
-  $.support.cors = true;//поддержка ajax для IE
-    var htmlka = $('#partners-list').html();
-    var content = tmpl(htmlka, partners);
-    $('.partners').append(content);   
+  $.support.cors = true;//поддержка ajax для IE  
     
     var queryWord = getWord(0,12);
 

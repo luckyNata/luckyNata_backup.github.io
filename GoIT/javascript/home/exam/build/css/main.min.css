@@ -32,14 +32,12 @@ header{background-image:url("../img/top_bg.jpg");background-repeat:no-repeat;bac
 .step-btn--step2{top:100px}.step-title{display:block;font:24px/24px Montserrat-Bold,sans-serif;color:#fff;position:absolute;top:110px;left:20px}
 .step-title--step2{top:140px}.step-text{display:block;font:14px/15px robotolight,sans-serif;color:#fff;position:absolute;top:177px;left:20px}
 .partners{margin-top:15px;margin-bottom:36px}.partners-list{width:320px;margin:13px auto}
-.partners-list__item{text-align:center}.icon-circle1:before,.icon-circle2:before,.icon-circle3:before,.icon-circle4:before{content:'';background:url("../img/circle1.png") no-repeat;width:41px;height:40px;position:absolute;top:87px;left:85px;z-index:100}
-.icon-circle2:before{background:url("../img/circle2.png") no-repeat}.icon-circle3:before{background:url("../img/circle3.png") no-repeat}
-.icon-circle4:before{background:url("../img/circle4.png") no-repeat}.item-photo{display:block;width:125px;margin:0 auto 16px;position:relative}
+.partners-list__item{text-align:center}.item-photo{display:block;width:125px;margin:0 auto 16px;position:relative}
 .item-name{font:14px Montserrat-Bold,sans-serif;text-align:center;color:#333}.item-hobby{width:230px;margin:11px auto;font:14px/18px robotolight,sans-serif;text-align:center;color:#666}
 .partners-list__item{margin-bottom:25px}.partners__btn{margin:-2px auto;width:275px;height:36px;border:2px solid #ff4e50;border-radius:18px;color:#ff4e50;font:14px/40px Montserrat-Bold,sans-serif;text-align:center;cursor:pointer}
 .partners__btn:hover{color:#000;height:36px;background-color:#ff4e50}.images{width:320px;margin:0 auto 25px;box-sizing:border-box}
 .title--images{color:#000;font-size:22px}.modal{display:table;width:100%;height:100%;position:fixed;top:0;left:0;z-index:9}
-.modal-overlay{display:table-cell;text-align:center;vertical-align:middle;z-index:8;background-color:rgba(0,0,0,0.7)}
+.modal-overlay{display:table-cell;text-align:center;vertical-align:middle;z-index:8}
 .modal-image{display:inline-block;max-height:600px;max-width:800px;z-index:3;-webkit-box-shadow:0 3px 10px 2px rgba(0,0,0,0.75);-moz-box-shadow:0 3px 10px 2px rgba(0,0,0,0.75);box-shadow:0 3px 10px 2px rgba(0,0,0,0.75)}
 .grid{margin-top:5px}.grid-item{width:300px;height:238px;float:left;border-radius:5px;margin:5px 0 4px 5px;background-size:cover;border:1px solid #cecece;position:relative}
 .img-shadow{width:100%;height:100%;position:absolute;top:0;left:0;background-color:rgba(0,0,0,0.3);z-index:2}
@@ -111,14 +109,14 @@ header{background-image:url("../img/top_bg.jpg");background-repeat:no-repeat;bac
 .step-btn--step2{top:100px}.step-title{display:block;font:24px/24px Montserrat-Bold,sans-serif;color:#fff;position:absolute;top:110px;left:20px}
 .step-title--step2{top:140px}.step-text{display:block;font:14px/15px robotolight,sans-serif;color:#fff;position:absolute;top:177px;left:20px}
 .partners{margin-top:15px;margin-bottom:36px}.partners-list{width:320px;margin:13px auto}
-.partners-list__item{text-align:center}.icon-circle1:before,.icon-circle2:before,.icon-circle3:before,.icon-circle4:before{content:'';background:url("../img/circle1.png") no-repeat;width:41px;height:40px;position:absolute;top:87px;left:85px;z-index:100}
-.icon-circle2:before{background:url("../img/circle2.png") no-repeat}.icon-circle3:before{background:url("../img/circle3.png") no-repeat}
-.icon-circle4:before{background:url("../img/circle4.png") no-repeat}.item-photo{display:block;width:125px;margin:0 auto 16px;position:relative}
+.partners-list__item{text-align:center}.icon-circle1,.icon-circle2,.icon-circle3,.icon-circle4{background:url("../img/circle1.png") no-repeat;width:40px;height:40px;position:absolute;top:85px;right:2px}
+.icon-circle2{background:url("../img/circle2.png") no-repeat}.icon-circle3{background:url("../img/circle3.png") no-repeat}
+.icon-circle4{background:url("../img/circle4.png") no-repeat}.item-photo{display:block;width:125px;margin:0 auto 16px;position:relative}
 .item-name{font:14px Montserrat-Bold,sans-serif;text-align:center;color:#333}.item-hobby{width:230px;margin:11px auto;font:14px/18px robotolight,sans-serif;text-align:center;color:#666}
 .partners-list__item{margin-bottom:25px}.partners__btn{margin:-2px auto;width:275px;height:36px;border:2px solid #ff4e50;border-radius:18px;color:#ff4e50;font:14px/40px Montserrat-Bold,sans-serif;text-align:center;cursor:pointer}
 .partners__btn:hover{color:#000;height:36px;background-color:#ff4e50}.images{width:320px;margin:0 auto 25px;box-sizing:border-box}
 .title--images{color:#000;font-size:22px}.modal{display:table;width:100%;height:100%;position:fixed;top:0;left:0;z-index:9}
-.modal-overlay{display:table-cell;text-align:center;vertical-align:middle;z-index:8;background-color:rgba(0,0,0,0.7)}
+.modal-overlay{display:table-cell;text-align:center;vertical-align:middle;z-index:8}
 .modal-image{display:inline-block;max-height:600px;max-width:800px;z-index:3;-webkit-box-shadow:0 3px 10px 2px rgba(0,0,0,0.75);-moz-box-shadow:0 3px 10px 2px rgba(0,0,0,0.75);box-shadow:0 3px 10px 2px rgba(0,0,0,0.75)}
 .grid{margin-top:5px}.grid-item{width:300px;height:238px;float:left;border-radius:5px;margin:5px 0 4px 5px;background-size:cover;border:1px solid #cecece;position:relative}
 .img-shadow{width:100%;height:100%;position:absolute;top:0;left:0;background-color:rgba(0,0,0,0.3);z-index:2}
